@@ -54,7 +54,8 @@ create table Products
 (pdID nvarchar(10) not null primary key DEFAULT DBO.AUTO_ProductID(),
  pdName nvarchar(50) not null, 
  catID nvarchar(10) not null,
- pdPrice float not null, 
+ pdPrice float not null,
+ pdQuantity int not null, 
  pdAuthor nvarchar(50) not null,
 pdDes nvarchar(1000) not null, 
 pdCover nvarchar(200), 
@@ -75,6 +76,9 @@ create table Transactions
 (tID nvarchar(10) not null primary key, 
 uID nvarchar(10) not null,
 pdID nvarchar(10) not null,
+pdBooksBought int not null,
+pdStatus bit not null,
+pdDate Date default(getDate())
 constraint FK_uID Foreign key(uID) references Users(uID),
 constraint FK_pdID Foreign key(pdID) references Products(pdID)  )
 
@@ -99,8 +103,10 @@ insert into Categories(catID, catName) values ('C015', 'Short Story')
 /* ==============================PRODUCTS VALUES=============================== */
 GO
 --1 Action & Adventure
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0001','The Hobbit', 'C001', 300000, 'J.R.R. Tolkien',
+
+
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor, pdDes)
+values ('P0001','The Hobbit', 'C001', 300000, 10, 'J.R.R. Tolkien',
 'The European languages are members of the same family.
 Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
 The languages only differ in their grammar, their pronunciation and their most common words.
@@ -108,8 +114,8 @@ Everyone realizes why a new common language would be desirable: one could refuse
 To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words...')
 
 --2 Action & Adventure
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0002','The Three Musketeers', 'C001', 400000, ' Alexandre Dumas',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0002','The Three Musketeers', 'C001', 400000, 20, ' Alexandre Dumas',
 'A wonderful serenity has taken possession of my entire soul,
 like these sweet mornings of spring which I enjoy with my whole heart.
 I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
@@ -117,8 +123,8 @@ I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranqu
 that I neglect my talents. I should be incapable of drawing a single stroke at the present moment...')
 
 --3 Classic
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0003','To Kill a Mockingbird ', 'C002', 250000, 'Harper Lee',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0003','To Kill a Mockingbird ', 'C002', 250000, 25, 'Harper Lee',
 ' I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
 I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence,
 that I neglect my talents. I should be incapable of drawing a single stroke at the present moment;
@@ -128,8 +134,8 @@ and but a few stray gleams steal into the inner sanctuary,
 I throw myself down among the tall grass by the trickling stream...')
 
 --4 Classic
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0004','Romeo and Juliet ', 'C002', 550000, 'William Shakespeare',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0004','Romeo and Juliet ', 'C002', 550000, 10, 'William Shakespeare',
 ' When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the 
 impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, 
 I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, 
@@ -140,8 +146,8 @@ as it floats around us in an eternity of bliss; and then, my friend, when darkne
 earth...')
 
 --5 Commic and Graphic Novel
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0005',' Batman: The Dark Knight Returns ', 'C003', 700000, 'Frank Miller',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0005',' Batman: The Dark Knight Returns ', 'C003', 700000, 9, 'Frank Miller',
 ' But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and 
 I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, 
 the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, 
@@ -150,8 +156,8 @@ Nor again is there anyone who loves or pursues or desires to obtain pain of itse
 occasionally circumstances occur in which toil and pain can procure him some great pleasure....')
 
 --6 Commic and Graphic Novel
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0006',' V for Vendetta ', 'C003', 350000, 'Alan Moore',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0006',' V for Vendetta ', 'C003', 350000, 12, 'Alan Moore',
 ' Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little bit 
 longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to 
 sleeping on his right, and in his present state couldnt get into that position. However hard he threw himself onto 
@@ -160,16 +166,16 @@ wouldnt have to look at the floundering legs, and only stopped when he began to 
 he had never felt before...')
 
 --7 Crime and Detective
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0007',' Sherlock Holmes ', 'C004', 1000000, 'Arthur Conan Doyle',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0007',' Sherlock Holmes ', 'C004', 1000000,30, 'Arthur Conan Doyle',
 ' "Oh, God", he thought, "what a strenuous career it is that I have chosen! Travelling day in and day out. 
 Doing business like this takes much more effort than doing your own business at home, and on top of that there is the 
 curse of travelling, worries about making train connections, bad and irregular food, contact with different people all 
 the time so that you can never get to know anyone or become friendly with them. It can all go to Hell!...')
 
 --8 Crime and Detective
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0008',' Murder on The Orient Express ', 'C004', 800000, ' Agatha Christie',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0008',' Murder on The Orient Express ', 'C004', 800000, 15, ' Agatha Christie',
 ' He felt a slight itch up on his belly; pushed himself slowly up on his back towards the headboard so that he could 
 lift his head better; found where the itch was, and saw that it was covered with lots of little white spots which he 
 didnt know what to make of; and when he tried to feel the place with one of his legs he drew it quickly back because 
@@ -178,8 +184,8 @@ as soon as he touched it he was overcome by a cold shudder. He slid back into hi
 Other travelling salesmen live a life of luxury...')
 
 --9 Drama
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0009',' Hamlet ', 'C005', 635000, ' William Shakespeare',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0009',' Hamlet ', 'C005', 635000, 22, ' William Shakespeare',
 ' And it is a funny sort of business to be sitting up there at your desk, talking down at your subordinates from up 
 there, especially when you have to go right up close because the boss is hard of hearing. Well, there is still some 
 hope; once I have got the money together to pay off my parents debt to him - another five or six years I suppose - 
@@ -189,8 +195,8 @@ he thought. It was half past six and the hands were quietly moving forwards, it 
 more like quarter to seven. Had the alarm clock not rung?...')
 
 --10 Drama
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0010',' The Crucible ', 'C005', 600000, ' Arthur Miller',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0010',' The Crucible ', 'C005', 600000, 20, ' Arthur Miller',
 ' He could see from the bed that it had been set for four o clock as it should have been; it certainly must have rung. 
 Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, 
 but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to 
@@ -200,8 +206,8 @@ office assistant would have been there to see the five o clock train go, he woul
 Gregor...')
 
 --11 Fable
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0011',' Trí khôn của ta đây ', 'C006', 90000, ' Sưu tầm ',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0011',' Trí khôn của ta đây ', 'C006', 90000, 13, ' Sưu tầm ',
 ' "Từ đó, cọp sinh ra con nào trên mình cũng có những vằn đen dài"
 Một con cọp từ trong rừng đi ra, thấy một anh nông dân cùng một con trâu đang cày dưới ruộng. 
 Trâu cặm cụi đi từng bước, lâu lâu lại bị quất một roi vào mông. Cọp lấy làm ngạc nhiên. Đến trưa, mở cày, 
@@ -211,8 +217,8 @@ Trâu trả lời khẽ vào tai Cọp:
 .... ')
 
 --12 Fable
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0012',' The Fox and The Grapes ', 'C006', 100000, ' Đen Vâu',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0012',' The Fox and The Grapes ', 'C006', 100000, 35, ' Đen Vâu',
 'Anh như con cáo 
  Em như một cành nho xanh
 Khi em còn trẻ và đẹp
@@ -238,8 +244,8 @@ Nhưng mà em trẻ và đẹp
 Em lại không dành cho anh ...')
 
 --13 Fairy Tale
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0013',' Rapunzel ', 'C007', 50000, ' Brothers Grimm',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0013',' Rapunzel ', 'C007', 50000, 18, ' Brothers Grimm',
 ' Drops of rain could be heard hitting the pane, which made him feel quite sad. 
 "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was 
 unable to do because he was used to sleeping on his right, and in his present state couldnt get into that position. 
@@ -248,8 +254,8 @@ times, shut his eyes so that he wouldnt have to look at the floundering legs, an
 a mild, dull pain there that he had never felt before...')
 
 --14 Fairy Tale
- insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0014',' Beauty And The Beast ', 'C007', 70000, ' Gabrielle-Suzanne de Villeneuve',
+ insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0014',' Beauty And The Beast ', 'C007', 70000, 25, ' Gabrielle-Suzanne de Villeneuve',
 ' He slid back into his former position. "Getting up early all the time", he thought, "it makes you stupid. 
 You have got to get enough sleep. Other travelling salesmen live a life of luxury. For instance, whenever I go back 
 to the guest house during the morning to copy out the contract, these gentlemen are always still sitting there eating 
@@ -258,8 +264,8 @@ maybe that would be the best thing for me. If I didnt have my parents to think a
 long time ago, I would have gone up to the boss and told him just what I think...')
 
 --15 Fan-fiction
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0015',' Harry Potter And The Method of Rationality ', 'C008', 900000, ' Eliezer Yudkowsky',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0015',' Harry Potter And The Method of Rationality ', 'C008', 900000, 40, ' Eliezer Yudkowsky',
 'Harry had a thin face, knobbly knees, black hair and bright-green eyes. 
 He wore round glasses held together with a lot of Sellotape because of all the times Dudley had punched 
 him on the nose. The only thing Harry liked about his own appearance was a very thin scar on his forehead which was 
@@ -267,8 +273,8 @@ shaped like a bolt of lightning. He had had it as long as he could remember and 
 remember asking his Aunt Petunia was how he had got it....')
 
 --16 Fan-fiction
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0016',' Fangirl  ', 'C008', 900000, 'Rainbow Rowell',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0016',' Fangirl  ', 'C008', 900000, 15, 'Rainbow Rowell',
 'A collection of textile samples lay spread out on the table - 
 Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an 
 illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur 
@@ -278,8 +284,8 @@ which made him feel quite sad.....')
 
 --17 Humor
 
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0017',' The Hitchhiker’s Guide to The Galaxy  ', 'C009', 100000, 'Douglas Adams',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0017',' The Hitchhiker’s Guide to The Galaxy  ', 'C009', 100000, 14, 'Douglas Adams',
 '"How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was 
 unable to do because he was used to sleeping on his right, and in his present state couldnt get into that position. 
 However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a hundred 
@@ -287,8 +293,8 @@ times, shut his eyes so that he wouldnt have to look at the floundering legs, an
 a mild, dull pain there that he had never felt before...')
 
 --18 Humor
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0018',' Three Men in a Boat ', 'C009', 200000, 'Jerome K. Jerome',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0018',' Three Men in a Boat ', 'C009', 200000, 22, 'Jerome K. Jerome',
 'A collection of textile samples lay spread out on the table - Samsa was a travelling salesman -
  and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, 
  gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that 
@@ -301,28 +307,28 @@ values ('P0019',' The Shining  ', 'C010', 300000, ' Stephen King',
 and only stopped when he began to feel a mild, dull pain there that he had never felt before...')
 
 --20 Horror
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0020',' It', 'C010', 300000, ' Stephen King',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0020',' It', 'C010', 300000, 17, ' Stephen King',
 'His boss would certainly come round with the doctor from the medical insurance company, 
 accuse his parents of having a lazy son, and accept the doctor s recommendation not to make any claim as the doctor 
 believed that no-one was ever ill but that many were workshy...')
 
 --21 Romance
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0021','Fifty Shades of Grey', 'C011', 2000000, ' E.L James',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity,pdAuthor,pdDes)
+values ('P0021','Fifty Shades of Grey', 'C011', 2000000, 38, ' E.L James',
 'He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, 
 slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed 
 ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him...')
 
 --22 Romance
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0022', 'Perfect Chemistry ', 'C011', 1900000, ' Simone Elkeles',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0022', 'Perfect Chemistry ', 'C011', 1900000, 20, ' Simone Elkeles',
 '"What is happened to me? " he thought. It wasnt a dream. His room, a proper human room although a little too small, 
 lay peacefully between its four familiar walls....')
 
 --23 Science Fiction (Sci-Fi)
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0023', 'Dune ', 'C012', 500000, ' Frank Herbert',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0023', 'Dune ', 'C012', 500000, 21, ' Frank Herbert',
 'Worries about making train connections, bad and irregular food, contact with different people all the time so that 
 you can never get to know anyone or become friendly with them. It can all go to Hell! " He felt a slight itch up on 
 his belly; pushed himself slowly up on his back towards the headboard so that he could lift his head better; 
@@ -330,45 +336,45 @@ found where the itch was, and saw that it was covered with lots of little white 
 of...')
 
 --24 Science Fiction (Sci-Fi)
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0024', 'The Hunger Games', 'C012', 600000, ' Suzanne Collins',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0024', 'The Hunger Games', 'C012', 600000, 30, ' Suzanne Collins',
 'I go back to the guest house during the morning to copy out the contract, these gentlemen are always still sitting 
 there eating their breakfasts. I ought to just try that with my boss; I would get kicked out on the spot. 
 But who knows, maybe that would be the best thing for me...')
 
 --25 Reference Books
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0025', 'Dictionary VietName_Japan', 'C013', 350000, ' NIHONSEI',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0025', 'Dictionary VietName_Japan', 'C013', 350000, 22, ' NIHONSEI',
 'Ohayoogozaimasu, watashiha danieru desu, chuugokujin desu , betonamugogadaisuki desu ... ')
 
 --26 Reference Books
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0026', 'The Vintage Cars 1886-1940 ', 'C013', 650000, 'Rob de la Rive Box',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0026', 'The Vintage Cars 1886-1940 ', 'C013', 650000, 16, 'Rob de la Rive Box',
 'Discrete mathematics is the study of mathematical structures that are fundamentally discrete rather than continuous. 
 In contrast to real numbers that have the property of varying "smoothly".')
 
 --27 Textbook
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0027', 'Discrete Mathematics 7th Edition', 'C014',5527421, 'Lam Thanh',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0027', 'Discrete Mathematics 7th Edition', 'C014',5527421, 50, 'Lam Thanh',
 'Discrete mathematics is the study of mathematical structures that are fundamentally discrete rather than continuous. 
 In contrast to real numbers that have the property of varying "smoothly".')
 
 --28 Textbook
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0028', 'Vietnam: A History ', 'C014', 280000, ' Stanley Karnow',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0028', 'Vietnam: A History ', 'C014', 280000, 30, ' Stanley Karnow',
 'A landmark work...The most complete account to date of the Vietnam tragedy." -The Washington Post Book World... ')
 
 --29 Short Story
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0029', 'The Lottery', 'C015', 150000, ' Shirley Jackson',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0029', 'The Lottery', 'C015', 150000, 5, ' Shirley Jackson',
 'Tell him everything I would, let him know just what I feel. He would fall right off his desk! And it is a funny sort 
 of business to be sitting up there at your desk, talking down at your subordinates from up there, especially when you 
 have to go right up close because the boss is hard of hearing. Well, there is still some hope; once I have got the money 
 together to pay off my parents debt to him... ')
 
 --30 Short Story
-insert into Products(pdID,pdName,catID,pdPrice,pdAuthor,pdDes)
-values ('P0030', 'The Illustrated Man', 'C015', 200000, 'Ray Bradbury',
+insert into Products(pdID,pdName,catID,pdPrice, pdQuantity, pdAuthor,pdDes)
+values ('P0030', 'The Illustrated Man', 'C015', 200000, 25, 'Ray Bradbury',
 'One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a 
 horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, 
 slightly domed and divided by arches into stiff... ')
@@ -382,7 +388,68 @@ insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U000
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0004','phat@gmail.com','246','Phat','3333333333', 'Viet Nam')
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0005','phuc@gmail.com','135','Phuc','4444444444', 'Viet Nam, Nihon, Kankoku')
 
-insert into Transactions(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0001','lam@gmail.com','123','Lam ML','0000000000',' Somewhere in china ')
+
+
+
+
+/*=======================================TRANSACTIONS VALUES==========================================*/
+
+
+--1 U0001
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T001','U0001','P0001', 2, '0', getdate())
+--2
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T002','U0001','P0008', 3, '1', getdate())
+--3
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T003','U0001','P0013', 1, '1', getdate())
+
+--4 U0002
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T004','U0002','P0002', 1, '1', getdate())
+--5
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T005','U0002','P0009', 3, '0', getdate())
+--6
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T006','U0002','P0012', 3, '1', getdate())
+
+--7 U0003
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T007','U0003','P0030', 1, '1', getdate())
+--8
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T008','U0003','P0015', 2, '1', getdate())
+--9
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T009','U0003','P0022', 3, '0', getdate())
+
+--10 U0004
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T010','U0004','P0012', 2, '0', getdate())
+--11
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T011','U0004','P0019', 3, '0', getdate())
+--12
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T012','U0004','P0001', 3, '1', getdate())
+
+--13 U0005
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T013','U0001','P0014', 4, '1', getdate())
+
+--14
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T014','U0001','P0025', 2, '1', getdate())
+--15
+insert into Transactions(tID, uID, pdID,pdBooksBought, pdStatus, pdDate) 
+values ('T015','U0001','P0002', 2, '1', getdate())
+
+
+
+
+
 
 
 select * from Categories
