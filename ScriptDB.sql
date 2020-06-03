@@ -2,6 +2,49 @@
 use BookWebsite
 
 GO
+
+
+--Auto generate ID
+
+--Tự động tăng pdID
+CREATE FUNCTION AUTO_ProductID()
+RETURNS VARCHAR(5)
+AS
+BEGIN
+	DECLARE @ID VARCHAR(5)
+	IF (SELECT COUNT(pdID) FROM Products) = 0
+		SET @ID = '0'
+	ELSE
+		SELECT @ID = MAX(RIGHT(pdID, 3)) FROM Products
+		SELECT @ID = CASE
+			WHEN @ID >= 0 and @ID < 9 THEN 'P000' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+			WHEN @ID >= 9 THEN 'P00' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+			WHEN @ID >= 99 THEN 'P0' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+			WHEN @ID >= 999 THEN 'P' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+		END
+	RETURN @ID
+END
+
+--Tự động tăng userID
+CREATE FUNCTION AUTO_UserID()
+RETURNS VARCHAR(10)
+AS
+BEGIN
+	DECLARE @ID VARCHAR(10)
+	IF (SELECT COUNT(uID) FROM Users) = 0
+		SET @ID = '0'
+	ELSE
+		SELECT @ID = MAX(RIGHT(uID, 3)) FROM Users
+		SELECT @ID = CASE
+			WHEN @ID >= 0 and @ID < 9 THEN 'U000' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+			WHEN @ID >= 9 THEN 'U00' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+			WHEN @ID >= 99 THEN 'U0' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+			WHEN @ID >= 999 THEN 'U' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+		END
+	RETURN @ID
+END
+
+
 create table Categories
 (catID nvarchar(10) not null primary key, 
 catName nvarchar(50) not null)
@@ -30,7 +73,8 @@ uAddress nvarchar(30) not null)
 
 create table Transactions
 (tID nvarchar(10) not null primary key, 
-uID nvarchar(10) not null,pdID nvarchar(10) not null, 
+uID nvarchar(10) not null,
+pdID nvarchar(10) not null,
 constraint FK_uID Foreign key(uID) references Users(uID),
 constraint FK_pdID Foreign key(pdID) references Products(pdID)  )
 
@@ -337,66 +381,12 @@ insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U000
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0003','tue@gmail.com','789','Tue','2222222222', ' Viet Nam ')
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0004','phat@gmail.com','246','Phat','3333333333', 'Viet Nam')
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0005','phuc@gmail.com','135','Phuc','4444444444', 'Viet Nam, Nihon, Kankoku')
+
+insert into Transactions(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0001','lam@gmail.com','123','Lam ML','0000000000',' Somewhere in china ')
+
+
 select * from Categories
 select * from Products
 select * from Users
 select * from Transactions
 
---Auto generate ID
-
---Tự động tăng pdID
-CREATE FUNCTION AUTO_ProductID()
-RETURNS VARCHAR(5)
-AS
-BEGIN
-	DECLARE @ID VARCHAR(5)
-	IF (SELECT COUNT(pdID) FROM Products) = 0
-		SET @ID = '0'
-	ELSE
-		SELECT @ID = MAX(RIGHT(pdID, 3)) FROM Products
-		SELECT @ID = CASE
-			WHEN @ID >= 0 and @ID < 9 THEN 'P000' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
-			WHEN @ID >= 9 THEN 'P00' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
-			WHEN @ID >= 99 THEN 'P0' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
-			WHEN @ID >= 999 THEN 'P' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
-		END
-	RETURN @ID
-END
-
---Tự động tăng userID
-CREATE FUNCTION AUTO_UserID()
-RETURNS VARCHAR(10)
-AS
-BEGIN
-	DECLARE @ID VARCHAR(10)
-	IF (SELECT COUNT(uID) FROM Users) = 0
-		SET @ID = '0'
-	ELSE
-		SELECT @ID = MAX(RIGHT(uID, 3)) FROM Users
-		SELECT @ID = CASE
-			WHEN @ID >= 0 and @ID < 9 THEN 'U000' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
-			WHEN @ID >= 9 THEN 'U00' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
-			WHEN @ID >= 99 THEN 'U0' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
-			WHEN @ID >= 999 THEN 'U' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
-		END
-	RETURN @ID
-END
-
---Tự động tăng transactionID
-CREATE FUNCTION AUTO_TransactionID()
-RETURNS VARCHAR(10)
-AS
-BEGIN
-	DECLARE @ID VARCHAR(10)
-	IF (SELECT COUNT(tID) FROM Transactions) = 0
-		SET @ID = '0'
-	ELSE
-		SELECT @ID = MAX(RIGHT(tID, 3)) FROM Transactions
-		SELECT @ID = CASE
-			WHEN @ID >= 0 and @ID < 9 THEN 'T000' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
-			WHEN @ID >= 9 THEN 'T00' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
-			WHEN @ID >= 99 THEN 'T0' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
-			WHEN @ID >= 999 THEN 'T' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
-		END
-	RETURN @ID
-END
