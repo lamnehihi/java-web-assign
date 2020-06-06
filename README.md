@@ -1,8 +1,8 @@
 # BOOK WOOCOMMERCE
 > Java-web project of five cooks
-> Nhớ check-out branch trc khi push !!! KHÔNG BAO GIỜ PUSH MASTER LÊN !!!
 
 ## Pushing requirement
+> Nhớ check-out branch trc khi push !!! KHÔNG BAO GIỜ PUSH MASTER LÊN !!!
 ```sh
 1) git checkout -b yourBranch (Create your own branch)
 2) git pull                   (Update latest version of project)
