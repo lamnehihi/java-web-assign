@@ -173,13 +173,44 @@ public class BookDB implements DatabaseInfo {
         }
     }
     
+    //--------------------------------------------------------------------
+    public static ArrayList<Book> getByAuthor(String author) {
+        Book b = null;
+        ArrayList<Book> bookList = new ArrayList<Book>();
+        try {
+            Class.forName(driverName);
+            try (Connection con = DriverManager.getConnection(dbURL, userDB, passDB)) {
+                PreparedStatement stmt = con.prepareStatement("Select bID, bName, catID, bPrice, bQuantity, bAuthor, bDes, bCover from Books where bAuthor = ?");
+                stmt.setString(1, author);
+                ResultSet rs = stmt.executeQuery();
+                while (rs.next()) {
+                    String bID = rs.getString(1);
+                    String bName = rs.getString(2);
+                    String catID = rs.getString(3);
+                    float bPrice = Float.parseFloat(rs.getString(4));
+                    int bQuantity = Integer.parseInt(rs.getString(5));
+                    String bAuthor = rs.getString(6);
+                    String bDes = rs.getString(7);
+                    String bCover = rs.getString(8);
+                    b = new Book(bID, bName, catID, bPrice, bQuantity, bAuthor, bDes, bCover);
+                    bookList.add(b);
+                }
+                con.close();
+            }
+            return bookList;
+        } catch (ClassNotFoundException | SQLException e) {
+            Logger.getLogger(BookDB.class.getName()).log(Level.SEVERE, null, e);
+            return null;
+        }
+    }
+    
     
     
 
     public static void main(String[] args) {
         Book b = new Book();
         ArrayList<Book> bl = new ArrayList<>();
-        bl = BookDB.getByPrice(700000, 900000);
+        bl = BookDB.getByAuthor("Frank Miller");
         System.out.println(bl.size());
         for (int i = 0; i < bl.size(); i++) {
             System.out.println(bl.get(i).getbName());
