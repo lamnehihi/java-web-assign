@@ -5,6 +5,7 @@
  */
 package Model;
 
+import java.time.LocalDate;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,9 +26,6 @@ public class Transaction {
         this.uID = uID;
         this.Status = Status;
         this.tDate = tDate;
-    }
-
-    public Transaction() {
     }
 
     public String gettID() {
@@ -69,6 +67,10 @@ public class Transaction {
     public void settDate(Date tDate) {
         this.tDate = tDate;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Transaction{" + "tID=" + tID + ", uID=" + uID + ", Cart=" + Cart + ", Status=" + Status + ", tDate=" + tDate + '}';
+    }
+
 }

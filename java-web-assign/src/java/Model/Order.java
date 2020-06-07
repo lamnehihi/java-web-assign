@@ -37,6 +37,11 @@ public class Order {
     public void settQuatity(int tQuatity) {
         this.tQuatity = tQuatity;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" + "bID=" + bID + ", tQuatity=" + tQuatity + '}';
+    }
     
     
 }
