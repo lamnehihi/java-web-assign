@@ -73,12 +73,13 @@ uAddress nvarchar(30) not null)
 
 
 create table Transactions
-(tID nvarchar(10) not null primary key, 
+(tID nvarchar(10) not null, 
 uID nvarchar(10) not null,
 bID nvarchar(10) not null,
 tQuantity int not null,
 status bit not null,
 tDate Date default(getDate())
+constraint PK Primary Key(tID,bID),
 constraint FK_uID Foreign key(uID) references Users(uID),
 constraint FK_bID Foreign key(bID) references Books(bID)  )
 
@@ -397,13 +398,14 @@ insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U000
 
 --1 U0001
 insert into Transactions(tID, uID, bID,tQuantity, status, tDate) 
-values ('T001','U0001','B0001', 2, '0', getdate())
+values ('T001','U0001','B0001', 2, '0', getdate()),
+		('T001','U0001','B0003', 1, '0', getdate())
 --2
 insert into Transactions(tID, uID, bID,tQuantity, status, tDate) 
-values ('T002','U0001','B0008', 3, '1', getdate())
+values ('T002','U0001','B0008', 3, '1', getdate()),('T002','U0001','B0002', 1, '1', getdate())
 --3
 insert into Transactions(tID, uID, bID,tQuantity, status, tDate) 
-values ('T003','U0001','B0013', 1, '1', getdate())
+values ('T003','U0001','B0013', 1, '1', getdate()),('T003','U0001','B0003', 2, '1', getdate())
 
 --4 U0002
 insert into Transactions(tID, uID, bID,tQuantity, status, tDate) 
