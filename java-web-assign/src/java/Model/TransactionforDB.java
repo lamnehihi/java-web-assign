@@ -5,6 +5,7 @@
  */
 package Model;
 
+import java.time.LocalDate;
 import java.sql.Date;
 
 /**
@@ -12,9 +13,10 @@ import java.sql.Date;
  * @author tran phu phat
  */
 public class TransactionforDB {
+
     private String tID;
-    private String bID;
     private String uID;
+    private String bID;
     private int tQuatity;
     private boolean Status;
     private Date tDate;
@@ -22,15 +24,16 @@ public class TransactionforDB {
     public TransactionforDB() {
     }
 
-    public TransactionforDB(String tID, String bID, String uID, int tQuatity, boolean Status, Date tDate) {
+    public TransactionforDB(String tID, String uID, String bID, int tQuatity, boolean Status, Date tDate) {
         this.tID = tID;
-        this.bID = bID;
         this.uID = uID;
+        this.bID = bID;
         this.tQuatity = tQuatity;
         this.Status = Status;
         this.tDate = tDate;
     }
 
+    
     public String gettID() {
         return tID;
     }
@@ -78,5 +81,12 @@ public class TransactionforDB {
     public void settDate(Date tDate) {
         this.tDate = tDate;
     }
-    
+
+   
+
+    @Override
+    public String toString() {
+        return "TransactionforDB{" + "tID=" + tID + ", uID=" + uID + ", bID=" + bID + ", tQuatity=" + tQuatity + ", Status=" + Status + ", tDate=" + tDate + '}';
+    }
+
 }
