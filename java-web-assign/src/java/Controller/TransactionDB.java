@@ -248,7 +248,7 @@ public class TransactionDB implements DatabaseInfo {
     public void AddnewTransaction(Transaction t) {
         ArrayList<TransactionforDB> list = new ArrayList<>();
         for (int i = 0; i < t.getCart().size(); i++) {
-            list.add(new TransactionforDB(t.gettID(), t.getuID(), t.getCart().get(i).getbID(), t.getCart().get(i).gettQuatity(), t.isStatus(), t.gettDate()));
+            list.add(new TransactionforDB(t.gettID(), t.getUs().getuID(), t.getCart().get(i).getBook().getbId(), t.getCart().get(i).gettQuatity(), t.isStatus(), t.gettDate()));
         }
         try {
             Class.forName(driverName);
