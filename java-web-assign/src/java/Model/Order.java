@@ -5,29 +5,31 @@
  */
 package Model;
 
+import Controller.BookDB;
+
 /**
  *
  * @author tran phu phat
  */
 public class Order {
 
-    private String bID;
+    private Book book;
     private int tQuatity;
 
     public Order(String bID, int tQuatity) {
-        this.bID = bID;
+        this.book = BookDB.getById(bID);
         this.tQuatity = tQuatity;
     }
 
     public Order() {
     }
 
-    public String getbID() {
-        return bID;
+    public Book getBook() {
+        return book;
     }
 
-    public void setbID(String bID) {
-        this.bID = bID;
+    public void setBook(Book book) {
+        this.book = book;
     }
 
     public int gettQuatity() {
@@ -40,8 +42,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" + "bID=" + bID + ", tQuatity=" + tQuatity + '}';
+        return "Order{" + "bID=" + book + ", tQuatity=" + tQuatity + '}';
     }
-    
-    
+
 }

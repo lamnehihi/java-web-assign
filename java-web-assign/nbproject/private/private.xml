@@ -2,6 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group/>
+=======
+        <group>
+            <file>file:/C:/Users/tran%20phu%20phat/java-web-assign/java-web-assign/src/java/Controller/TransactionDB.java</file>
+            <file>file:/C:/Users/tran%20phu%20phat/java-web-assign/java-web-assign/src/java/Model/Transactions.java</file>
+            <file>file:/C:/Users/tran%20phu%20phat/java-web-assign/java-web-assign/src/java/Model/DatabaseInfo.java</file>
+        </group>
+>>>>>>> 451d0fdece99e5c0dc90b4323c95a0b4aa76f80d
     </open-files>
 </project-private>
