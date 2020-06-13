@@ -5,6 +5,7 @@
  */
 package Model;
 
+import Controller.UserDB;
 import java.time.LocalDate;
 import java.sql.Date;
 import java.util.ArrayList;
@@ -16,16 +17,18 @@ import java.util.List;
  */
 public class Transaction {
     private String tID;
-    private String uID;
+    private User us;
     private List<Order> Cart= new ArrayList<>() ;
     private boolean Status;
     private Date tDate;
+    private Double Total;
 
     public Transaction(String tID, String uID, boolean Status, Date tDate) {
         this.tID = tID;
-        this.uID = uID;
+        this.us = UserDB.getUserById(uID);
         this.Status = Status;
         this.tDate = tDate;
+        setTotal();
     }
 
     public String gettID() {
@@ -36,13 +39,25 @@ public class Transaction {
         this.tID = tID;
     }
 
-    public String getuID() {
-        return uID;
+    public User getUs() {
+        return us;
     }
 
-    public void setuID(String uID) {
-        this.uID = uID;
+    public void setUs(User us) {
+        this.us = us;
     }
+
+    public Double getTotal() {
+        return Total;
+    }
+
+    private void setTotal() {
+        for (Order order : Cart) {
+            this.Total+=(order.getBook().getbPrice()*order.gettQuatity()); 
+        }
+    }
+
+    
 
     public List<Order> getCart() {
         return Cart;
@@ -70,7 +85,7 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "Transaction{" + "tID=" + tID + ", uID=" + uID + ", Cart=" + Cart + ", Status=" + Status + ", tDate=" + tDate + '}';
+        return "Transaction{" + "tID=" + tID + ", uID=" + us + ", Cart=" + Cart + ", Status=" + Status + ", tDate=" + tDate + '}';
     }
 
 }
