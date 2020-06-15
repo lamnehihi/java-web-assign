@@ -1,6 +1,5 @@
 ﻿create database BookWebsite
 use BookWebsite
-
 GO
 
 
@@ -27,10 +26,10 @@ END
 
 --Tự động tăng userID
 CREATE FUNCTION AUTO_UserID()
-RETURNS VARCHAR(10)
+RETURNS VARCHAR(5)
 AS
 BEGIN
-	DECLARE @ID VARCHAR(10)
+	DECLARE @ID VARCHAR(5)
 	IF (SELECT COUNT(uID) FROM Users) = 0
 		SET @ID = '0'
 	ELSE
@@ -388,6 +387,11 @@ insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U000
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0003','tue@gmail.com','789','Tue','2222222222', ' Viet Nam ')
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0004','phat@gmail.com','246','Phat','3333333333', 'Viet Nam')
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0005','phuc@gmail.com','135','Phuc','4444444444', 'Viet Nam, Nihon, Kankoku')
+insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('lam@gmail.com','123','Lam ML','0000000000',' Somewhere in chinaaaa ')
+insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('dat09@gmail.com','456','Dat 1 phit','1111111111','Viet Nammmm')
+insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('tue@gmail.com','789','Tue','2222222222', ' Viet Nammmmm ')
+insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('phat@gmail.com','246','Phat','3333333333', 'Viet Nammmmm')
+insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('phuc@gmail.com','135','Phuc','4444444444', 'Viet Nam, Nihon, Kankokuuuuu')
 
 
 
