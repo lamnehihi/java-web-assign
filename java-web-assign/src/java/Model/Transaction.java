@@ -28,7 +28,7 @@ public class Transaction {
         this.us = UserDB.getUserById(uID);
         this.Status = Status;
         this.tDate = tDate;
-        setTotal();
+        
     }
 
     public String gettID() {
@@ -51,9 +51,11 @@ public class Transaction {
         return Total;
     }
 
-    private void setTotal() {
+    public void setTotal() {
+        this.Total=0.0;
         for (Order order : Cart) {
             this.Total+=(order.getBook().getbPrice()*order.gettQuatity()); 
+            System.out.println(tID+"/"+order.getBook().getbName()+order.getBook().getbPrice()+"/"+order.gettQuatity());
         }
     }
 
@@ -65,6 +67,7 @@ public class Transaction {
 
     public void setCart(List<Order> Cart) {
         this.Cart = Cart;
+        setTotal();
     }
 
     public boolean isStatus() {

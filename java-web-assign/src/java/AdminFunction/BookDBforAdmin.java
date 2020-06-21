@@ -22,7 +22,7 @@ import java.util.logging.Logger;
  *
  * @author PC
  */
-public class BookDB {
+public class BookDBforAdmin {
 
     public static boolean addNewBook(Book b) {
         try {
@@ -42,7 +42,7 @@ public class BookDB {
             }
             return true;
         } catch (ClassNotFoundException | SQLException e) {
-            Logger.getLogger(BookDB.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(BookDBforAdmin.class.getName()).log(Level.SEVERE, null, e);
             return false;
         }
     }

@@ -5,16 +5,19 @@
  */
 package Controller;
 
-import Model.*;
+import static Controller.DatabaseInfo.dbURL;
+import static Controller.DatabaseInfo.driverName;
+import static Controller.DatabaseInfo.passDB;
+import static Controller.DatabaseInfo.userDB;
+import Model.Order;
+import Model.Transaction;
+import Model.TransactionforDB;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.ArrayList;
-import java.util.Stack;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,10 +25,10 @@ import java.util.logging.Logger;
  *
  * @author tran phu phat
  */
-public class TransactionDB implements DatabaseInfo {
-//---------------Private Function---------------------------------------------------------------------------------
+public class TransactionDB {
+    //---------------Private Function---------------------------------------------------------------------------------
 
-    private ArrayList<String> getAlltID() {
+    private static ArrayList<String> getAlltID() {
         try {
             // get All tID in table Transaction from Database
             ArrayList<String> result = new ArrayList<>();
@@ -48,7 +51,7 @@ public class TransactionDB implements DatabaseInfo {
         return null;
     }
 
-    private ArrayList<TransactionforDB> getTransactionbyOneAttribute(int choice, String Attribute) {
+    private static ArrayList<TransactionforDB> getTransactionbyOneAttribute(int choice, String Attribute) {
         // get Transaction by One Attribute: choice: 1-tID 2-uID 3-bID 4-Status 5- date
         String sql = "select tID,uID,bID,tQuantity,status,tDate from Transactions where ";
         switch (choice) {
@@ -92,7 +95,7 @@ public class TransactionDB implements DatabaseInfo {
         return null;
     }
 
-    private ArrayList<Transaction> convert(ArrayList<TransactionforDB> list) {
+    private static ArrayList<Transaction> convert(ArrayList<TransactionforDB> list) {
         boolean isExist;
         //System.out.println(list.size()+"before");
         if (list.isEmpty()) {
@@ -100,7 +103,7 @@ public class TransactionDB implements DatabaseInfo {
         }
         ArrayList<Transaction> result = new ArrayList<>();
         for (TransactionforDB tr : list) {
-            //System.out.println(tr.gettID());
+            //System.out.println(tr.gettID()+"a");
             isExist = false;
             if (!result.isEmpty()) {
                 for (Transaction rs : result) {
@@ -109,13 +112,17 @@ public class TransactionDB implements DatabaseInfo {
                         isExist = true;
                         //break;
                     }
+                rs.setTotal();
                 }
+                
             }
             if (!isExist) {
                 Transaction temp = new Transaction(tr.gettID(), tr.getuID(), tr.isStatus(), tr.gettDate());
                 temp.getCart().add(new Order(tr.getbID(), tr.gettQuatity()));
                 //System.out.println(temp);
+                temp.setTotal();
                 result.add(temp);
+                
             }
 
         }
@@ -159,7 +166,7 @@ public class TransactionDB implements DatabaseInfo {
     }
     //--------------------------------- Public function --------------------------------------------------------------
 
-    public ArrayList<Transaction> getAll() {
+    public static ArrayList<Transaction> getAll() {
         ArrayList<Transaction> result = new ArrayList<>();
         ArrayList<String> listTID = getAlltID();
         //if(listTID.isEmpty())System.out.println("null tID");
@@ -174,11 +181,11 @@ public class TransactionDB implements DatabaseInfo {
         return result;
     }
 
-    public ArrayList<Transaction> getBytID(String tID) {
+    public static ArrayList<Transaction> getBytID(String tID) {
         return convert(getTransactionbyOneAttribute(1, tID));
     }
 
-    public ArrayList<Transaction> getByuID(String uID) {
+    public static ArrayList<Transaction> getByuID(String uID) {
         ArrayList<Transaction> result = new ArrayList<>();
         ArrayList<Transaction> ls = convert(getTransactionbyOneAttribute(2, uID));
         //if(ls.isEmpty())System.out.println("null  2 "+tID);
@@ -188,7 +195,7 @@ public class TransactionDB implements DatabaseInfo {
         return result;
     }
 
-    public ArrayList<Transaction> getBybID(String bID) {
+    public static ArrayList<Transaction> getBybID(String bID) {
         ArrayList<Transaction> result = new ArrayList<>();
         ArrayList<Transaction> ls = convert(getTransactionbyOneAttribute(3, bID));
         //if(ls.isEmpty())System.out.println("null  2 "+tID);
@@ -198,7 +205,7 @@ public class TransactionDB implements DatabaseInfo {
         return result;
     }
 
-    public ArrayList<Transaction> getByStatus(boolean status) {
+    public static ArrayList<Transaction> getByStatus(boolean status) {
         ArrayList<Transaction> result = new ArrayList<>();
         ArrayList<Transaction> ls = new ArrayList<>();
         if (status) {
@@ -213,7 +220,7 @@ public class TransactionDB implements DatabaseInfo {
         return result;
     }
 
-    public ArrayList<Transaction> getByDate(String Date) {
+    public static ArrayList<Transaction> getByDate(String Date) {
         ArrayList<Transaction> result = new ArrayList<>();
         //the format of Date : dd-mm-yyyy
         ArrayList<Transaction> ls = convert(getTransactionbyOneAttribute(5, " tDate = '" + Date + "'"));
@@ -223,7 +230,7 @@ public class TransactionDB implements DatabaseInfo {
         return result;
     }
 
-    public ArrayList<Transaction> getByYear(String year) {
+    public static ArrayList<Transaction> getByYear(String year) {
         ArrayList<Transaction> result = new ArrayList<>();
         //the format of Date : dd-mm-yyyy
         ArrayList<Transaction> ls = convert(getTransactionbyOneAttribute(5, " YEAR(tDate)= " + year));
@@ -234,7 +241,7 @@ public class TransactionDB implements DatabaseInfo {
         return result;
     }
 
-    public ArrayList<Transaction> getByMonth(String month, String year) {
+    public static ArrayList<Transaction> getByMonth(String month, String year) {
         ArrayList<Transaction> result = new ArrayList<>();
         //the format of Date : dd-mm-yyyy
         ArrayList<Transaction> ls = convert(getTransactionbyOneAttribute(5, " MONTH(tDate)= " + month + " and YEAR(tDate)= " + year));
@@ -245,7 +252,7 @@ public class TransactionDB implements DatabaseInfo {
         return result;
     }
 
-    public void AddnewTransaction(Transaction t) {
+    public static void AddnewTransaction(Transaction t) {
         ArrayList<TransactionforDB> list = new ArrayList<>();
         for (int i = 0; i < t.getCart().size(); i++) {
             list.add(new TransactionforDB(t.gettID(), t.getUs().getuID(), t.getCart().get(i).getBook().getbId(), t.getCart().get(i).gettQuatity(), t.isStatus(), t.gettDate()));
@@ -276,7 +283,7 @@ public class TransactionDB implements DatabaseInfo {
         //return false;
     }
 
-    public void ChangeStatus(String tID) {
+    public static void ChangeStatus(String tID) {
         try {
             Class.forName(driverName);
             int rc;
@@ -285,7 +292,9 @@ public class TransactionDB implements DatabaseInfo {
                 stmt.setString(1, tID);
                 rc = stmt.executeUpdate();
             }
-            if(rc==0 ) throw new Exception("Change Status failed");
+            if (rc == 0) {
+                throw new Exception("Change Status failed");
+            }
         } catch (Exception e) {
             System.out.println(e);
         }
