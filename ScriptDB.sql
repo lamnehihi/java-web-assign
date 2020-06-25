@@ -1,4 +1,5 @@
 ﻿create database BookWebsite
+go
 use BookWebsite
 GO
 
