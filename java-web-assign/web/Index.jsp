@@ -7,86 +7,58 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/Index.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- Sidebar -->
-      <nav class="navbar navbar-expand-lg navbar-light sideBar">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
-            </li>
-          </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+            />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/Index.css" />
+        <link rel="stylesheet" href="css/Container-right.css" />
+
+        <script
+            src="https://kit.fontawesome.com/e96465b91f.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- SideBar -->
+            <jsp:include page="components/sideBar.jsp"/>
+
+            <div class="container-right">
+                <!-- Topbar -->
+                <jsp:include page="components/topBar.jsp"/>
+
+                <!--Content-->
+                <jsp:include page="components/dashboard.jsp"/>
+            </div>
         </div>
-      </nav>
 
-      <!-- Topbar -->
-      <div class="container-right">
-        <nav class="topBar">
-          <h1></h1>
-        </nav>
-        
-        <div class="content">
-            <h1></h1>
-        </div>
-      </div>
-
-      <!-- Content -->
-    </div>
-
-    <!-- Boot strap js -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <!-- Boot strap js -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
 
