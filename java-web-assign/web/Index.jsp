@@ -21,8 +21,12 @@
             crossorigin="anonymous"
             />
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <!--Css lib-->
         <link rel="stylesheet" href="css/Index.css" />
         <link rel="stylesheet" href="css/Container-right.css" />
+        <link rel="stylesheet" href="css/SideBar.css" />
+        <link rel="stylesheet" href="css/TopBar.css" />
+        <link rel="stylesheet" href="css/DashBoard.css" />
 
         <script
             src="https://kit.fontawesome.com/e96465b91f.js"
