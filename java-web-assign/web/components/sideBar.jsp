@@ -6,7 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <nav class="navbar navbar-expand-lg navbar-light sideBar">
-    <a class="navbar-brand sidebar-brand text-white" href="#">
+    <a class="navbar-brand sidebar-brand text-white" href="index">
         <div class="mb-2 ml-3">
             <div class="sidebar-brand-icon">
                 <img id="logo" src="./images/glasses.svg" alt="logo" />
@@ -21,19 +21,19 @@
     <div class="w-100" id="navbarNav w-100">
         <ul class="navbar-nav mt-2 d-flex align-items-start">
             <li class="nav-item active">
-                <a class="nav-link text-white" href="#"
+                <a class="nav-link text-white" href="index"
                    >Dash Board <span class="sr-only">(current)</span></a
                 >
             </li>
             <hr class="sidebar-divider my-0 w-100 mt-3">
             <li class="nav-item">
-                <a class="nav-link text-white-50" href="#">Book</a>
+                <a class="nav-link text-white-50" href="books?value=books">Book</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white-50" href="#">User</a>
+                <a class="nav-link text-white-50" href="users?value=users">User</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white-50" href="#">Order</a>
+                <a class="nav-link text-white-50" href="orders?value=orders">Order</a>
             </li>
         </ul>
     </div>
