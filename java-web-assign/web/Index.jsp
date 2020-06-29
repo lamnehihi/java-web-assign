@@ -21,15 +21,25 @@
             crossorigin="anonymous"
             />
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <!--Css lib-->
         <link rel="stylesheet" href="css/Index.css" />
         <link rel="stylesheet" href="css/Container-right.css" />
+        <link rel="stylesheet" href="css/SideBar.css" />
+        <link rel="stylesheet" href="css/TopBar.css" />
+        <link rel="stylesheet" href="css/DashBoard.css" />
 
         <script
             src="https://kit.fontawesome.com/e96465b91f.js"
             crossorigin="anonymous"
         ></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css"
+            />
     </head>
     <body>
+        <% String path = request.getParameter("value"); %>
         <div class="wrapper">
             <!-- SideBar -->
             <jsp:include page="components/sideBar.jsp"/>
@@ -39,7 +49,24 @@
                 <jsp:include page="components/topBar.jsp"/>
 
                 <!--Content-->
+                <%
+                    if (request.getParameter("value") == null) {
+                %>
                 <jsp:include page="components/dashboard.jsp"/>
+                <% }
+                   else if (request.getParameter("value").equalsIgnoreCase("books")) {
+                %>
+                <jsp:include page="components/books.jsp"/>
+                <% }
+                   else if (request.getParameter("value").equalsIgnoreCase("users")) {
+                %>
+                <jsp:include page="components/users.jsp"/>
+                <% }
+                   else if (request.getParameter("value").equalsIgnoreCase("orders")) {
+                %>
+                <jsp:include page="components/orders.jsp"/>
+                <% }
+                %>
             </div>
         </div>
 
@@ -58,6 +85,13 @@
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             crossorigin="anonymous"
+        ></script>
+
+        <!-- Table pluggin -->
+        <script
+            type="text/javascript"
+            charset="utf8"
+            src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"
         ></script>
     </body>
 </html>

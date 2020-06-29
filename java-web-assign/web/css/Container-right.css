@@ -7,32 +7,9 @@ body {
     display: flex;
 }
 
-.wrapper .sideBar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: 17vw;
-    background-color: #4e73df;
-}
 
 .wrapper .container-right {
     width: 83vw;
-}
-
-.wrapper .sideBar .navbar-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrapper .container-right .topBar {
-    position: absolute;
-    top: 0px;
-    width: 83%;
-    background-color: rgb(255, 255, 255);
-    height : fit-content;
 }
 
 .wrapper .shadowed {
@@ -42,67 +19,6 @@ body {
 .wrapper .container-right .content {
     background-color: #eaebef;
     height: 100%;
+    padding-top: 7.5rem !important;
 }
 
-.wrapper .sideBar .sidebar-brand-text {
-    height: fit-content;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .05rem;
-    z-index: 1;
-}
-
-.wrapper .sideBar li {
-    padding-top: .5rem;
-}
-
-#logo {
-    width: 2rem;
-    filter: invert(97%) sepia(2%) saturate(230%) hue-rotate(49deg) brightness(115%) contrast(73%);
-}
-
-.wrapper .sidebar-divider {
-    border-top: 1px solid rgba(255, 255, 255, 0.123);
-    min-width: 100%;
-}
-
-.wrapper .topBar .navbar-search {
-    padding: 1.8rem 0rem 1.8rem 0rem;
-}
-
-.wrapper .topBar .noti .noti-icon{
-    width: 40px;
-    padding-right: 15px;
-}
-
-.wrapper .topBar .topbar-divider {
-    width: 0;
-    border-right: 1px solid #e3e6f0;
-    height: calc(4.375rem - 1rem);
-    margin: auto 1rem;
-}
-
-.wrapper .topBar .topbar-divider {
-    width: 0;
-    border-right: 1px solid #e3e6f0;
-    height: calc(4.375rem - 1rem);
-    margin: auto 1rem;
-}
-
-.wrapper .topBar .nav-item {
-    position: relative;
-}
-
-.wrapper .topBar .nav-item i{
-    width: 40px;
-}
-
-.wrapper .topBar .badge-counter {
-    font-size: .6rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
