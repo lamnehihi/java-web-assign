@@ -210,12 +210,11 @@ public class BookDB implements DatabaseInfo {
     public static void main(String[] args) {
         Book b = new Book();
         ArrayList<Book> bl = new ArrayList<>();
-        bl = BookDB.getByAuthor("Frank Miller");
-        System.out.println(bl.size());
+        bl = BookDB.getAll();
         for (int i = 0; i < bl.size(); i++) {
-            System.out.println(bl.get(i).getbName());
+           // System.out.println(bl.get(i).toString());
         }
-        b = BookDB.getById("B0001");
-        //System.out.println(b.getbName());
+        System.out.println(bl.get(1).toString());
+       
     }
 }

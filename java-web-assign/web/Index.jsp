@@ -4,6 +4,12 @@
     Author     : Admin
 --%>
 
+<%@page import="Controller.UserDB"%>
+<%@page import="Model.User"%>
+<%@page import="Controller.BookDB"%>
+<%@page import="Controller.BookDB"%>
+<%@page import="java.util.*"%>
+<%@page import="Model.Book"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,11 +41,18 @@
         <link
             rel="stylesheet"
             type="text/css"
-            href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css"
+            href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css"
             />
     </head>
     <body>
-        <% String path = request.getParameter("value"); %>
+        <% 
+            List<User> bl = UserDB.getAllUser();
+        %>
+        <% for (int i = 0; i < bl.size(); i++) {%>
+        <tr>
+            <td> <%= bl.get(i).toString()%></td>
+        </tr>
+        <% } %>
         <div class="wrapper">
             <!-- SideBar -->
             <jsp:include page="components/sideBar.jsp"/>
@@ -53,16 +66,13 @@
                     if (request.getParameter("value") == null) {
                 %>
                 <jsp:include page="components/dashboard.jsp"/>
-                <% }
-                   else if (request.getParameter("value").equalsIgnoreCase("books")) {
+                <% } else if (request.getParameter("value").equalsIgnoreCase("books")) {
                 %>
                 <jsp:include page="components/books.jsp"/>
-                <% }
-                   else if (request.getParameter("value").equalsIgnoreCase("users")) {
+                <% } else if (request.getParameter("value").equalsIgnoreCase("users")) {
                 %>
                 <jsp:include page="components/users.jsp"/>
-                <% }
-                   else if (request.getParameter("value").equalsIgnoreCase("orders")) {
+                <% } else if (request.getParameter("value").equalsIgnoreCase("orders")) {
                 %>
                 <jsp:include page="components/orders.jsp"/>
                 <% }
@@ -87,12 +97,31 @@
             crossorigin="anonymous"
         ></script>
 
-        <!-- Table pluggin -->
         <script
             type="text/javascript"
-            charset="utf8"
-            src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"
+            src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"
         ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"
+        ></script>
+
+        <!-- Table data -->
+        <%
+            if (request.getParameter("value") == null) {
+        %>
+        <% } else if (request.getParameter("value").equalsIgnoreCase("books")) {
+        %>
+        <jsp:include page="components/dataComponents/books.jsp"/>
+        <% } else if (request.getParameter("value").equalsIgnoreCase("users")) {
+        %>
+        <jsp:include page="components/users.jsp"/>
+        <% } else if (request.getParameter("value").equalsIgnoreCase("orders")) {
+        %>
+        <jsp:include page="components/orders.jsp"/>
+        <% }
+        %>
+
     </body>
 </html>
 
