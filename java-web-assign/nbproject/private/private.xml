@@ -2,12 +2,16 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-<<<<<<< HEAD
-        <group/>
-=======
         <group>
-            <file>file:/C:/NewDB/java-web-assign/java-web-assign/src/java/AdminFunction/BookDB.java</file>
+            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/web/components/books.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/src/java/Controller/BookDB.java</file>
+            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/web/components/users.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/src/java/Controller/DatabaseInfo.java</file>
+            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/web/components/tableComponents/books.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/web/components/dashboard.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/web/Index.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/web/Login.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/src/java/Controller/CategoryDB.java</file>
         </group>
->>>>>>> 525e3929e1fe104ec2b128d6582e199f64b73d2f
     </open-files>
 </project-private>
