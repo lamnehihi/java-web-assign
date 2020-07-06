@@ -18,8 +18,8 @@
             crossorigin="anonymous"
             />
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/Login.css">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="Admin/css/Login.css">
+        <link rel="stylesheet" href="Admin/css/index.css">
     </head>
     <body>
 

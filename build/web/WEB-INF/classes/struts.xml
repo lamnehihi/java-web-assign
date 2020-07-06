@@ -6,14 +6,17 @@
     <!-- Configuration for the default package. -->
     <package name="default" extends="struts-default">
         <action name="">
-            <result>Login.jsp</result>
+            <result>Admin/Login.jsp</result>
         </action>
         <action name="login" class="Struct.LoginAction">
-            <result name="success">Index.jsp</result>
-            <result name="fail">Failed.jsp</result>
+            <result name="success">Admin/Index.jsp</result>
+            <result name="fail">Admin/Failed.jsp</result>
         </action>
         <action name="search">
-            <result>Search.jsp</result>
+            <result>Admin/Search.jsp</result>
+        </action>
+        <action name="books">
+            <result>Admin/BookRoute.jsp</result>
         </action>
     </package>
 </struts>

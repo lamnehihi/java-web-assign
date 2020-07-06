@@ -9,7 +9,7 @@
     <a class="navbar-brand sidebar-brand text-white" href="login">
         <div class="mb-2 ml-3">
             <div class="sidebar-brand-icon">
-                <img id="logo" src="./images/glasses.svg" alt="logo" />
+                <img id="logo" src="Admin/images/glasses.svg" alt="logo" />
             </div>
             <div class="sidebar-brand-text">Nerd</div>
         </div>
@@ -37,7 +37,7 @@
             </li>
             <!--demo(Xem xong thì cứ xóa)-->
             <li class="nav-item">
-                <a class="nav-link text-white-50" href="Search.jsp" >Search</a>
+                <a class="nav-link text-white-50" href="Admin/Search.jsp">Search</a>
             </li>
             
         </ul>
