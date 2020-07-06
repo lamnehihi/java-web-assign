@@ -8,8 +8,12 @@
 <div class="container-fluid content">
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Books</h1>
+    
+    <!--Adding new book-->
+    <a href="books?value=addNew" class="badge badge-success">+ Add new</a>
+    
     <p class="mb-4">
-        DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the 
+        DataTables is a third party plugin that is used to generate the demo table below. For more information, please visit the DataTables.net 
     </p>
     <div class="card shadow mb-4">
         <div class="card-header py-3">
