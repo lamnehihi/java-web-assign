@@ -4,6 +4,6 @@ public interface DatabaseInfo {
 
     public static String driverName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
     public static String dbURL = "jdbc:sqlserver://127.0.0.1:1433;databaseName=BookWebsite;";
-    public static String userDB = "phattp";
-    public static String passDB = "abcd";
+    public static String userDB="javadestop";
+    public static String passDB="lamnehihi6969";
 }

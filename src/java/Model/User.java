@@ -79,7 +79,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" + "uID=" + uID + ", uEmail=" + uEmail + ", uPassword=" + uPassword + ", uName=" + uName + ", uPhone=" + uPhone + ", uAddress=" + uAddress + '}';
+        return "[" + "'" + uAddress + "'" + ", "  + "'" + uID  + "'" + ", "  + "'" + uEmail  + "'" + ", "  + "'" + uPassword + "'" + ", "  + "'" + uName  + "'" + ", "  + "'" + uPhone  + "'" + ']';
     }
     
 }

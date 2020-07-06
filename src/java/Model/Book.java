@@ -109,7 +109,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "[" + this.getbId() + "," + this.getbName() + "," + this.getCatId() + ",\"" + this.getbPrice()+ "\",\"" + this.getbQuantity()+ "\"," + this.getbAuthor()+ "," + this.getbDes()+ "," + this.getbCover()+ "]" ; //To change body of generated methods, choose Tools | Templates.
+        return "[\"" + bId + "\",\"" + bName  + "\",\"" + catId + "\",\"" + bPrice + "\",\"" + bQuantity + "\",\"" + bAuthor + "\",\"" + bCover + "\"]" ;
     }
     
     

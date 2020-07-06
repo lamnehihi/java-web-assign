@@ -55,15 +55,7 @@
             <div class="container-right">
                 <!-- Topbar -->
                 <jsp:include page="components/topBar.jsp"/>
-                <h1>Welcome <s:property value="%{#session.ID}"/></h1>
-                <%
-                    List<User> bl = UserDB.getAllUser();
-                %>
-                <% for (int i = 0; i < bl.size(); i++) {%>
-                <tr>
-                    <td> <%= bl.get(i).toString()%></td>
-                </tr>
-                <% } %>
+                
                 <!--Content-->
                 <%
                     if (request.getParameter("value") == null) {
@@ -118,7 +110,7 @@
         <jsp:include page="components/dataComponents/books.jsp"/>
         <% } else if (request.getParameter("value").equalsIgnoreCase("users")) {
         %>
-        <jsp:include page="components/users.jsp"/>
+        <jsp:include page="components/dataComponents/users.jsp"/>
         <% } else if (request.getParameter("value").equalsIgnoreCase("orders")) {
         %>
         <jsp:include page="components/orders.jsp"/>

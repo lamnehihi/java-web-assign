@@ -17,7 +17,7 @@
         </div>
         <div class="card-body">
             <table
-                id="mydatatable"
+                id="bookDataTable"
                 class="display table table-striped table-bordered"
                 width="100%"
                 >
