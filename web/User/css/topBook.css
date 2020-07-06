@@ -1,0 +1,54 @@
+.cover {
+    background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/04/game-of-thrones-hd-wallpaper-picture-018.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #top-book {
+    height: 80vh;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-book .container-left {
+    max-width: 40%;
+    font-size: 1.1em;
+    text-shadow: 0.5px 0.5px 2px #ddd;
+    height: fit-content;
+  }
+  
+  .top-book .container-left .btn-secondary{
+      opacity: .8;
+  }
+  
+  .top-book .container-right {
+    min-width: 60%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .top-book .container-right .cover {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/916xhosdTsL.jpg");
+    width: 50%; 
+    height: 550px;  
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .fade-out {
+    min-height: 10vh;
+    background: rgb(20, 20, 20);
+    background: linear-gradient(
+      180deg,
+      rgba(20, 20, 20, 0.06488532913165268) 0%,
+      rgba(20, 20, 20, 0.17693014705882348) 22%,
+      rgba(20, 20, 20, 0.4626444327731093) 41%,
+      rgba(20, 20, 20, 0.737154236694678) 63%,
+      rgba(20, 20, 20, 0.9080225840336135) 83%,
+      rgba(20, 20, 20, 1) 100%
+    );
+  
+    margin-top: -10vh;
+  }
