@@ -18,5 +18,13 @@
         <action name="books">
             <result>Admin/BookRoute.jsp</result>
         </action>
+        <action name="newBook" class="Struct.NewBookAction" >
+            <result name="success">Admin/BookRoute.jsp</result>
+            <result name="fail">Admin/Failed.jsp</result>
+        </action>
+        <action name="deleteBook" class="Struct.DeleteBookAction">
+            <result name="success">Admin/BookRoute.jsp</result>
+            <result name="fail">Admin/Failed.jsp</result>        
+        </action>
     </package>
 </struts>

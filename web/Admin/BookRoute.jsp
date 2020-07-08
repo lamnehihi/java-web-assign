@@ -50,26 +50,26 @@
 
         <div class="wrapper">
             <!-- SideBar -->
-            <jsp:include page="components/sideBar.jsp"/>
+            <jsp:include page="./components/sideBar.jsp"/>
 
             <div class="container-right">
                 <!-- Topbar -->
-                <jsp:include page="components/topBar.jsp"/>
+                <jsp:include page="./components/topBar.jsp"/>
 
                 <!--Main panel for main entity-->
                 <%
                     if (request.getParameter("value") == null) {
                 %>
-                <jsp:include page="components/books.jsp"/>
+                <jsp:include page="./components/books.jsp"/>
                 <% } else if (request.getParameter("value").equalsIgnoreCase("addNew")) {
                 %>
-                <jsp:include page="components/booksAddNew.jsp"/>
+                <jsp:include page="./components/booksAddNew.jsp"/>
                 <% } else if (request.getParameter("value").equalsIgnoreCase("users")) {
                 %>
-                <jsp:include page="components/users.jsp"/>
+                <jsp:include page="./components/users.jsp"/>
                 <% } else if (request.getParameter("value").equalsIgnoreCase("orders")) {
                 %>
-                <jsp:include page="components/orders.jsp"/>
+                <jsp:include page="./components/orders.jsp"/>
                 <% }
                 %>
             </div>
@@ -105,16 +105,16 @@
         <%
             if (request.getParameter("value") == null) {
         %>
-                <jsp:include page="Admin/components/dataComponents/books.jsp"/>
+                <jsp:include page="./components/dataComponents/books.jsp"/>
         <% } else if (request.getParameter("value").equalsIgnoreCase("")) {
         %>
-        <jsp:include page="Admin/components/dataComponents/books.jsp"/>
+        <jsp:include page="./components/dataComponents/books.jsp"/>
         <% } else if (request.getParameter("value").equalsIgnoreCase("users")) {
         %>
-        <jsp:include page="Admin/components/dataComponents/users.jsp"/>
+        <jsp:include page="./components/dataComponents/users.jsp"/>
         <% } else if (request.getParameter("value").equalsIgnoreCase("orders")) {
         %>
-        <jsp:include page="Admin/components/orders.jsp"/>
+        <jsp:include page="./components/orders.jsp"/>
         <%}
         %>
 

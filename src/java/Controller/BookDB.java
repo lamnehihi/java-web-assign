@@ -5,7 +5,8 @@
  */
 package Controller;
 
-import Model.*;
+import Controller.BookDBAdmin;
+import Model.Book;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -109,7 +110,7 @@ public class BookDB implements DatabaseInfo {
             return null;
         }
     }
-   
+
     //--------------------------------------------------------------------
     public static ArrayList<Book> getByCategoryID(String cateID) {
         Book b = null;
@@ -140,7 +141,7 @@ public class BookDB implements DatabaseInfo {
             return null;
         }
     }
-    
+
     //--------------------------------------------------------------------
     public static ArrayList<Book> getByPrice(float from, float to) {
         Book b = null;
@@ -172,7 +173,7 @@ public class BookDB implements DatabaseInfo {
             return null;
         }
     }
-    
+
     //--------------------------------------------------------------------
     public static ArrayList<Book> getByAuthor(String author) {
         Book b = null;
@@ -203,18 +204,15 @@ public class BookDB implements DatabaseInfo {
             return null;
         }
     }
-    
-    
-    
 
     public static void main(String[] args) {
         Book b = new Book();
         ArrayList<Book> bl = new ArrayList<>();
         bl = BookDB.getAll();
         for (int i = 0; i < bl.size(); i++) {
-           // System.out.println(bl.get(i).toString());
+            // System.out.println(bl.get(i).toString());
         }
         System.out.println(bl.get(1).toString());
-       
+
     }
 }

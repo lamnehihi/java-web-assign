@@ -17,17 +17,26 @@
     <% for (int i = 0; i < bl.size(); i++) {%>
     dataSet.push(<%= bl.get(i).toString()%>);
     <% }%>
-    $("#bookDataTable").DataTable(
-    {
-    data: dataSet,
-            columns: [
-            {title: "ID"},
-            {title: "Title"},
-            {title: "Category"},
-            {title: "Price"},
-            {title: "Quantity"},
-            {title: "Author"},
-            {title: "Cover"}
-            ]
+//    $("#bookDataTable").DataTable(
+//        {data: dataSet}
+//    );
+
+    $(document).ready(function () {
+        var table = $('#bookDataTable')
+                .DataTable({
+                    "lengthMenu": [[-1, 50, 20, 10], ["All", 50, 20, 10]],
+                    "data": dataSet
+                });
+
+        $('#bookDataTable tbody tr').each(function ()
+        {
+
+//        Action to edit and delete book !!!
+
+            $(this).append('<td><a href="updateBook?id=' + table.row(this).data()[0] + '" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Edit</a> <a href="deleteBook?id=' + table.row(this).data()[0] + '" class="btn btn-danger btn-sm" role="button" aria-pressed="true">Del</a></td>');
+        });
     });
+
 </script>
+
+

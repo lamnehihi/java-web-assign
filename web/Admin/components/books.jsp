@@ -9,9 +9,11 @@
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Books</h1>
     
+    <div id="demo_info" class="box"></div>
+
     <!--Adding new book-->
     <a href="books?value=addNew" class="badge badge-success">+ Add new</a>
-    
+
     <p class="mb-4">
         DataTables is a third party plugin that is used to generate the demo table below. For more information, please visit the DataTables.net 
     </p>
@@ -25,6 +27,26 @@
                 class="display table table-striped table-bordered"
                 width="100%"
                 >
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Author</th>
+                    </tr>
+                </tfoot>
             </table>
         </div>
     </div>

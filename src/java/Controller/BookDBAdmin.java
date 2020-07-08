@@ -28,7 +28,7 @@ public class BookDBAdmin {
         try {
             Class.forName(driverName);
             try (Connection con = DriverManager.getConnection(dbURL, userDB, passDB)) {
-                PreparedStatement stmt = con.prepareStatement("insert into Books (bName, catID, bPrice, bQuantity, bAuthor, bDes, bCover ) values(?, ?, ?, ?, ?, ?, ?, ?)");
+                PreparedStatement stmt = con.prepareStatement("insert into Books (bName, catID, bPrice, bQuantity, bAuthor, bDes, bCover ) values(?, ?, ?, ?, ?, ?, ?)");
                 stmt.setString(1, b.getbName());
                 stmt.setString(2, b.getCatId());
                 stmt.setFloat(3, b.getbPrice());

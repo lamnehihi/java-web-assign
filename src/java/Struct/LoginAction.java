@@ -43,7 +43,7 @@ public class LoginAction {
     public String execute() throws Exception {
         try{
         UserDB uDB = new UserDB();
-        String result = uDB.LogIn("a", "b");
+        String result = uDB.LogIn(email,password);
         String URL = FAIL;
         if (result!=null) {
             Map session = ActionContext.getContext().getSession();
