@@ -106,6 +106,11 @@ public class Book {
     public void setbCover(String bCover) {
         this.bCover = bCover;
     }
+
+    @Override
+    public String toString() {
+        return "[" + this.getbId() + "," + this.getbName() + "," + this.getCatId() + ",\"" + this.getbPrice()+ "\",\"" + this.getbQuantity()+ "\"," + this.getbAuthor()+ "," + this.getbDes()+ "," + this.getbCover()+ "]" ; //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }

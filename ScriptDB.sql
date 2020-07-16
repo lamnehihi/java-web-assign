@@ -1,8 +1,10 @@
 ﻿create database BookWebsite
+go
 use BookWebsite
-
 GO
 
+--Hiiii
+--Hiiiiiiiiiiiiiiii
 
 --Auto generate ID
 
@@ -27,10 +29,10 @@ END
 
 --Tự động tăng userID
 CREATE FUNCTION AUTO_UserID()
-RETURNS VARCHAR(10)
+RETURNS VARCHAR(5)
 AS
 BEGIN
-	DECLARE @ID VARCHAR(10)
+	DECLARE @ID VARCHAR(5)
 	IF (SELECT COUNT(uID) FROM Users) = 0
 		SET @ID = '0'
 	ELSE
@@ -107,7 +109,7 @@ GO
 
 
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor, bDes)
-values ('B0001','The Hobbit', 'C001', 300000, 10, 'J.R.R. Tolkien',
+values ('B0001', 'The Hobbit', 'C001', 300000, 10, 'J.R.R. Tolkien',
 'The European languages are members of the same family.
 Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
 The languages only differ in their grammar, their pronunciation and their most common words.
@@ -116,7 +118,7 @@ To achieve this, it would be necessary to have uniform grammar, pronunciation an
 
 --2 Action & Adventure
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0002','The Three Musketeers', 'C001', 400000, 20, ' Alexandre Dumas',
+values ('B0002', 'The Three Musketeers', 'C001', 400000, 20, 'Alexandre Dumas',
 'A wonderful serenity has taken possession of my entire soul,
 like these sweet mornings of spring which I enjoy with my whole heart.
 I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
@@ -125,7 +127,7 @@ that I neglect my talents. I should be incapable of drawing a single stroke at t
 
 --3 Classic
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0003','To Kill a Mockingbird ', 'C002', 250000, 25, 'Harper Lee',
+values ('B0003', 'To Kill a Mockingbird', 'C002', 250000, 25, 'Harper Lee',
 ' I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
 I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence,
 that I neglect my talents. I should be incapable of drawing a single stroke at the present moment;
@@ -136,7 +138,7 @@ I throw myself down among the tall grass by the trickling stream...')
 
 --4 Classic
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0004','Romeo and Juliet ', 'C002', 550000, 10, 'William Shakespeare',
+values ('B0004', 'Romeo and Juliet', 'C002', 550000, 10, 'William Shakespeare',
 ' When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the 
 impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, 
 I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, 
@@ -148,7 +150,7 @@ earth...')
 
 --5 Commic and Graphic Novel
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0005',' Batman: The Dark Knight Returns ', 'C003', 700000, 9, 'Frank Miller',
+values ('B0005', 'Batman: The Dark Knight Returns', 'C003', 700000, 9, 'Frank Miller',
 ' But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and 
 I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, 
 the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, 
@@ -158,7 +160,7 @@ occasionally circumstances occur in which toil and pain can procure him some gre
 
 --6 Commic and Graphic Novel
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0006',' V for Vendetta ', 'C003', 350000, 12, 'Alan Moore',
+values ('B0006', 'V for Vendetta', 'C003', 350000, 12, 'Alan Moore',
 ' Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little bit 
 longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to 
 sleeping on his right, and in his present state couldnt get into that position. However hard he threw himself onto 
@@ -168,7 +170,7 @@ he had never felt before...')
 
 --7 Crime and Detective
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0007',' Sherlock Holmes ', 'C004', 1000000,30, 'Arthur Conan Doyle',
+values ('B0007', 'Sherlock Holmes', 'C004', 1000000,30, 'Arthur Conan Doyle',
 ' "Oh, God", he thought, "what a strenuous career it is that I have chosen! Travelling day in and day out. 
 Doing business like this takes much more effort than doing your own business at home, and on top of that there is the 
 curse of travelling, worries about making train connections, bad and irregular food, contact with different people all 
@@ -176,7 +178,7 @@ the time so that you can never get to know anyone or become friendly with them. 
 
 --8 Crime and Detective
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0008',' Murder on The Orient Express ', 'C004', 800000, 15, ' Agatha Christie',
+values ('B0008', 'Murder on The Orient Express', 'C004', 800000, 15, 'Agatha Christie',
 ' He felt a slight itch up on his belly; pushed himself slowly up on his back towards the headboard so that he could 
 lift his head better; found where the itch was, and saw that it was covered with lots of little white spots which he 
 didnt know what to make of; and when he tried to feel the place with one of his legs he drew it quickly back because 
@@ -186,7 +188,7 @@ Other travelling salesmen live a life of luxury...')
 
 --9 Drama
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0009',' Hamlet ', 'C005', 635000, 22, ' William Shakespeare',
+values ('B0009', 'Hamlet', 'C005', 635000, 22, 'William Shakespeare',
 ' And it is a funny sort of business to be sitting up there at your desk, talking down at your subordinates from up 
 there, especially when you have to go right up close because the boss is hard of hearing. Well, there is still some 
 hope; once I have got the money together to pay off my parents debt to him - another five or six years I suppose - 
@@ -197,7 +199,7 @@ more like quarter to seven. Had the alarm clock not rung?...')
 
 --10 Drama
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0010',' The Crucible ', 'C005', 600000, 20, ' Arthur Miller',
+values ('B0010', 'The Crucible', 'C005', 600000, 20, 'Arthur Miller',
 ' He could see from the bed that it had been set for four o clock as it should have been; it certainly must have rung. 
 Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, 
 but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to 
@@ -208,7 +210,7 @@ Gregor...')
 
 --11 Fable
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0011',' Trí khôn của ta đây ', 'C006', 90000, 13, ' Sưu tầm ',
+values ('B0011', 'Trí khôn của ta đây', 'C006', 90000, 13, 'Sưu tầm',
 ' "Từ đó, cọp sinh ra con nào trên mình cũng có những vằn đen dài"
 Một con cọp từ trong rừng đi ra, thấy một anh nông dân cùng một con trâu đang cày dưới ruộng. 
 Trâu cặm cụi đi từng bước, lâu lâu lại bị quất một roi vào mông. Cọp lấy làm ngạc nhiên. Đến trưa, mở cày, 
@@ -219,7 +221,7 @@ Trâu trả lời khẽ vào tai Cọp:
 
 --12 Fable
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0012',' The Fox and The Grapes ', 'C006', 100000, 35, ' Đen Vâu',
+values ('B0012', 'The Fox and The Grapes', 'C006', 100000, 35, 'Đen Vâu',
 'Anh như con cáo 
  Em như một cành nho xanh
 Khi em còn trẻ và đẹp
@@ -246,7 +248,7 @@ Em lại không dành cho anh ...')
 
 --13 Fairy Tale
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0013',' Rapunzel ', 'C007', 50000, 18, ' Brothers Grimm',
+values ('B0013', 'Rapunzel', 'C007', 50000, 18, 'Brothers Grimm',
 ' Drops of rain could be heard hitting the pane, which made him feel quite sad. 
 "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was 
 unable to do because he was used to sleeping on his right, and in his present state couldnt get into that position. 
@@ -256,7 +258,7 @@ a mild, dull pain there that he had never felt before...')
 
 --14 Fairy Tale
  insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0014',' Beauty And The Beast ', 'C007', 70000, 25, ' Gabrielle-Suzanne de Villeneuve',
+values ('B0014', 'Beauty And The Beast', 'C007', 70000, 25, 'Gabrielle-Suzanne de Villeneuve',
 ' He slid back into his former position. "Getting up early all the time", he thought, "it makes you stupid. 
 You have got to get enough sleep. Other travelling salesmen live a life of luxury. For instance, whenever I go back 
 to the guest house during the morning to copy out the contract, these gentlemen are always still sitting there eating 
@@ -266,7 +268,7 @@ long time ago, I would have gone up to the boss and told him just what I think..
 
 --15 Fan-fiction
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0015',' Harry Potter And The Method of Rationality ', 'C008', 900000, 40, ' Eliezer Yudkowsky',
+values ('B0015', 'Harry Potter And The Method of Rationality', 'C008', 900000, 40, 'Eliezer Yudkowsky',
 'Harry had a thin face, knobbly knees, black hair and bright-green eyes. 
 He wore round glasses held together with a lot of Sellotape because of all the times Dudley had punched 
 him on the nose. The only thing Harry liked about his own appearance was a very thin scar on his forehead which was 
@@ -275,7 +277,7 @@ remember asking his Aunt Petunia was how he had got it....')
 
 --16 Fan-fiction
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0016',' Fangirl  ', 'C008', 900000, 15, 'Rainbow Rowell',
+values ('B0016', 'Fangirl', 'C008', 900000, 15, 'Rainbow Rowell',
 'A collection of textile samples lay spread out on the table - 
 Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an 
 illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur 
@@ -286,7 +288,7 @@ which made him feel quite sad.....')
 --17 Humor
 
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0017',' The Hitchhiker’s Guide to The Galaxy  ', 'C009', 100000, 14, 'Douglas Adams',
+values ('B0017','The Hitchhiker’s Guide to The Galaxy', 'C009', 100000, 14, 'Douglas Adams',
 '"How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was 
 unable to do because he was used to sleeping on his right, and in his present state couldnt get into that position. 
 However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a hundred 
@@ -295,7 +297,7 @@ a mild, dull pain there that he had never felt before...')
 
 --18 Humor
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0018',' Three Men in a Boat ', 'C009', 200000, 22, 'Jerome K. Jerome',
+values ('B0018','Three Men in a Boat', 'C009', 200000, 22, 'Jerome K. Jerome',
 'A collection of textile samples lay spread out on the table - Samsa was a travelling salesman -
  and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, 
  gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that 
@@ -303,33 +305,33 @@ values ('B0018',' Three Men in a Boat ', 'C009', 200000, 22, 'Jerome K. Jerome',
 
 --19 Horror
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0019',' The Shining', 'C010', 300000, 20, ' Stephen King',
+values ('B0019','The Shining', 'C010', 300000, 20, 'Stephen King',
 'He must have tried it a hundred times, shut his eyes so that he wouldnt have to look at the floundering legs, 
 and only stopped when he began to feel a mild, dull pain there that he had never felt before...')
 
 --20 Horror
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0020',' It', 'C010', 300000, 17, ' Stephen King',
+values ('B0020','It', 'C010', 300000, 17, 'Stephen King',
 'His boss would certainly come round with the doctor from the medical insurance company, 
 accuse his parents of having a lazy son, and accept the doctor s recommendation not to make any claim as the doctor 
 believed that no-one was ever ill but that many were workshy...')
 
 --21 Romance
 insert into Books(bID,bName,catID,bPrice, bQuantity,bAuthor,bDes)
-values ('B0021','Fifty Shades of Grey', 'C011', 2000000, 38, ' E.L James',
+values ('B0021','Fifty Shades of Grey', 'C011', 2000000, 38, 'E.L James',
 'He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, 
 slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed 
 ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him...')
 
 --22 Romance
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0022', 'Perfect Chemistry ', 'C011', 1900000, 20, ' Simone Elkeles',
+values ('B0022', 'Perfect Chemistry', 'C011', 1900000, 20, 'Simone Elkeles',
 '"What is happened to me? " he thought. It wasnt a dream. His room, a proper human room although a little too small, 
 lay peacefully between its four familiar walls....')
 
 --23 Science Fiction (Sci-Fi)
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0023', 'Dune ', 'C012', 500000, 21, ' Frank Herbert',
+values ('B0023', 'Dune', 'C012', 500000, 21, 'Frank Herbert',
 'Worries about making train connections, bad and irregular food, contact with different people all the time so that 
 you can never get to know anyone or become friendly with them. It can all go to Hell! " He felt a slight itch up on 
 his belly; pushed himself slowly up on his back towards the headboard so that he could lift his head better; 
@@ -338,14 +340,14 @@ of...')
 
 --24 Science Fiction (Sci-Fi)
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0024', 'The Hunger Games', 'C012', 600000, 30, ' Suzanne Collins',
+values ('B0024', 'The Hunger Games', 'C012', 600000, 30, 'Suzanne Collins',
 'I go back to the guest house during the morning to copy out the contract, these gentlemen are always still sitting 
 there eating their breakfasts. I ought to just try that with my boss; I would get kicked out on the spot. 
 But who knows, maybe that would be the best thing for me...')
 
 --25 Reference Books
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0025', 'Dictionary VietName_Japan', 'C013', 350000, 22, ' NIHONSEI',
+values ('B0025', 'Dictionary VietName_Japan', 'C013', 350000, 22, 'NIHONSEI',
 'Ohayoogozaimasu, watashiha danieru desu, chuugokujin desu , betonamugogadaisuki desu ... ')
 
 --26 Reference Books
@@ -362,12 +364,12 @@ In contrast to real numbers that have the property of varying "smoothly".')
 
 --28 Textbook
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0028', 'Vietnam: A History ', 'C014', 280000, 30, ' Stanley Karnow',
+values ('B0028', 'Vietnam: A History ', 'C014', 280000, 30, 'Stanley Karnow',
 'A landmark work...The most complete account to date of the Vietnam tragedy." -The Washington Post Book World... ')
 
 --29 Short Story
 insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes)
-values ('B0029', 'The Lottery', 'C015', 150000, 5, ' Shirley Jackson',
+values ('B0029', 'The Lottery', 'C015', 150000, 5, 'Shirley Jackson',
 'Tell him everything I would, let him know just what I feel. He would fall right off his desk! And it is a funny sort 
 of business to be sitting up there at your desk, talking down at your subordinates from up there, especially when you 
 have to go right up close because the boss is hard of hearing. Well, there is still some hope; once I have got the money 
@@ -388,6 +390,11 @@ insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U000
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0003','tue@gmail.com','789','Tue','2222222222', ' Viet Nam ')
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0004','phat@gmail.com','246','Phat','3333333333', 'Viet Nam')
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0005','phuc@gmail.com','135','Phuc','4444444444', 'Viet Nam, Nihon, Kankoku')
+insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('lam@gmail.com','123','Lam ML','0000000000',' Somewhere in chinaaaa ')
+insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('dat09@gmail.com','456','Dat 1 phit','1111111111','Viet Nammmm')
+insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('tue@gmail.com','789','Tue','2222222222', ' Viet Nammmmm ')
+insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('phat@gmail.com','246','Phat','3333333333', 'Viet Nammmmm')
+insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('phuc@gmail.com','135','Phuc','4444444444', 'Viet Nam, Nihon, Kankokuuuuu')
 
 
 
@@ -449,9 +456,40 @@ insert into Transactions(tID, uID, bID,tQuantity, status, tDate)
 values ('T015','U0001','B0002', 2, '1', getdate())
 
 
+-----------------------------------------------------------Update 30 books cover---------------------------------------------------
+UPDATE Books SET bCover = 'https://i.pinimg.com/originals/5b/db/6b/5bdb6bf7e2b394e945f8a7702d3ff067.jpg' WHERE bID = 'B0001';
+UPDATE Books SET bCover = 'https://i.ebayimg.com/images/g/n~8AAOSwZ~hbIBmw/s-l640.jpg' WHERE bID = 'B0002';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/71FxgtFKcQL.jpg' WHERE bID = 'B0003';
+UPDATE Books SET bCover = 'https://hamiltoncs.org/lit220/wp-content/uploads/2017/01/tumblr_nbtgglXB7k1svslr6o1_500.png' WHERE bID = 'B0004';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/917wsCEYSML.jpg' WHERE bID = 'B0005';
+UPDATE Books SET bCover = 'https://classroom-pcc.flywheelsites.com/wp-content/uploads/2019/03/V-for-Vendetta_600x774.png' WHERE bID = 'B0006';
+UPDATE Books SET bCover = 'https://i.pinimg.com/originals/de/86/4b/de864b2083c04b0f45f99c0336cbb11c.jpg' WHERE bID = 'B0007';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/81Ebi0i6anL.jpg' WHERE bID = 'B0008';
+UPDATE Books SET bCover = 'https://i.pinimg.com/originals/da/39/46/da3946a2090014b11b8637d3758ae68c.jpg' WHERE bID = 'B0009';
+UPDATE Books SET bCover = 'https://i.pinimg.com/236x/39/0b/24/390b24999b5d6eeb9bd6e855dbacc8fc--god-is-dead-high-schools.jpg' WHERE bID = 'B0010';
+UPDATE Books SET bCover = 'https://salt.tikicdn.com/media/catalog/product/i/m/img119.u2487.d20160510.t101104.jpg' WHERE bID = 'B0011';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/51zCSsldlJL.jpg' WHERE bID = 'B0012';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/716rf-9RNoL.jpg' WHERE bID = 'B0013';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/71uDm-9dhfL.jpg' WHERE bID = 'B0014';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/91yiWEC6wTL.jpg' WHERE bID = 'B0015';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/61pbRERSDCL.jpg' WHERE bID = 'B0016';
+UPDATE Books SET bCover = 'https://i.pinimg.com/originals/fc/34/a3/fc34a32c5a16264a2f9b128b1938d917.png' WHERE bID = 'B0017';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/71iCUnY11ML.jpg' WHERE bID = 'B0018';
+UPDATE Books SET bCover = 'https://prodimage.images-bn.com/pimages/9780345806789_p0_v2_s1200x630.jpg' WHERE bID = 'B0019';
+UPDATE Books SET bCover = 'https://kbimages1-a.akamaihd.net/991ee2b8-3f3b-4418-a0b0-77f70dfb6051/353/569/90/False/it-22.jpg' WHERE bID = 'B0020';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/810BkqRP+iL.jpg' WHERE bID = 'B0021';
+UPDATE Books SET bCover = 'https://a.wattpad.com/cover/201993297-256-k801639.jpg' WHERE bID = 'B0022';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/81BJ3OD3J-L.jpg' WHERE bID = 'B0023';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/61JfGcL2ljL.jpg' WHERE bID = 'B0024';
+UPDATE Books SET bCover = 'https://image.winudf.com/v2/image/c3BpZGVjLmRpY3Rpb25hcnluaGF0dmlldF9zY3JlZW5zaG90c18wXzc1MDY5Yzgw/screen-0.jpg?fakeurl=1&type=.jpg' WHERE bID = 'B0025';
+UPDATE Books SET bName = 'Dictionary VietNam_Japan' WHERE bID = 'B0025';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/51Q8s7d3SyL._SX354_BO1,204,203,200_.jpg' WHERE bID = 'B0026';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/716hbj45eOL.jpg' WHERE bID = 'B0027';
+UPDATE Books SET bCover = 'https://images-na.ssl-images-amazon.com/images/I/51l1tuPpQGL._SX330_BO1,204,203,200_.jpg' WHERE bID = 'B0028';
+UPDATE Books SET bCover = 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348757577l/6219656.jpg' WHERE bID = 'B0029';
+UPDATE Books SET bCover = 'https://sciencefictionbookart.com/wp-content/uploads/2017/02/The-Illustrated-Man.png' WHERE bID = 'B0030';
 
-
-
+-----------------------------------------------------------------------------------------------------------------------------------
 
 
 select * from Categories
@@ -653,3 +691,8 @@ insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
 ('B0080','Flubby Is Not a Good Pet!','C003',250000,15,'J.E.Morris','The charming illustrations, simple text, and comic-like panels by J. E. Morris, author-illustrator of the Maud the Koala books, make this a unique format with a narrative style perfect for
  storytime and progressing readers. Exciting, easy-to-read books are the stepping stone a young reader needs to bridge the gap between being a beginner and being fluent.','https://images-na.ssl-images-amazon.com/images/I/51WB4COcpOL._SX334_BO1,204,203,200_.jpg') 
+=======
+select * from Users
+ALTER TABLE Users
+ADD uRole int not null default(0);
+update Users set uRole =1 where uID='U0001'
