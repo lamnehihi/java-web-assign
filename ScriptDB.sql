@@ -459,3 +459,197 @@ select * from Books
 select * from Users
 select * from Transactions
 
+--NMT insert 50 books
+GO
+
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0031','Blockchain','C013',300000,15,'Mark Gates','Crypto currency - most typically Bitcoin, is taking attention from global finance. Ability to pay by cryptocurrency
+inspires many potential for commercial, changes in paying method. This core of new technology is called Blockchain.','https://ebook.vn//uploads/books/blockchain.jpg')
+
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0032','SEO master','C013',250000,15,'Nguyen Trong Tho','If you are or want to start a business on the Internet, this is a book you cant help but read. I certainly am.
+ If you already own this book, I congratulate you. Please read this practical, trendy book with respectful feelings to face the challenge and immediately implement lessons
+ to put the website on TOP Google.','https://ebook.vn//uploads/books/ebook.vn-seo-master-nguyen-trong-tho.png')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0033','Wanted: Alive or Dead','C011',300000,15,'Kerrelyn Sparks','Phineas McKinney thought New York City was tough, until he was attacked by Malcontents - evil vampires who
+consider mortals to be snacks. Saved by the good vampires, Phin swore to devote his now undead life to stopping the Malcontents. Hes got his job cut out for him when
+word comes that their enemy may be hiding in Wyoming. What does a city boy like him know about horses and campfires? Good thing hes got Brynley Jones with him, if
+only she didnt hate every vampire on earth.','https://covers.openlibrary.org/b/id/8998733-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0034','Everything leads to you','C008',250000,20,'Nina LaCour','While working as a film production designer in Los Angeles, Emi finds a mysterious letter from a silver
+ screen legend which leads Emi to Ava who is about to expand Emis understanding of family, acceptance, and true romance.','https://covers.openlibrary.org/b/id/7963161-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0035','The Great Dirty Dinosaur','C008',200000,20,'Martin Waddell','Hal and his little dog Billy calmly deal with a dinosaurs monstrous temper tantrum.','https://covers.openlibrary.org/b/id/8240165-L.jpg')
+
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0036','Enchanted glass','C008',250000,20,'Diana Wynne Jones','After his grandfather dies, Andrew Hope inherits a house and surrounding land in an English village, but
+ things become very complicated when young orphan Aidan shows up and suddenly a host of variously magical townsfolk and interlopers start intruding on their lives.','https://covers.openlibrary.org/b/id/9679573-L.jpg')
+
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0037','My friend is sad','C011',270000,25,'Mo Willems','When Gerald the Elephant is sad, Piggie is determined cheer him up, but finds after many tries that it only takes the simplest thing to change Geralds mood.','https://covers.openlibrary.org/b/id/8173599-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0038','Clear and present danger','C004',300000,20,'Tom Clancy','The sudden and surprising assassination of three American officials in Colombia. Many people in many places, moving off on missions
+ they all mistakenly thought they understood. The future was too fearful for contemplation, and beyond the expected finish lines were things that, once decided, were better left unseen.','https://ia800801.us.archive.org/view_archive.php?archive=/18/items/olcovers662/olcovers662-L.zip&file=6621299-L.jpg&ext=')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0039','Tom Clancy full force and effect','C001',300000,15,'Mark Greaney','A North Korean ICBM crashes into the Sea of Japan. A veteran CIA officer is murdered in Ho Chi Minh City, and a package of forged documents
+ goes missing. The pieces are there, but assembling the puzzle will cost Jack Ryan, Jr. and his fellow Campus agents precious time. Time they dont have. The challenge facing President Jack Ryan is an old one with
+ a terrifying new twist. The international stalemate with North Korea continues into its seventh decade. A young, untested dictator is determined to prove his strength by breaking the deadlock. Like his father
+ before him, he hangs his plans on the countrys nuclear ambitions.','https://covers.openlibrary.org/b/id/8134960-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0040','Devil s gate','C001',350000,20,'Clive Cussler','A weapon of unspeakable power... A madman holds the world hostage... Only Kurt Austin and the NUMA team can stop him.','https://ia801608.us.archive.org/view_archive.php?archive=/28/items/olcovers697/olcovers697-L.zip&file=6975069-L.jpg&ext=')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0041','Shape-changer','C012',350000,20,'Bill Brittain','Two seventh-grade friends help a shape-changing policeman from the planet Rodinam as he tries to recapture an alien master criminal who can also change form.','https://ia801602.us.archive.org/view_archive.php?archive=/17/items/olcovers393/olcovers393-L.zip&file=3939741-L.jpg&ext=')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0042','Everything s Eventual','C012',300000,15,'Stephen King','International bestselling author Stephen King is in terrifying top form with his first collection of short stories in almost a decade. In this spine-chilling
+ compilation, King takes readers down a road less traveled (for good reason) in the blockbuster e-Book "Riding the Bullet," bad table service turns bloody when you stop in for "Lunch at the Gotham Cafe," and terror becomes
+ deja vu all over again when you get "That Feeling, You Can Only Say What IT IS in French"--along with eleven more stories that will keep you awake until daybreak. Enter a nightmarish mindscape of unrelenting horror and
+ shocking revelations that could only come from the imagination of the greatest storyteller of our time.','https://covers.openlibrary.org/b/id/8585687-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0043','Trojan Odyssey','C012',350000,15,'Clive Cussler','Long hailed as the grand master of adventure fiction, Clive Cussler has continued to astound with the intricate plotting and astonishing set pieces of his novels.
+ Now, with a surprising twist, he gives us his most audacious work yet.','https://ia802702.us.archive.org/view_archive.php?archive=/30/items/olcovers25/olcovers25-L.zip&file=259071-L.jpg&ext=')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0044','Duma Key','C008',200000,15,'Stephen King','A terrible construction site accident takes Edgar Freemantles right arm and scrambles his memory and his mind, leaving him with little but rage as he begins the ordeal
+ of rehabilitation. A marriage that produced two lovely daughters suddenly ends, and Edgar begins to wish he hadnt survived the injuries that could have killed him. He wants out. His psychologist, Dr. Kamen, suggests a
+ "geographic cure," a new life distant from the Twin Cities and the building business Edgar grew from scratch. And Kamen suggests something else.','https://covers.openlibrary.org/b/id/8457060-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0045','Atlantis Found','C012',250000,10,'Clive Cussler','Dirk Pitt knows that somehow these events are connected. His investigations lead to an ancient mystery with devastating modern consequences, and a diabolical
+ enemy unlike any he has ever known. Now, he is racing to save not only his life—but the world. The trap is set. The clock is ticking. And only one man stands between the earth and Armageddon…','https://ia800700.us.archive.org/view_archive.php?archive=/31/items/olcovers702/olcovers702-L.zip&file=7024772-L.jpg&ext=')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0046','Breathless','C008',200000,20,'Dean Koontz','This book is great! He really pulls you in from the start, and by the time its over I was in tears. If you like Dean Koontz read it. One of his best.','https://ia800602.us.archive.org/view_archive.php?archive=/1/items/olcovers666/olcovers666-L.zip&file=6669847-L.jpg&ext=')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0047','Cell','C008',250000,15,'Stephen King','There are one hundred and ninety-three million cell phones in the United States alone. Who doesnt have one? Stephen Kings utterly gripping, gory, and fascinating
+ novel doesnt just ask the question "Can you hear me now?" It answers it with a vengeance.','https://covers.openlibrary.org/b/id/8288254-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0048','The Kingdom','C008',250000,25,'Clive Cussler','Packed with the endless imagination and breathtaking suspense that are his hallmarks, The Kingdom once again proves that Clive Cussler is "just about the best storyteller in the business','https://covers.openlibrary.org/b/id/9155138-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0049','Relentless','C008',300000,15,'Dean Koontz','Facing an inexorable assault on far more than his life, successful family man and bestselling novelist Cullen "Cubby" Greenwich finds himself in a desperate struggle with relentless sociopath
+ and reclusive critic Shearman Waxx.','https://covers.openlibrary.org/b/id/8085498-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0050','Mr.Mercedes','C010',250000,15,'Stephen King','Mr. Mercedes is a war between good and evil, from the master of suspense whose insight into the mind of this obsessed, insane killer is chilling and unforgettable.','https://covers.openlibrary.org/b/id/9155058-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0051','Golden Buddha','C013',250000,15,'Clive Cussler','Oregon Files #1','https://ia800602.us.archive.org/view_archive.php?archive=/19/items/olcovers27/olcovers27-L.zip&file=272549-L.jpg&ext=')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0052','Storm of the Century','C001',200000,20,'Stephen King','For the first time in Stephen Kings remarkable publishing history, the master storyteller presents an all-new, original tale written expressly for the television screen.','https://covers.openlibrary.org/b/id/8401475-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0053','The stand','C008',250000,25,'Stephen King','Dark dreams that warned of the coming of the dark man. The apostate of death, his worn-down boot heels tramping the night roads. The warlord of the charnel house and Prince of Evil.','https://covers.openlibrary.org/b/id/9255989-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0054','Rainbow Six','C012',20000,15,'Tom Clancy','This edition doesnt have a description yet.','https://ia800801.us.archive.org/view_archive.php?archive=/3/items/olcovers687/olcovers687-L.zip&file=6873545-L.jpg&ext=')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0055','Black wind','C008',150000,20,'Clive Cussler','Pitt has faced devastating enemies before, has even teamed up with his children to track them down. But never before has he encountered such pure evil—until now.','https://covers.openlibrary.org/b/id/8231873-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0056','Demon seed','C008',200000,15,'Dean Koontz','This edition doesnt have a description yet.','https://ia800602.us.archive.org/view_archive.php?archive=/29/items/olcovers648/olcovers648-L.zip&file=6487440-L.jpg&ext=')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0057','Walter the Baker','C002',150000,15,'Eric Carle','By order of the Duke, Walter the baker must invent a tasty roll through which the rising sun can shine three times.','https://ia802605.us.archive.org/view_archive.php?archive=/18/items/olcovers43/olcovers43-L.zip&file=434888-L.jpg&ext=')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0058','Tiger on a tree','C002',200000,16,'Anushka Ravishankar','After trapping a tiger in a tree, a group of men must decide what to do with it.','https://ia801608.us.archive.org/view_archive.php?archive=/27/items/olcovers22/olcovers22-L.zip&file=224170-L.jpg&ext=')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0059','Dinosaur Trouble','C002',250000,15,'Dick King-Smith','T. rex! T. rex! Run! The terrible Tyrannosaurus rex is scaring all the dinosaur families that live on the Great Plain. Nosy, the little pterodactyl,
+ and his great friend Banty, the apatosaurus, agree that T. rex has got to be stopped. But how? Luckily Nosy has a plan ...','https://ia800603.us.archive.org/view_archive.php?archive=/11/items/olcovers296/olcovers296-L.zip&file=2966918-L.jpg&ext=')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0060','Dragons Milk','C007',250000,20,'Susan Fletcher','But little does Kaeldra know what shes getting into. Shes about to begin a journey that will entwine her fate with that of three little draclings and one would-be dragonslayer.
+ A journey that will become a struggle for life.','https://ia802605.us.archive.org/view_archive.php?archive=/18/items/olcovers43/olcovers43-L.zip&file=433683-L.jpg&ext=')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0061','Rooster is off to see the world','C007',250000,10,'Eric Carle','A simple introduction to the meaning of numbers and sets as a rooster, on his way to see the world, is joined by fourteen animals along the way','https://covers.openlibrary.org/b/id/9153843-L.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0062','Catwings','C002',200000,15,'Ursula K. Le Guin','Mrs. Jane Tabby cant explain why her four precious kittens were born with wings, but shes grateful that they are able to use their flying skills to soar away from
+ the dangerous city slums where they were born. However, once the kittens escape the big city, they learn that country life can be just as difficult!','https://images-na.ssl-images-amazon.com/images/I/51WTJYPJnZL._SX350_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0063','Catwings Return','C008',200000,20,'Ursula K. Le Guin','Wishing to visit their mother, the winged cats leave their new country home to return to the city, where they discover a winged kitten in a building on the verge of being demolished.','https://images-na.ssl-images-amazon.com/images/I/51nqHYbNNML._SX355_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0064','The Night Fairy','C007',250000,15,'Laura Amy Schlitz','Not every creature, however, is as willing to bend to Flory’s demands. Newbery Medal winner Laura Amy Schlitz and world-renowned illustrator and miniaturist Angela Barrett venture
+ into the realm of the illustrated classic — a classic entirely and exquisitely of their making, and a magnificent adventure.','https://images-na.ssl-images-amazon.com/images/I/51EsRGBtnKL._SX352_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0065','Small Spaces','C002',200000,15,'Katherine Arden','Only Ollie and two of her classmates heed these warnings. As the trio head out into the woods--bordered by a field of scarecrows that seem to be watching them--the bus driver has just one
+ final piece of advice for Ollie and her friends: "Avoid large places. Keep to small.". And with that, a deliciously creepy and hair-raising adventure begins.','https://images-na.ssl-images-amazon.com/images/I/51vvQv-5DzL._SX325_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0066','Front Desk ','C002',200000,15,'Kelly Yang','"Many readers will recognize themselves or their neighbors in these pages." -- Kirkus Reviews, starred review
+Mia Tang has a lot of secrets.','https://images-na.ssl-images-amazon.com/images/I/51dN99OdBtL._SX341_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0067','The Parker Inheritance','C002',200000,20,'Varian Johnson','So with the help of Brandon, the quiet boy across the street, she begins to decipher the clues. The challenge will lead them deep into Lamberts history, full of ugly deeds,
+ forgotten heroes, and one great love; and deeper into their own families, with their own unspoken secrets. Can they find the fortune and fulfill the letters promise before the answers slip into the past yet again?','https://images-na.ssl-images-amazon.com/images/I/51XluZ8tjEL._SX342_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0068','Nine, Ten: A September 11 Story','C011',150000,15,'Nora Raleigh Baskin','These four don’t know one another, but their lives are about to intersect in ways they never could have imagined. Award-winning author Nora Raleigh Baskin
+ weaves together their stories into an unforgettable novel about that seemingly perfect September day—the day our world changed forever.','https://images-na.ssl-images-amazon.com/images/I/31oPP1b1YQL._SX326_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0069','Before They Were Authors: Famous Writers as Kids','C015',200000,15,'Elizabeth Haidle','Children ages ten and up will see themselves in these humanized portraits and wonder if they, too, might have it in them to write.
+ A celebration of creativity, this collective graphic biography is sprinkled throughout with writing wisdom and inspiring quotes.','https://images-na.ssl-images-amazon.com/images/I/51SMXPJqTtL._SX373_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0070','A Wolf Called Wander','C002',150000,20,'Rosanne Parry','Includes black-and-white illustrations throughout and a map as well as information about the real wolf who inspired the novel.','https://images-na.ssl-images-amazon.com/images/I/51Q63gyZiNL._SX329_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0071','Stay','C015',200000,15,'Bobbie Pyron','Told in alternating perspectives, this classic and heartfelt animal tale proclaims the importance of hope, the power of story, and the true meaning of home.','https://images-na.ssl-images-amazon.com/images/I/51XiJ7uHf+L._SX334_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0072','Nightbooks','C008',250000,15,'J. A. White','This modern spin on the Scheherazade story is perfect for fans of Coraline and A Tale Dark and Grimm. With interwoven tips on writing with suspense, adding in plot twists,
+ hooks, interior logic, and dealing with writer’s block, this is the ideal book for budding writers and all readers of delightfully just-dark-enough tales.','https://images-na.ssl-images-amazon.com/images/I/41NUq4hHL0L._SX334_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0073','Caterpillar Summer','C011',200000,17,'Gillian McDunn','But even the strongest glue sometimes struggles to hold. When a summer trip doesn’t go according to plan, Cat and Chicken end up spending three weeks with
+ grandparents they never knew. For the first time in years, Cat has the opportunity to be a kid again, and the journey she takes shows that even the most broken or strained relationships can be healed if people take the
+ time to walk in one another’s shoes.','https://images-na.ssl-images-amazon.com/images/I/5158Je0Lc4L._SX329_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0074','The Unicorn in the Barn ','C002',200000,15,'Jacqueline Ogburn','A tender tale of love, loss, and the connections we make, The Unicorn in the Barn shows us that sometimes ordinary life can take extraordinary turns.','https://images-na.ssl-images-amazon.com/images/I/41H5xRuCFgL._SX334_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0075','Truman the Dog','C003',300000,15,'Debbi Michiko Florence','"T" is for Truman, tricks, and TROUBLE! Truman the black lab might be an older rescue dog, but hes still got enough mischief beneath his collar to keep
+ eight-year-old Kaita Takano and her animal-fostering family on their toes from morning till night. Chewed through and through, the playfully illustrated, Kaita-narrated chapter book promises plenty of canine fun.','https://images-na.ssl-images-amazon.com/images/I/51NJrPm58aL._SX348_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0076','Happy Fell #3','C003',270000,20,'Erica S. Perl','Exciting, easy-to-read books are the stepping stone a young reader needs to bridge the gap between being a beginner and being fluent.','https://images-na.ssl-images-amazon.com/images/I/51RcDTo4R5L._SX334_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0077','Chick and Brain: Smell My Foot! ','C009',280000,16,'Cece Bell','Meet Chick and Brain. And their friend Spot. Chick likes to follow the rules. Brain might not be as smart as he looks. And Spot just wants to eat lunch. 
+In a graphic reader loaded with verbal and visual humor, Cece Bell offers a comical primer on good manners gone awry. Simple, silly, and perfectly suited for its audience, this tale of Chick and Brain’s constant misunderstandings
+ and miscommunications proves once again that Cece Bell is a master at meeting kids where they are.','https://images-na.ssl-images-amazon.com/images/I/51wJC7voUkL._SX333_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0078','Stop! Bot!','C003',250000,15,'James Yang','Musicians, baseball players, zoo animals, and finally a very large monkey all play a part -- but will they rescue the Bot before its too late?!
+ Children will love all the funny details and easy-to-read words in this very playful picture book!','https://images-na.ssl-images-amazon.com/images/I/51nRmAMw9xL._SX276_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0079','The Book Hog','C009',300000,20,'Greg Pizzoli','Greg Pizzoli, master of read-aloud fun and three-time Theodor Seuss Geisel Award recipient, introduces a character sure to steal kids hearts using his signature cheerful colors and lighthearted narrative style.','https://images-na.ssl-images-amazon.com/images/I/51PxLqvuS8L._SX400_BO1,204,203,200_.jpg')
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0080','Flubby Is Not a Good Pet!','C003',250000,15,'J.E.Morris','The charming illustrations, simple text, and comic-like panels by J. E. Morris, author-illustrator of the Maud the Koala books, make this a unique format with a narrative style perfect for
+ storytime and progressing readers. Exciting, easy-to-read books are the stepping stone a young reader needs to bridge the gap between being a beginner and being fluent.','https://images-na.ssl-images-amazon.com/images/I/51WB4COcpOL._SX334_BO1,204,203,200_.jpg') 
