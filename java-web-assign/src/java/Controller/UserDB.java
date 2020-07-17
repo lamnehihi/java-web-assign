@@ -14,6 +14,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -33,12 +34,12 @@ public class UserDB {
             PreparedStatement stmt= con.prepareStatement("Select uID, uEmail, uPassword, uName, uPhone, uAddress from Users");
             ResultSet rs=stmt.executeQuery();
             while (rs.next()){
-                String uID = rs.getString(2);
-                String uEmail = rs.getString(3);
-                String uPassword = rs.getString(4);
-                String uName = rs.getString(5);
-                String uPhone = rs.getString(6);
-                String uAddress = rs.getString(1);
+                String uID = rs.getString(1);
+                String uEmail = rs.getString(2);
+                String uPassword = rs.getString(3);
+                String uName = rs.getString(4);
+                String uPhone = rs.getString(5);
+                String uAddress = rs.getString(6);
                 s = new User(uID, uEmail, uPassword, uName, uPhone, uAddress);
                 list.add(s);
             }
@@ -49,24 +50,42 @@ public class UserDB {
             return null;
         }
     }
-    public static String addNewUser(String uID, String uEmail, String uPassword, String uName, String uPhone, String uAddress){
+    public static boolean addNewUser(String uEmail, String uPassword, String uName, String uPhone, String uAddress){
         try {
             Class.forName(driverName);
             Connection con = DriverManager.getConnection(dbURL,userDB,passDB);
-            PreparedStatement stmt=con.prepareStatement("Insert Into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) Values(?,?,?,?,?,?) ");
-            stmt.setString(1, uID);
-            stmt.setString(2, uEmail);
-            stmt.setString(3, uPassword);
-            stmt.setString(4, uName);
-            stmt.setString(5, uPhone);
-            stmt.setString(6, uAddress);
-            stmt.execute();
+            PreparedStatement stmt=con.prepareStatement("Insert Into Users( uEmail, uPassword, uName, uPhone, uAddress) Values(?,?,?,?,?) ");
+            stmt.setString(1, uEmail);
+            stmt.setString(2, uPassword);
+            stmt.setString(3, uName);
+            stmt.setString(4, uPhone);
+            stmt.setString(5, uAddress);
+            stmt.executeUpdate();
             con.close();
-        } catch (Exception ex) {
-            Logger.getLogger(UserDB.class.getName()).log(Level.SEVERE, null, ex);
-        } 
-        return null;
+           return true;
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
+//    public static boolean addNewUser(User user) {
+//        try {
+//            Class.forName(driverName);
+//            Connection con = DriverManager.getConnection(dbURL,userDB,passDB);
+//            PreparedStatement stmt=con.prepareStatement("Insert Into Users( uEmail, uPassword, uName, uPhone, uAddress) Values(?,?,?,?,?) ");
+//            stmt.setString(1, user.getuEmail());
+//            stmt.setString(2, user.getuPassword());
+//            stmt.setString(3, user.getuName());
+//            stmt.setString(4, user.getuPhone());
+//            stmt.setString(5, user.getuAddress());
+//            stmt.execute();
+//            con.close();
+//            return true;
+//        } catch (ClassNotFoundException | SQLException e) {
+//            e.printStackTrace();
+//            return false;
+//        }
+//    }
     public static boolean updateUser(User s){
         try {
             Class.forName(driverName);
@@ -133,7 +152,7 @@ public class UserDB {
     }
     
     public static void main(String[] args) {
-//        UserDB.addNewUser("U0006", "a@b.c", "123", "assss", "9488555", "Da Nang");
+        UserDB.addNewUser( "dat@gmai.com", "123", "dat", "9488555", "Da Nang");
 //        UserDB.addNewUser("U0007", "aa@b.c", "d123", "asassss", "09488555", "Da Nang");
 
 //        System.out.println("=   =   =   =   =   =   =   =   =   =       =   =   =   =   =   =   ==");

@@ -99,6 +99,7 @@ insert into Categories(catID, catName) values ('C012', 'Science Fiction (Sci-Fi)
 insert into Categories(catID, catName) values ('C013', 'Reference Books') /* sách tham khảo */
 insert into Categories(catID, catName) values ('C014', 'Textbook')
 insert into Categories(catID, catName) values ('C015', 'Short Story')
+insert into Categories(catID, catName) values ('C016', 'Self Growth Books')
 
 /* ==============================PRODUCTS VALUES=============================== */
 GO
@@ -379,8 +380,183 @@ values ('B0030', 'The Illustrated Man', 'C015', 200000, 25, 'Ray Bradbury',
 horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, 
 slightly domed and divided by arches into stiff... ')
 
-
-
+--Sach Dat them
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes)
+--31// https://m.media-amazon.com/images/I/51dOw2SF9YL.jpg
+values 
+('The Maze Runner', 'C012', 180000, 20, 'James Dashner',
+'When Thomas wakes up in the lift, the only thing he can remember is his name. He’s surrounded by strangers—boys whose memories
+are also gone.Nice to meet ya, shank. Welcome to the Glade. Outside the towering stone walls that surround the Glade is a 
+limitless, ever-changing maze. It’s the only way out—and no one’s ever made it through alive. Everything is going to change.
+Then a girl arrives. The first girl ever. And the message she delivers is terrifying. Remember. Survive. Run. '),
+--32// https://images-na.ssl-images-amazon.com/images/I/81s5gr8znaL.jpg
+('The Alchemist', 'C003', 130000, 30, 'Paulo Coelho',
+'A young shepherd boy who resides in Andalusia, a mountainous region in the south of Spain. Santiago, who had given up a path
+ of priesthood in order to enjoy the nomadic life of a shepherd, has recently been having recurring dreams. The dream first occurred
+ to him while he and his sheep took respite in an abandoned church in the countryside. Sleeping under the sycamore growing through the
+ church s ruined roof, the boy s dream sees him visited by a little girl who guides him toward the Egyptian pyramids. The little girl 
+ tells him that if he goes to the pyramids, he will find a hidden treasure there. Having the dream twice, Santiago figures that it must 
+ be of some importance. While en route to trade sheep s wool with a merchant he stops in the town of Tarifa, hoping to speak with a woman
+ who is said to be able to interpret dreams. Upon finding her, Santiago is discomforted to learn she is a Gypsy woman; having never met 
+ one before, he is somewhat unsettled by the unfamiliar furnishings of her room, as well as the unsavory stories he heard about Gypsies 
+ growing up. But upon glimpsing the Sacred Heart of Jesus in her home, he is put at ease. '),
+ --33// https://salt.tikicdn.com/cache/w390/ts/product/3d/48/33/94b39d773b28290e9f4ed1daa53449eb.jpg
+ ('Pay Back Time', 'C016', 299000, 25, 'Phil Town',
+'Phil Town’s first book, the #1 New York Times bestseller Rule #1, was a guide to stock trading for people who believe they lack the 
+ knowledge to trade.  But because many people aren’t ready to go from mutual funds directly into trading without understanding investing—for 
+ the long term – he created Payback Time.'),
+ --34// https://images-na.ssl-images-amazon.com/images/I/81qODNqTJ5L.jpg
+ ('Never eat alone', 'C016', 112000, 40, 'Keith Ferrazzi',
+ 'Success is rarely a solo accomplishment. The author of Never Eat Alone shows you how to eliminate artificial boundaries between personal and 
+ professional relationships. Building on a foundation of intimacy and generosity, you can strengthen all your relationships and build a community 
+ that can help you reach your most ambitious goals. In this live presentation, Keith Ferrazzi, one of the world s "most connected individuals", talks about:
+ How to have real relationships in your professional life
+ How to "warm" a cold call
+ Finding time to build relationships
+ Opening yourself to others generosity'),
+ --35// https://salt.tikicdn.com/cache/w1200/media/catalog/product/t/u/tuoi-tho-du-doi_3.jpg
+ ('Tuổi thơ dữ dội', 'C003', 299000, 25, 'Phùng Quán',
+'Nhắc đến Phùng Quán, người ta sẽ nhớ ngay tới một cây bút lạ kỳ trong nền văn học Việt Nam với một tác phẩm thiếu nhi vô cùng chân thực và xúc động về một 
+ thế hệ trẻ anh hùng:
+ Tuổi thơ dữ dội - cuốn truyện xoay quanh cuộc sống chiến đấu và hy sinh của những thiếu niên 13, 14 tuổi trong hàng ngũ Đội thiếu niên trinh sát của trung 
+ đoàn Trần Cao Vân. Những Lượm, Mừng, Quỳnh sơn ca, Hòa đen, Bồng da rắn, Vịnh sưa, Tư dát... mỗi người một hoàn cảnh song đều chung quyết tâm, nhiệt huyết 
+ và lòng yêu nước, đã tham gia chiến đấu hết mình và hy sinh khi tuổi đời còn rất trẻ.'),
+ --36// https://salt.tikicdn.com/ts/product/61/87/8a/082a07cec3232115e2b22636fd71593c.jpg
+ ('Trên đường băng', 'C015', 46.400, 42, 'Tony buổi sáng',
+'"Khi còn trẻ, hãy ra ngoài nhiều hơn ở nhà. Hãy nhào vô xin người khác “bóc hết, lột sạch” khả năng của mình. Chỉ sợ bất tài nộp hồ sơ “xin việc”, mà chả ai 
+thèm cho, chả ai thèm bóc lột. Khi đã được bóc và lột hết, dù sau này đi đâu, làm gì, bạn đều cực kỳ thành công. Vì năng lực được trui rèn trong quá trình làm 
+cho người khác. Sự chăm chỉ, tính kỷ luật, quen tay quen chân, quen ngáp, quen lười… cũng từ công việc mà ra. Mọi ông chủ vĩ đại đều từng là những người làm 
+công ở vị trí thấp nhất. Họ đều rẽ trái trong khi mọi người rẽ phải. Họ có những quyết định không theo đám đông, không cam chịu sống một cuộc đời tầm thường, 
+nhạt nhòa… rồi chết.'),
+ --37// https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1429108714l/25364706.jpg
+ ('Cà phê cùng Tony', 'C015', 44.100, 34, 'Tony buổi sáng',
+'Có đôi khi vào những tháng năm bắt đầu vào đời, giữa vô vàn ngả rẽ và lời khuyên, khi rất nhiều dự định mà thiếu đôi phần định hướng, thì CẢM HỨNG là điều 
+ quan trọng để bạn trẻ bắt đầu bước chân đầu tiên trên con đường theo đuổi giấc mơ của mình. Cà Phê Cùng Tony là tập hợp những bài viết của tác giả Tony Buổi 
+ Sáng. Đúng như tên gọi, mỗi bài nhẹ nhàng như một tách cà phê, mà bạn trẻ có thể nhận ra một chút gì của chính mình hay bạn bè mình trong đó: Từ chuyện lớn 
+ như định vị bản thân giữa bạn bè quốc tế, cho đến chuyện nhỏ như nên chú ý những phép tắc xã giao thông thường.'),
+ --38// https://thichblog.net/wp-content/uploads/2018/12/thinking-fast-and-slow-01.u4939.d20170915.t105730.179978.jpg
+ ('Tư duy nhanh và chậm', 'C003', 155.350, 60, 'Daniel Kahneman',
+'Chúng ta thường tự cho rằng con người là sinh vật có lý trí mạnh mẽ, khi quyết định hay đánh giá vấn đề luôn kĩ lưỡng và lý tính. Nhưng sự thật là, dù bạn 
+có cẩn trọng tới mức nào, thì trong cuộc sống hàng ngày hay trong vấn đề liên quan đến kinh tế, bạn vẫn có những quyết định dựa trên cảm tính chủ quan của mình. 
+“Tư duy nhanh và chậm”, cuốn sách nổi tiếng tổng hợp tất cả nghiên cứu được tiến hành qua nhiều thập kỷ của nhà tâm lý học từng đạt giải Nobel Kinh tế Daniel Kahneman 
+sẽ cho bạn thấy những sư hợp lý và phi lý trong tư duy của chính bạn. Cuốn sách được đánh giá là “kiệt tác” trong việc thay đổi hành vi của con người, Tư duy nhanh và 
+chậm đã dành được vô số giải thưởng danh giá, lọt vào Top 11 cuốn sách kinh doanh hấp dẫn nhất năm 2011. Alpha Books đã mua bản quyền và sẽ xuất bản cuốn sách trong Quý 
+1 năm nay. Tư duy nhanh và chậm dù là cuốn sách có tính hàn lâm cao nhưng vô cùng bổ ích với tất cả mọi người và đặc biệt rất dễ hiểu và vui nhộn.'),
+--39// https://cf.shopee.vn/file/4dafe6b727ed98b72e27b70dea574b31
+ ('Người giàu có nhất thành Babylon', 'C015', 68000, 55, 'George S. Clason',
+'Trước mắt bạn, tương lai đang trải rộng con đường dẫn tới những miền đất xa xôi đầy hứa hẹn. Trên con đường đó, bạn háo hức, mong muốn thực hiện nhiều ước mơ, dự định, 
+khát khao… của riêng mình.
+Để những nguyện vọng của mình được thực hiện, ít nhất bạn phải thành công về mặt tiền bạc. Quyển sách này sẽ giúp bạn biết cách vận dụng những nguyên lý quan trọng để 
+phát triển tài chính. Hãy để cuốn sách dẫn dắt bạn đi từ một hoàn cảnh khó khăn, tiêu biểu là một cái túi lép xẹp, đến một cuộc sống đầy đủ và hạnh phúc, tiêu biểu là 
+một túi tiền căng phồng, sung túc.'),
+--40// https://www.nxbtre.com.vn/Images/Book/nxbtre_full_31372020_023745.jpg
+('Đời thay đổi khi chúng ta thay đổi', 'C015', 55000, 58, 'Andrew Matthews',
+'Quyển sách này nói về việc tại sao có những người dường như lúc nào cũng ở đúng nơi và đúng lúc - và làm thế nào bạn cũng được như họ; tại sao hoá đơn tính tiền luôn 
+luôn tới ngay tức khắc; tại sao đèn giao thông cứ ở màu đỏ hoài cả nửa ngày trong khi bạn đang trễ một cuộc hẹn làm ă Sách cũng bàn về việc nhận thức được các quy luật 
+tự nhiên để chúng ta có thể điều chỉnh bản tính chúng ta tốt hơn.'),
+--41// https://static.8cache.com/cover/o/eJzLyTDW181ONTKN9_M3sLCM1A8zyA7IiiwwzjHz1HeEAn_DSP30VGePzKzkKmPDSMdC9yQ_k4xs54gUo4iKEI8Si0ATb0dn53z9ciNDU90MYyMjAHD7Gb4=/chuyen-con-meo-day-hai-au-bay.jpg
+('Chuyện con mèo dạy hải âu bay', 'C003', 49000, 58, 'Luis Sepulveda',
+'Lời hứa của một con mèo cũng là trách nhiệm của toàn bộ mèo trên bến cảng, bởi vậy bè bạn của Zorba bao gồm ngài mèo Đại Tá đầy uy tín, mèo Secretario nhanh nhảu, 
+mèo Einstein uyên bác, mèo Bốn Biển đầy kinh nghiệm đã chung sức giúp nó hoàn thành trách nhiệm. Tuy nhiên, việc chăm sóc, dạy dỗ một con hải âu đâu phải chuyện đùa, 
+sẽ có hàng trăm rắc rối nảy sinh và cần có những kế hoạch đầy linh hoạt được bàn bạc kỹ càng…'),
+--42// https://salt.tikicdn.com/ts/product/bd/08/51/da06acd3cfa862aa4fa8db5deba6fb4b.jpg
+('Thông minh cảm xúc thế kỉ 21', 'C016', 98000, 70, 'Travis Bradberry & Jean Greaves',
+'Lời hứa của một con mèo cũng là trách nhiệm của toàn bộ mèo trên bến cảng, bởi vậy bè bạn của Zorba bao gồm ngài mèo Đại Tá đầy uy tín, mèo Secretario nhanh nhảu, 
+mèo Einstein uyên bác, mèo Bốn Biển đầy kinh nghiệm đã chung sức giúp nó hoàn thành trách nhiệm. Tuy nhiên, việc chăm sóc, dạy dỗ một con hải âu đâu phải chuyện đùa, 
+sẽ có hàng trăm rắc rối nảy sinh và cần có những kế hoạch đầy linh hoạt được bàn bạc kỹ càng…'),
+--43// https://bookmart.vn/wp-content/uploads/sach-dac-nhan-tam.jpg
+('Đắc nhân tâm', 'C003', 76000, 58, 'Dale Carnegie',
+'Là quyển sách đầu tiên có ảnh hưởng làm thay đổi cuộc đời của hàng triệu người trên thế giới, Đắc Nhân Tâm là cuốn sách đem lại những giá trị tuyệt vời cho người đọc, 
+bao gồm những lời khuyên cực kì bổ ích về cách ứng xử trong cuộc sống hàng ngày. Sức lan toả của quyển sách vô cùng rộng lớn – với nhiều tầng lớp, đối tượng.'),
+--44// https://salt.tikicdn.com/cache/550x550/ts/product/2b/b1/b7/60031f112d30ed96bde76d40b5b263dc.jpg
+('Mắt biếc', 'C003', 110000, 70, 'Nguyễn Nhật Ánh',
+'“Tôi gửi tình yêu cho mùa hè, nhưng mùa hè không giữ nổi. Mùa hè chỉ biết ra hoa, phượng đỏ sân trường và tiếng ve nỉ non trong lá. Mùa hè ngây ngô, giống như tôi vậy. 
+Nó chẳng làm được những điều tôi ký thác. Nó để Hà Lan đốt tôi, đốt rụi. Trái tim tôi cháy thành tro, rơi vãi trên đường về.”'),
+--45// https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/o/co_gai_den_tu_hom_qua_1_2018_11_16_11_03_46.JPG
+('Cô gái đến từ hôm qua', 'C003', 80000, 72, 'Nguyễn Nhật Ánh',
+'Nếu ngày xưa còn bé, Thư luôn tự hào mình là cậu con trai thông minh có quyền bắt nạt và sai khiến các cô bé cùng lứa tuổi thì giờ đây khi lớn lên, anh luôn khổ sở khi 
+thấy mình ngu ngơ và bị con gái “xỏ mũi”. Và điều nghịch lý ấy xem ra càng “trớ trêu’ hơn, khi như một định mệnh, Thư nhận ra Việt An, cô bạn học thông minh thường làm 
+mình bối rối bấy lâu nay chính là Tiểu Li, con bé hàng xóm ngốc nghếch từng hứng chịu những trò nghịch ngợm của mình hồi xưa.'),
+--46// https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_180164_1_43_1_57_1_4_1_2_1_210_1_29_1_98_1_25_1_21_1_5_1_3_1_18_1_18_1_45_1_26_1_32_1_14_1_1234.jpg
+('Cho tôi xin một vé đi tuổi thơ', 'C003', 80000, 72, 'Nguyễn Nhật Ánh',
+'Truyện Cho tôi xin một vé đi tuổi thơ là sáng tác mới nhất của nhà văn Nguyễn Nhật Ánh. Nhà văn mời người đọc lên chuyến tàu quay ngược trở lại thăm tuổi thơ và tình 
+bạn dễ thương của 4 bạn nhỏ. Những trò chơi dễ thương thời bé, tính cách thật thà, thẳng thắn một cách thông minh và dại dột, những ước mơ tự do trong lòng… khiến cuốn 
+sách có thể làm các bậc phụ huynh lo lắng rồi thở phào. Không chỉ thích hợp với người đọc trẻ, cuốn sách còn có thể hấp dẫn và thực sự có ích cho người lớn trong quan 
+hệ với con mình.'),
+--47// https://www.nxbtre.com.vn/Images/Book/nxbtre_full_04152018_031555.jpg
+('Tôi thấy hoa vàng trên cỏ xanh', 'C003', 125000, 32, 'Nguyễn Nhật Ánh',
+'Ta bắt gặp trong Tôi Thấy Hoa Vàng Trên Cỏ Xanh một thế giới đấy bất ngờ và thi vị non trẻ với những suy ngẫm giản dị thôi nhưng gần gũi đến lạ. Câu chuyện của Tôi 
+Thấy Hoa Vàng Trên Cỏ Xanh có chút này chút kia, để ai soi vào cũng thấy mình trong đó, kiểu như lá thư tình đầu đời của cu Thiều chẳng hạ ngây ngô và khờ khạo.'),
+--48// https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546100331l/32068852.jpg
+('Ngày xưa có một chuyện tình', 'C003', 65000, 45, 'Nguyễn Nhật Ánh',
+'Ngày xưa có một chuyện tình có phải là một câu chuyện cảm động khi người ta yêu nhau, nỗi khát khao một hạnh phúc êm đềm ấm áp đến thế; hay đơn giản chỉ là chuyện 
+ba người - anh, em, và người ấy…?'),
+--49// https://salt.tikicdn.com/ts/product/bd/1a/40/888d58e13c2b3e60327ad6bd577f8a3b.jpg
+('Còn chút gì để nhớ', 'C003', 125000, 24, 'Nguyễn Nhật Ánh',
+'Đó là những kỷ niệm thời đi học của Chương, lúc mới bước chân vào Sài Gòn và làm quen với cuộc sống đô thị. Là những mối quan hệ bạn bè tưởng chừng hời hợt thoảng 
+qua nhưng gắn bó suốt cuộc đời. Cuộc sống đầy biến động đã xô dạt mỗi người mỗi nơi, nhưng trải qua hàng mấy chục năm, những kỷ niệm ấy vẫn luôn níu kéo Chương về 
+với một thời để nhớ.'),
+--50// https://salt.tikicdn.com/cache/w390/media/catalog/product/h/o/hoa-hong-xu-khac.jpg
+('Hoa hồng xứ khác', 'C003', 80000, 64, 'Nguyễn Nhật Ánh',
+'Trong truyện, Ngữ, Khoa và Hòa lé đều say mê cô bạn cùng lớp Gia Khanh. Cái cô gái bị ba người cùng theo đó sẽ phải làm sao. Ba anh chàng làm gì để “chiến thắng”. 
+Điều lý thú là gần như tác giả tái hiện lại thời học trò của mình với ngôn ngữ thời bây giờ nên các bạn đọc trẻ sẽ tìm thấy hình bóng của chính mình trong đó.'),
+--51// https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1454949850i/28961874._UY886_SS886_.jpg
+('Con chó nhỏ mang giỏ hoa hồng', 'C003', 95000, 80, 'Nguyễn Nhật Ánh',
+'Tại sao lại là con chó mang giỏ hoa hồng? Nó mang cho bạn nó, hay cho những ai biết yêu thương nó? Câu chuyện về 5 chú chó đầy thú vị và cũng không kém cảm xúc 
+lãng mạn- tác phẩm mới nhất của nhà văn bestseller Nguyễn Nhật Ánh sẽ khiến bạn thay đổi nhiều trong cách nhìn về loài thú cưng số 1 thế giới này.'),
+--52// https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1437835556l/25977277.jpg
+('Ngôi trường mọi khi', 'C003', 72000, 34, 'Nguyễn Nhật Ánh',
+'Những câu chuyện về nhóm bạn học sinh năm đầu cấp 3 với bao kỷ niệm vui buồn hờn giận, bao nhiêu trò tinh nghịch của tuổi mới lớn. Với những Hạt tiêu, 
+Tóc ngắn, Hột mít, Bảnh trai, Răng chuột, Mặt mụn… đã tạo nên không khí của một lớp học thật dễ thương với bao nhiêu tình cảm yêu thương, cảm động và gần gũi. 
+Đây là sách mới nhất của tác giả viết về tuổi áo trắng mộng mơ và tinh nghịch.'),
+--53// https://salt.tikicdn.com/ts/product/ec/7a/e5/9d1087de4f55919f6ec8bbc48496ec6b.jpg
+('Phòng trọ ba người', 'C003', 72000, 40, 'Nguyễn Nhật Ánh',
+'Hẳn bạn đọc ở lứa tuổi học trò đã từng quen thuộc với tác giả Nguyễn Nhật Anh với những truyện ngắn và truyện dài đậm chất học trò như: Trại hoa vàng, Chú 
+bé rắc rối, Phòng trọ ba người, Bồ câu không đưa thư, Những chàng trai xấu tính, Cô gái đến từ hôm qua, Trước vòng chung kết, Hạ đỏ, Hoa hồng xứ khác, Buổi 
+chiều Windows, Ut Quyên và tôi... Với lối viết dung dị và cách chọn đề tài gần gũi với lứa tuổi học trò, như quan hệ thầy trò, trường lớp, bạn bè, gia đình... 
+nên những truyện của ông chiếm được cảm tình của rất nhiều bạn đọc nhỏ tuổi. Họ hào hứng và nóng lóng đón đọc các trang viết của ông. Chúng tôi sẽ lần lượt giới 
+thiệu với bạn đọc các tác phẩm của ông.'),
+--54// https://www.nxbtre.com.vn/Images/Book/nxbtre_thumb_09342017_103452.jpg
+('Lá nằm trong lá', 'C003', 80000, 52, 'Nguyễn Nhật Ánh',
+'Chuyện của bút nhóm học trò, truyện nằm trong truyện, những cơn giận dỗi ghen tuông bạn gái bạn trai với nhau, nhiều nhất vẫn là chuyện nhà trường có các cô 
+giáo hơn trò vài tuổi coi trò như bạn, có thầy hiệu trưởng tâm lý và yêu thương học trò coi trò như con…Trở lại với đề tài học trò, hóm hỉnh và gần gũi như chính 
+các em, Nguyễn Nhật Ánh chắc chắn sẽ được các bạn trẻ vui mừng đón nhận. Cứ lật đằng cuối sách, đọc bài thơ tình trong veo là có thể thấy điều đó “…Khi mùa xuân 
+đến / Tình anh lại đầy / Lá nằm trong lá / Tay nằm trong tay”.'),
+--55// https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336126336l/13633451.jpg
+('Kính vạn hoa', 'C003', 69000, 40, 'Nguyễn Nhật Ánh',
+'Đọc Kính Vạn Hoa, tôi cảm ơn Nguyễn Nhật Ánh đã dày công phản ánh những sinh hoạt muôn mặt của lứa tuổi học trò. Từ cách học với các thủ thuật “phổ thơ” để ghi 
+nhớ thuộc lòng các công thức Toán, Lý, Hóa, Anh văn… đến lối làm thơ, kể vè, dựng hoạt cảnh để học tập các môn Văn, Sử. Từ trò chơi bóng đá, thi giải câu đố… ở 
+sân trường đến những chuyến đi nghỉ hè khám phá các vùng xa. Từ việc tìm hiểu (và yêu mến) những người thân trong gia đình, thầy cô giáo đến việc làm quen với 
+những bà con lao động đủ các nghề nghiệp: bán hàng rong, hốt rác, diễn thế thân (cascadeur), đạo diễn điện ảnh, nghệ sĩ ngôi sao, cầu thủ siêu hạng…'),
+--56// https://product.hstatic.net/1000092447/product/hieuungchimmoi_tap_1_done.jpg
+('Hiệu ứng chim mồi', 'C015', 75000, 46, 'Quốc Khánh',
+'Quyển sách được cấu trúc thành các phần nhỏ với lý thuyết và ứng dụng đan xen. Mỗi hiện tượng hay kỹ thuật bán hàng đều được giải thích bằng lý thuyết, và mỗi 
+lý thuyết đều có các ứng dụng minh họa, nhằm giúp các bạn độc giả có thể có kiến thức vững chắc và linh hoạt. Để thể hiện sự tôn trọng với các tác giả đi trước, 
+mọi thông tin và số liệu lấy từ các nghiên cứu của các nhà khoa học khác đều được trích dẫn cụ thể, chính xác và ghi nguồn đầy đủ ở phần Tài liệu tham khảo.'),
+--57// https://cdn0.fahasa.com/media/flashmagazine/images/page_images/dieu_vi_dai_doi_thuong_doi_bia_moi/2020_05_27_09_29_20_1.JPG
+('Điều vĩ đại đời thường', 'C015', 80000, 30, 'Robin Sharma',
+'Điều Vĩ Đại Đời Thường (Tái Bản) là quyển sách có nội dung về hành trình trở nên vĩ đại khởi đầu từ những điều thật giản dị và gần gũi, cũng giống như hành trình 
+vạn dặm khởi đầu từ một bước chân giản đơn. 101 câu chuyện và ý tưởng của tác giả trong quyển sách này chính là 101 bài học minh chứng cho triết lý đơn sơ ấy.
+Không có cuộc sống nào là hoàn hảo, tất cả chúng ta phải đối mặt với nhiều thử thách, từ đơn giản đến nghiêm trọng… Nhưng chúng ta đều có quyền lựa chọn vượt 
+lên mọi nghịch cảnh để vươn tới vị trí cao nhất và tốt nhất của cuộc sống.'),
+--58// https://www.sachhanoi.vn/wp-content/uploads/2018/09/quangganhlodi.jpg
+('Quẳng gánh lo đi và vui sống', 'C015', 76000, 50, 'Dale Carnegie',
+'Bất kỳ ai đang sống đều sẽ có những lo lắng thường trực về học hành, công việc, những hoá đơn, chuyện nhà cửa,... Cuộc sống không dễ dàng giải thoát bạn khỏi căng 
+thẳng, ngược lại, nếu quá lo lắng, bạn có thể mắc bệnh trầm cảm. Quẳng Gánh Lo Đi Và Vui Sống khuyên bạn hãy khóa chặt dĩ vãng và tương lai lại để sống trong cái 
+phòng kín mít của ngày hôm nay. Mọi vấn đề đều có thể được giải quyết, chỉ cần bạn bình tĩnh và xác định đúng hành động cần làm vào đúng thời điểm.'),
+--59// https://product.hstatic.net/1000217031/product/image_176107_516f488bcaca4cc8bda1b349d445a8a0.jpg
+('Lối sống tối giản của người Nhật', 'C015', 95000, 50, 'Sasaki Fumio',
+'Chẳng có ai từ khi sinh ra đã có tài sản, đồ đạc gì trong tay. Vậy nên bất cứ ai khi mới chào đời đều là những người sống tối giản. Cứ mỗi lần bạn sở hữu trong tay 
+những đồ dùng hơn mức cần thiết là một lần bạn lấy mất tự do của chính mình. Giá trị bản thân chúng ta không đo bằng những đồ dùng mà chúng ta sở hữu. Những đồ dùng 
+này chỉ cho chúng ta một chút cảm giác hạnh phúc nhất thời mà thôi. Mang theo những đồ dùng hơn mức cần thiết sẽ lấy hết thời gian, năng lượng của bạn. Khi nhận ra được 
+điều đó, tức là bạn đã bắt đầu trở thành một người sống tối giản.'),
+--60// https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1527947135i/40360069._UY2197_SS2197_.jpg
+('Nghĩ đơn giản, sống đơn thuần', 'C015', 62000, 50, 'Sasaki Fumio',
+'Từ xưa đến nay, chúng ta vẫn được định hướng để tin rằng chẳng có điều gì đáng giá mà không cần đấu tranh. Bản thân tôi cũng đã dành hàng thập kỷ để nghiên cứu về 
+nhận định phổ biến này. Tôi chưa bao giờ để cuộc sống trở nên dễ dàng. Tuy nhiên, giờ đây, thay vì cứ cố gắng làm mọi việc đúng theo ý mình, tôi đã tìm ra chiến lược 
+để mọi thứ diễn ra theo cách của nó. Kết quả, tôi thấy mình khoẻ mạnh hơn, hạnh phúc và giàu có hơn tôi tưởng tượng. Nếu cuộc sống của bạn căng thẳng, buồn chán hoặc 
+mãi quẩn quanh, đó là dấu hiệu bạn đang thiếu đi điều gì đó cốt yếu, và bạn đang tự cho phép mình ngừng phát triển. “Nghĩ đơn giản, sống đơn thuần” sẽ mang tới cho bạn 
+bộ khung cơ bản để bạn nhìn nhận lại chính mình và tìm ra những mảnh ghép còn thiếu.')
 /*======================================USER INFO VALUES==============================================*/
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0001','lam@gmail.com','123','Lam ML','0000000000',' Somewhere in china ')
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0002','dat09@gmail.com','456','Dat 1 phit','1111111111','Viet Nam')
@@ -390,8 +566,7 @@ insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U000
 insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('lam@gmail.com','123','Lam ML','0000000000',' Somewhere in chinaaaa ')
 insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('dat09@gmail.com','456','Dat 1 phit','1111111111','Viet Nammmm')
 insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('tue@gmail.com','789','Tue','2222222222', ' Viet Nammmmm ')
-insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('phat@gmail.com','246','Phat','3333333333', 'Viet Nammmmm')
-insert into Users(uEmail, uPassword, uName, uPhone, uAddress) values ('phuc@gmail.com','135','Phuc','4444444444', 'Viet Nam, Nihon, Kankokuuuuu')
+
 
 
 
