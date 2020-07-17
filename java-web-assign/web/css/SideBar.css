@@ -1,0 +1,34 @@
+
+.wrapper .sideBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 17vw;
+    background-color: #4e73df;
+}
+
+.wrapper .sideBar .sidebar-brand-text {
+    height: fit-content;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    z-index: 1;
+}
+
+.wrapper .sideBar li {
+    padding-top: .5rem;
+}
+
+#logo {
+    width: 2rem;
+    filter: invert(97%) sepia(2%) saturate(230%) hue-rotate(49deg) brightness(115%) contrast(73%);
+}
+
+.wrapper .sidebar-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.123);
+    min-width: 100%;
+}
