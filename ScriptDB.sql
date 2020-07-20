@@ -696,3 +696,368 @@ select * from Users
 ALTER TABLE Users
 ADD uRole int not null default(0);
 update Users set uRole =1 where uID='U0001'
+------------------------------------
+
+--75 books added NMT
+
+GO
+insert into Books
+values
+('B0081','Aesop’s Fables','C006',200000,19,'Charles Santore','Revive your childhood wonder and fascination with the most exquisitely illustrated
+ edition of Aesop’s Fables to hit the market in years—featuring breathtaking original artwork by #1 New York Times bestselling illustrator Charles
+  Santore!','https://images-na.ssl-images-amazon.com/images/I/51Ci0HKNGTL._SX389_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0082','Fables: The Deluxe Edition Book One','C006',600000,15,'Bill Willingham','Disguised among the normal citizens of modern-day New York,
+these magical characters created their own secret society-within an exclusive luxury apartment building on Manhattans Upper West Side-called
+Fabletown. But when Snow Whites party-girl sister, Rose Red, is apparently murdered, it is up to Bigby, Fabletowns sheriff, and a reformed
+and pardoned Big Bad Wolf, to determine if the culprit is Bluebeard, Roses ex-lover and notorious wife killer, or Jack, her current live-in
+ boyfriend and former beanstalk-climber.','https://images-na.ssl-images-amazon.com/images/I/61OjHHECFHL._SX346_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0083','Fables','C006',150000,25,'Arnold Lobel','A pig flying through marshmallow clouds? A camel pirouetting through the desert?
+Where else could a reader find such marvelous things but in a fable? From the author-illustrator behind beloved Frog and Toad, Arnold
+ Lobel, comes a collection of humorous, silly fables that will delight readers young and old.','https://images-na.ssl-images-amazon.com/images/I/51qfeSTt8QL._SX334_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0084','The Swallows: Rhymed Fables ','C006',270000,15,'Christy Astremsky','Simple texts of this children book are complemented by colorful pictures that will help a child understand
+the moral of each fable.','https://images-na.ssl-images-amazon.com/images/I/51ZFcX+0WOL._SX258_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0085','Friedmans Fables','C006',400000,10,'Edwin H. Friedman','These tales playfully demonstrate that new ideas, new questions, and imagination, more than accepted wisdom, 
+provide each of us with the keys to overcoming stubborn emotional barriers and facilitating real change both in ourselves and others. Thought-provoking discussion questions
+ for each fable are included.','https://images-na.ssl-images-amazon.com/images/I/51QAUIC0w7L._SX333_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0086','Fables Vol. 1: Legends in Exile','C006',250000,20,'Bill Willingham','When a savage creature known only as the Adversary conquered the fabled lands of legends and fairy tales,
+ all of the infamous inhabitants of folklore were forced into exile. Disguised among the ""mundys,"" their name for normal citizens of modern-day New York, these magical characters
+  created their own secret society that they call Fabletown.','https://m.media-amazon.com/images/I/61Z-mjxK+zL.jpg')
+insert into Books
+values
+('B0087','The McElderry Book of Aesops Fables','C006',500000,20,'Michael Morpurgo','Michael Morpurgos lively language gives each tale a fresh feel thats perfect for reading aloud and sharing.
+Emma Chichester Clarks radiant illustrations are bursting with bold colors and cheerful characters. Together they have created a modern classic brimming with fun, which children will enjoy
+ reading and laughing over again and again.','https://images-na.ssl-images-amazon.com/images/I/61YCAWYMG4L._SX454_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0088','The Power of a Praying Wife','C006',150000,25,'Stormie Omartian','You will be encouraged by Stormies own experiences, along with the Bible verses and sample prayers included in
+ each chapter. Join the millions of women who have been blessed by this life-changing look at the power of a wifes prayers.','https://images-na.ssl-images-amazon.com/images/I/51wP+tsCs4L._SX322_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0089','Aesops Favorite Fables','C006',250000,20,'Milo Winter','Accompanied by beautiful color illustrations, this beautiful collection of Aesop s Favorite Fables is sure to ignite young
+ imaginations and teach them virtue, kindness, integrity, problem-solving, happiness, and what it means to be human.','https://images-na.ssl-images-amazon.com/images/I/51DmiR2s5mL._SX398_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0090','Fables: The Deluxe Edition Book Seven','C006',11000000,15,'Bill Willingham','Preparation for war between Fabletown and the Empire begins! The Adversary calls a conference of the Imperial elite to decide
+ what to do about Fabletown and Pinocchio has to face up to his divided loyalties between his friends and his family. Meanwhile, Bigby decides the time has come to confront his father, the North Wind, while the
+  cubs learn more of their family and celebrate their birthday! Plus, Burning Questions by the fans answered!','https://images-na.ssl-images-amazon.com/images/I/51lqxIKd05L._SX337_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0091','Fables, Vol. 9: Sons of Empire','C006',330000,20,'Bill Willingham','Pinocchio suffers seriously divided loyalties between his father, the evil Adversary, and his fellow Fable refugees in New York.
+ Plus, Bigby Wolf reluctantly decides its finally time to square accounts with his long-estranged father, the North Wind, and makes a journey with Snow White and their kids to find him.',
+ 'https://images-na.ssl-images-amazon.com/images/I/61RQSun2pbL._SX337_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0092','Fables Vol. 7: Arabian Nights (and Days)','C006',260000,15,'Bill Willingham','Fabletown and a bad case of culture shock! This seventh volume of the popular Vertigo series also includes 
+"The Ballad of Rodney and June," the 2-part story of forbidden love among the Adversarys wooden soldiers, and features stellar Art by Mark Buckingham, Steve Leialoha, Jim Fern, Jimmy Palmiotti
+ and Andrew Pepoy.','https://images-na.ssl-images-amazon.com/images/I/61S96-3YAcL._SX321_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0093','Fables Vol. 5: The Mean Seasons','C006',350000,15,'Bill Willingham','Collecting issues 22 and 28-33 of the hit VERTIGO series, this trade paperback features two tales of Bigbys exploits
+ during World War II as well as "The Year After," which follows the aftermath of the Adversarys attempt to conquer Fabletown — including the birth of Snow White and Bigbys children!',
+ 'https://images-na.ssl-images-amazon.com/images/I/61V028IS6-L._SX319_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0094','Fables Vol. 3: Storybook Love','C006',270000,15,'Bill Willingham','A new Softcover collecting the acclaimed FABLES #11-18, including the 4-part "Storybook Love." Also included are 
+the 2-part "A Sharp Operator" and the single-issue tales "Bag o Bones" and "Barleycorn Brides." Dont miss this amazing third collection, topped off with a stunning new wraparound cover by James Jean.',
+'https://images-na.ssl-images-amazon.com/images/I/51Hkz00xUVL._SX320_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0095','Fables: Legends in Exile, Vol. 1','C006',250000,20,'Bill Willingham','When a savage creature known only as the Adversary conquered the fabled lands of legends and fairy tales, all
+ of the infamous inhabitants of folklore were forced into exile. Disguised among the "mundys," their name for normal citizens of modern-day New York, these magical characters created their
+  own secret society that they call Fabletown','https://images-na.ssl-images-amazon.com/images/I/61gK2Y2zSOL._SX323_BO1,204,203,200_.jpg')
+insert into Books
+values
+('B0096','Fairy Tales for Bedtime','C007',500000,20,'Rosie Dickins','A beautifully illustrated and bound collection of traditional stories, freshly retold for todays children.',
+'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4095/9781409550648.jpg')
+insert into Books
+values
+('B0097','A First Book of Fairy Tales','C007',250000,20,'Mary Hoffman','The stories in this collection show the consequences of greed, pride, and vanity, but also tell of
+ the love that grows from a kind heart and a cheerful nature. And along the way, there is a wealth of magic and fun to be enjoyed.','https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/7566/9780756621070.jpg')
+insert into Books
+values
+('B0098','Mixed Up Fairy Tales : Split-Page Book','C007',230000,20,'Hilary Robinson','This fantastic split page, spiral bound book allows the reader to mix and match different combinations
+ of fairy tales with hilarious results. What would happen if Goldilocks had two horrid stepsisters and fell asleep for a hundred years? Would she be woken by a hungry wolf or
+  Little Red Riding Hoods Granny?','https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/3408/9780340875582.jpg')
+insert into Books
+values
+('B0099','Peep Inside a Fairy Tale Little Red Riding Hood','C007',220000,15,'Anna Milbourne','Journey into the woods with Little Red Riding Hood, peeping through the trees, lifting flaps to see whats
+ beneath things, and watching grannys cottage emerge with each turn of the page. Delicate cutaways and holes to peep through are layered on top of each other to create a magical filigree effect,
+  drawing children in to the story.','https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4095/9781409599128.jpg')
+insert into Books
+values
+('B0100','Peep Inside a Fairy Tale Cinderella','C007',200000,20,'Anna Milbourne','This classic fairytale is given a new lease of life with the exquisite illustrations and elegant flaps and peep-through holes.
+ The second title in a new series which takes the format of the bestselling "Peep Inside" non-fiction series and applies it to much-loved fairy tales. Likely to become firm favourite for little ones and
+  sure to have children asking "again, again, again" before bedtime.','https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4095/9781409599111.jpg')
+insert into Books
+values
+('B0101','Goldilocks and the Three Bears','C007',200000,15,'Ladybird Tales','This Ladybird retelling of Goldilocks and the Three Bears is a wonderful introduction to
+ classic fairy tales for toddlers and preschool children. Enjoy reading the simple text together, looking at the bright pictures and feeling the different touch-and-feels on every page.',
+ 'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4093/9781409304470.jpg')
+insert into Books
+values
+('B0102','The Three Little Pigs','C007',190000,25,'Ladybird Tales','This Ladybird retelling of The Three Little Pigs is a wonderful introduction to classic fairy
+ tales for toddlers and preschool children. Enjoy reading the simple text together, looking at the bright pictures and feeling the different touch-and-feels on every page.',
+ 'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4093/9781409304524.jpg')
+insert into Books
+values
+('B0103','Usborne Book Of Fairy Tales Combined Volume','C007',300000,20,'Heather Amery','Charming picture book of six classic fairy tales (Cinderella, The Story of Rumpelstiltskin, Little Red Riding Hood,
+ Sleeping Beauty, Goldilocks and the Three Bears & Three Little Pigs). Dual-level text, on each page a simple line for beginner readers and a more complex one which can be read aloud by an adult or 
+ reading child','https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/7460/9780746064115.jpg')
+insert into Books
+values
+('B0104','Peep Inside a Fairy Tale Beauty & The Beast','C007',220000,15,'Anna Milbourne','Belle s inventor father stumbles upon the Beast s castle and is taken prisoner, Belle comes to the rescue and
+ agrees to take her fathers place. She sees beneath the Beasts exterior and discovers the heart and soul of a human prince. Delicate cutaways and holes to peep through are layered on top of each other
+  to create a magical filigree effect, drawing children in to the story.','https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4749/9781474920544.jpg')
+insert into Books
+values
+('B0105','Fairy Tales from the Brothers Grimm','C007',700000,15,'Philip Pullman','Suffused with romance and villainy, danger and wit, the Grimms fairy tales have inspired Pullmans
+ unique creative vision-and his beguiling retellings will draw you back into a world that has long cast a spell on the Western imagination.',
+ 'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/6700/9780670024971.jpg')
+insert into Books
+values
+('B0106','The Original Folk and Fairy Tales of Grimm ','C007',800000,15,'Jacob Grimm','Zipess introduction gives important historical context, and the book includes the Grimms prefaces and notes.
+ A delight to read, The Original Folk and Fairy Tales of the Brothers Grimm presents these peerless stories to a whole new generation of readers.',
+ 'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/6911/9780691160597.jpg')
+insert into Books
+values
+('B0107','Grimm s Complete Fairy Tales','C007',650000,20,'Jacob Grimm','With specially designed end papers, a genuine leather cover, and other enhancements, its the perfect gift for anyone looking to
+ build a complete home library. Many of these tales begin with the familiar refrain of "once upon a time"--but they end with something unexpected and fascinating!','https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/6071/9781607103134.jpg')
+insert into Books
+values
+('B0108','The Complete Fairy Tales','C007',550000,25,'Jacob Grimm','Jacob Grimm (1785-1863) and his brother Wilhelm (1786-1859) were philologists and folklorists. The brothers rediscovered a host of
+ fairy tales, telling of princes and princesses in their castles, witches in their towers and forests, of giants and dwarfs, of fabulous animals and dark deeds.','https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/8402/9781840221749.jpg')
+insert into Books
+values
+('B0109','Grimms Fairy Tales','C007',20000,20,'Jacob Grimm','From the land of fantastical castles, vast lakes and deep forests, the Brothers Grimm collected a treasury of enchanting folk and fairy
+ stories full of giants and dwarfs, witches and princesses, magical beasts and cunning children. From classics such as "The Frog-Prince" and "Hansel and Grettel" to the delights of "Ashputtel" or
+  "Old Sultan", all hold a timeless magic which has enthralled children for centuries.','https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/1413/9780141331201.jpg')
+insert into Books
+values
+('B0110','Grimm s Fairy Tales','C007',120000,20,'Jacob Grimm','The Brothers Grimm rediscovered a host of fairy tales, telling of princes and princesses in their castles, witches in their towers and
+ forests, of giants and dwarfs, of fabulous animals and dark deeds.','https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/8532/9781853261015.jpg')
+insert into Books
+values
+('B0111','Fangirl','C008',230000,15,'Rainbow Rowell','For Cath, the question is: Can she do this? Can she make it without Wren holding her hand? Is she ready to start living her own life? Writing her own stories?',
+'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1355886270l/16068905.jpg')
+insert into Books
+values
+('B0112','Geekerella','C008',180000,20,'Ashley Poston','Now they’re nothing but autographs and awkward meet-and-greets. Playing Carmindor is all he’s ever wanted, but the Starfield fandom has written him off
+as just another dumb heartthrob. As ExcelsiCon draws near, Darien feels more and more like a fake—until he meets a girl who shows him otherwise.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1476734515l/30724132.jpg')
+insert into Books
+values
+('B0113','Eliza and Her Monsters','C008',220000,15,'Francesca Zappia','But when Eliza’s secret is accidentally shared with the world, everything she’s built—her story, her relationship with Wallace, and even
+ her sanity—begins to fall apart.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1476994065l/31931941._SY475_.jpg')
+insert into Books
+values
+('B0114','Carry On','C008',230000,15,'Rainbow Rowell','Carry On - The Rise and Fall of Simon Snow is a ghost story, a love story and a mystery. It has just as much kissing and talking as you d expect from a
+ Rainbow Rowell story - but far, far more monsters.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1481729252l/32768522.jpg')
+insert into Books
+values
+('B0115','The Only Thing Worse Than Me Is You','C008',300000,15,'Lily Anderson','Trixie Watson has two very important goals for senior year: to finally save enough to buy the set of Doctor Who figurines at
+ the local comic books store, and to place third in her class and knock Ben West--and his horrendous new mustache that he spent all summer growing--down to number four.',
+ 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1444317771l/26114524.jpg')
+insert into Books
+values
+('B0116','Ms. Marvel, Vol. 1: No Normal','C008',330000,15,'G. Willow Wilson','Its history in the making from acclaimed writer G. Willow Wilson (Air, Cairo) and beloved artist Adrian Alphona (RUNAWAYS)!
+ Collecting MS. MARVEL (2014) #1-5 and material from ALL-NEW MARVEL NOW! POINT ONE #1.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1413031883l/20898019.jpg')
+insert into Books
+values
+('B0117','The Geek s Guide to Unrequited Love','C008',160000,20,'Sarvenaz Tash','But now they’re sixteen, still neighbors, still best friends. And Graham and Roxy share more than ever—moving on from
+ their Harry Potter obsession to a serious love of comic books.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1436552316l/24832518.jpg')
+insert into Books
+values
+('B0118','Queens of Geek','C008',180000,15,'Jen Wilde','Charlie likes to stand out. She’s a vlogger and actress promoting her first movie at SupaCon, and this is her chance to show fans she’s over
+ her public breakup with co-star Reese Ryan. When internet-famous cool-girl actress Alyssa Huntington arrives as a surprise guest, it seems Charlie’s long-time crush on her isn’t as one-sided as
+  she thought.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1488881057l/28245707._SY475_.jpg')
+insert into Books
+values
+('B0119','I Am Princess X','C008',150000,20,'Cherie Priest','Best friends, big fans, a mysterious webcomic, and a long-lost girl collide in this riveting novel, perfect for fans of both Cory Doctorow
+ and Sarah Dessen; illustrated throughout with comics.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415300641l/17408897.jpg')
+insert into Books
+values
+('B0120','Kill the Boy Band','C008',140000,20,'Goldy Moldavsky','Just know from the start that it wasn’t supposed to go like this. All we wanted was to get near them. That’s why we got a room in the
+ hotel where they were staying.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1448318289l/25184383.jpg')
+insert into Books
+values
+('B0121','All the Feels','C008',170000,20,'Danika Stone','College freshman Liv is more than just a fangirl: The Starveil movies are her life… So, when her favorite character, Captain Matt Spartan,
+ is killed off at the end of the last movie, Liv Just. Can’t. Deal.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463478745l/29222548._SY475_.jpg')
+insert into Books
+values
+('B0122','The Fault in Our Stars','C008',250000,20,'John Green','Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final
+ chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel s story is about to be completely rewritten.',
+ 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360206420l/11870085.jpg')
+insert into Books
+values
+('B0123','Ship It','C008',170000,20,'Britta Lundin','CLAIRE is a sixteen-year-old fangirl obsessed with the show Demon Heart. FOREST is an actor on Demon Heart who dreams of bigger roles.
+ When the two meet at a local Comic-Con panel, its a dream come true for Claire. Until the Q&A, that is, when Forest laughs off Claire s assertion that his character is gay.',
+ 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1505481235l/36204669.jpg')
+insert into Books
+values
+('B0124','You re Never Weird on the Internet (Almost)','C008',220000,22,'Felicia Day','From online entertainment mogul, actress, and “queen of the geeks” Felicia Day, a funny, quirky,
+ and inspiring memoir about her unusual upbringing, her rise to Internet-stardom, and embracing her individuality to find success in Hollywood.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1440565049l/23705512._SY475_.jpg')
+insert into Books
+values
+('B0125','Grace and the Fever','C008',250000,20,'Zan Romanoff','In middle school, everyone was a Fever Dream fan. Now, a few weeks after her high school graduation,
+ Grace Thomas sometimes feels like the only one who never moved on. She cant imagine what she d do without the community of online fans that share her obsession.
+  Or what her IRL friends would say if they ever found out about it.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1471975763l/30171404._SY475_.jpg') 
+insert into Books
+values
+('B0126','The Hitchhiker s Guide to the Galaxy','C009',340000,15,'Douglas Adams','Seconds before the Earth is demolished to make way for a galactic freeway, Arthur Dent is plucked off the planet
+ by his friend Ford Prefect, a researcher for the revised edition of The Hitchhiker s Guide to the Galaxy who, for the last fifteen years, has been posing as an out-of-work actor.',
+ 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1559986152l/386162.jpg')
+insert into Books
+values
+('B0127','Bossypants','C009',210000,15,'Tina Fey','Before Liz Lemon, before "Weekend Update," before "Sarah Palin," Tina Fey was just a young girl with a dream: a recurring stress dream that she was
+ being chased through a local airport by her middle-school gym teacher. She also had a dream that one day she would be a comedian on TV.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1481509554l/9418327.jpg')
+insert into Books
+values
+('B0128','Me Talk Pretty One Day','C009',230000,15,'David Sedaris','David Sedaris move to Paris from New York inspired these hilarious pieces, including the title essay, about his attempts to learn
+ French from a sadistic teacher who declares that every day spent with you is like having a caesarean section. His family is another inspiration.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1431013639l/4137.jpg')
+insert into Books
+values
+('B0129','Good Omens','C009',250000,20,'Terry Pratchett, Neil Gaiman','People have been predicting the end of the world almost from its very
+ beginning, so it’s only natural to be sceptical when a new date is set for Judgement Day. But what if, for once, the predictions are right, and the apocalypse really is due to arrive next Saturday,
+  just after tea?','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1392528568l/12067.jpg')
+insert into Books
+values
+('B0130','Is Everyone Hanging Out Without Me? ','C009',300000,10,'Mindy Kaling','Mindy Kaling has lived many lives: the obedient child of immigrant professionals, a timid chubster
+ afraid of her own bike, a Ben Affleck–impersonating Off-Broadway performer and playwright, and, finally, a comedy writer and actress prone to starting fights with her friends and coworkers with the
+  sentence “Can I just say one last thing about this, and then I swear I’ll shut up about it?”','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1443264638l/10335308._SY475_.jpg')
+insert into Books
+values
+('B0131','Yes Please','C009',250000,15,'Amy Poehler','In Amy Poehler’s highly anticipated first book, Yes Please, she offers up a big juicy stew of personal stories, funny bits on sex and love and
+ friendship and parenthood and real life advice (some useful, some not so much), like when to be funny and when to be serious. Powered by Amy’s charming and hilarious, biting yet wise voice, 
+ Yes Please is a book full of words to live by.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1402815435l/20910157.jpg')
+insert into Books
+values
+('B0132','Hyperbole and a Half','C009',260000,25,'Allie Brosh','This is a book I wrote. Because I wrote it,
+ I had to figure out what to put on the back cover to explain what it is. I tried to write a long, third-person summary that would imply how great the book is and also sound vaguely authoritative--like
+  maybe someone who isn’t me wrote it--but I soon discovered that I’m not sneaky enough to pull it off convincingly. So I decided to just make a list of things that are in the book',
+  'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1409522492l/17571564.jpg')
+insert into Books
+values
+('B0133','Dress Your Family in Corduroy and Denim','C009',220000,15,'David Sedaris','David Sedaris plays in the snow with his sisters. He goes on vacation with his family. He gets a job selling drinks.
+ He attends his brother’s wedding. He mops his sister’s floor. He gives directions to a lost traveler. He eats a hamburger. He has his blood sugar tested. It all sounds so normal, doesn’t it? In his newest
+ collection of essays, David Sedaris lifts the corner of ordinary life, revealing the absurdity teeming below its surface. His world is alive with obscure desires and hidden motives — a world where forgiveness
+ is automatic and an argument can be the highest form of love. Dress Your Family in Corduroy and Denim is another unforgettable collection from one of the wittiest and most original writers at work today.',
+ 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1352983006l/10176.jpg')
+insert into Books
+values
+('B0134','The Restaurant at the End of the Universe','C009',260000,15,'Douglas Adams','Facing annihilation at the hands of the warlike Vogons is a curious time to have a cosmically displaced Arthur Dent and
+ his curious comrades in arms as they hurtle through space powered by pure improbability - and desperately in search of a place to eat.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1521213881l/8695._SY475_.jpg')
+insert into Books
+values
+('B0135','Lets Pretend This Never Happened','C009',250000,15,'Jenny Lawson','Jenny Lawson realized that the most mortifying moments of our lives—the ones we d like to pretend never
+ happened—are in fact the ones that define us. In the #1 New York Times bestseller, Let’s Pretend This Never Happened, Lawson takes readers on a hilarious journey recalling her bizarre upbringing in rural
+  Texas, her devastatingly awkward high school years, and her relationship with her long-suffering husband, Victor.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1489415716l/12868761._SY475_.jpg')
+insert into Books
+values
+('B0136','When You Are Engulfed in Flames','C009',190000,19,'David Sedaris','Its early autumn 1964. Two straight-A students head off to school, and when only one of them returns home Chesney Yelverton is
+ coaxed from retirement and assigned to what proves to be the most difficult and deadly - case of his career. From the shining notorious East Side, When You Are Engulfed in Flames confirms once again that
+  David Sedaris is a master of mystery and suspense.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1547552824l/1044355._SX318_.jpg')
+insert into Books
+values
+('B0137','Naked','C009',250000,15,'David Sedaris','Welcome to the hilarious, strange, elegiac, outrageous world of David Sedaris. In Naked, Sedaris turns the mania for memoir on its proverbial ear, 
+mining the exceedingly rich terrain of his life, his family, and his unique worldview—a sensibility at once take-no-prisoners sharp and deeply charitable.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394178867l/4138.jpg')
+insert into Books
+values
+('B0138','Lamb','C009',280000,15,'Christopher Moore','The birth of Jesus has been well chronicled, as have his glorious teachings, acts, and divine
+ sacrifice after his thirtieth birthday. But no one knows about the early life of the Son of God, the missing years—except Biff, the Messiah s best bud, who has been resurrected to tell the story in the
+  divinely hilarious yet heartfelt work "reminiscent of Vonnegut and Douglas Adams"','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1331419009l/28881.jpg')
+insert into Books
+values
+('B0139','The Color of Magic','C009',190000,25,'Terry Pratchett','Terry Pratchett s profoundly irreverent, bestselling novels have garnered him a revered position in the halls of parody next to the likes
+ of Mark Twain, Kurt Vonnegut, Douglas Adams, and Carl Hiaasen.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1407111017l/34497.jpg')
+insert into Books
+values
+('B0140','Life, the Universe and Everything','C009',250000,15,'Douglas Adams','The unhappy inhabitants of planet Krikkit are sick of looking at the night sky above their heads–so they plan to destroy it.
+ The universe, that is. Now only five individuals stand between the killer robots of Krikkit and their goal of total annihilation.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1333577589l/8694.jpg')
+
+insert into Books
+values
+('B0141','The Institute','C010',370000,15,'Stephen King','In the middle of the night, in a house on a quiet street in suburban Minneapolis, intruders silently murder Luke Ellis’s parents and load him into a black SUV.
+ The operation takes less than two minutes. Luke will wake up at The Institute, in a room that looks just like his own, except there’s no window.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549241208l/43798285.jpg')
+insert into Books
+values
+('B0142','Imaginary Friend','C010',330000,15,'Stephen Chbosky','Imagine... Leaving your house in the middle of the night. Knowing your mother is doing her best, but shes just as scared as you.
+
+Imagine... Starting a new school, making friends. Seeing how happy it makes your mother. Hearing a voice, calling out to you.
+
+Imagine... Following the signs, into the woods. Going missing for six days. Remembering nothing about what happened.
+
+Imagine... Something that will change everything... And having to save everyone you love.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1550723936l/43522576.jpg')
+insert into Books
+values
+('B0143','The Girl in Red','C010',350000,15,'Christina Henry','Its not safe for anyone alone in the woods. There are predators that come out at night: critters and coyotes, snakes and wolves.
+ But the woman in the red jacket has no choice. Not since the Crisis came, decimated the population, and sent those who survived fleeing into quarantine camps that serve as breeding grounds for
+ death, destruction, and disease. She is just a woman trying not to get killed in a world that doesnt look anything like the one she grew up in, the one that was perfectly sane and normal and
+ boring until three months ago.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545249589l/42881101.jpg')
+insert into Books
+values
+('B0144','The Invited','C010',400000,20,'Jennifer McMahon','A chilling ghost story with a twist: the New York Times bestselling author of The Winter People returns to the woods of Vermont to 
+tell the story of a husband and wife who dont simply move into a haunted house, they start building one from scratch, without knowing it, until its too late . . .','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1541824130l/40065317.jpg')
+insert into Books
+values
+('B0145','The Lost Causes of Bleak Creek','C010',340000,20,'Rhett McLaughlin, Link Neal, Lance Rubin','Its 1992 in Bleak Creek, North Carolina, a sleepy little place with all the trappings
+ of an ordinary Southern town: two Baptist churches, friendly smiles coupled with silent judgments, and a seemingly unquenchable appetite for pork products. Beneath the town’s cheerful façade,
+ however, Bleak Creek teens live in constant fear of being sent to The Whitewood School, a local reformatory with a record of putting unruly teens back on the straight and narrow—a record so
+ impeccable that almost everyone is willing to ignore the mysterious deaths that have occurred there over the past decade.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556591693l/44034616.jpg')
+insert into Books
+values
+('B0146','Full Throttle','C010',370000,20,'Joe Hill','A little door that opens to a world of fairy tale wonders becomes the blood-drenched stomping ground for a gang of hunters in “Faun".
+ A grief-stricken librarian climbs behind the wheel of an antique Bookmobile to deliver fresh reads to the dead in “Late Returns.”','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553255544l/43801817.jpg')
+insert into Books
+values
+('B0147','Bunny','C010',370000,20,'Mona Awad','Samantha Heather Mackey couldnt be more of an outsider in her small, highly selective MFA program at New Englands Warren University.
+ A scholarship student who prefers the company of her dark imagination to that of most people, she is utterly repelled by the rest of her fiction writing cohort--a clique of unbearably
+  twee rich girls who call each other "Bunny," and seem to move and speak as one.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544742360l/42815544.jpg')
+insert into Books
+values
+('B0148','Wakenhyrst','C010',290000,15,'Michelle Paver','1906: A large manor house, Wakes End, sits on the edge of a bleak Fen, just outside the town of Wakenhyrst. It is the home
+ of Edmund Stearn and his family – a historian, scholar and land-owner, hes an upstanding member of the local community. But all is not well at Wakes End. Edmund dominates his family
+  tyrannically, in particular daughter Maud. When Mauds mother dies in childbirth and shes left alone with her strict, disciplinarian father, Mauds isolation drives her to her fathers
+   study, where she happens upon his diary.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545910688l/40725252._SY475_.jpg')
+insert into Books
+values
+('B0149','The Twisted Ones','C010',320000,15,'T. Kingfisher','When Mouse’s dad asks her to clean out her dead grandmother s house, she says yes. After all, how bad could it be?
+Answer: pretty bad. Grandma was a hoarder, and her house is stuffed with useless rubbish. That would be horrific enough, but there’s more—Mouse stumbles across her step-grandfather’s
+ journal, which at first seems to be filled with nonsensical rants…until Mouse encounters some of the terrifying things he described for herself.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1567950921l/42527596._SY475_.jpg')
+insert into Books
+values
+('B0150','A Cosmology of Monsters','C010',340000,10,'Shaun Hamill','A tender and terrifying literary horror novel - the author s debut - that tells the story of a family
+ (creators of a haunted house attraction called the Wandering Dark) and the hereditary monsters - both metaphorical and all-too-real - that haunt them.',
+ 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553582284l/43506916.jpg')
+insert into Books
+values
+('B0151','No One s Home','C010',320000,15,'D.M. Pulley','For fans of The Haunting of Hill House comes a dark tale of a mansion haunted by a legacy of tragedy and a family trapped by lies.
+Margot and Myron Spielman move to a new town, looking for a fresh start and an escape from the long shadow of their past. But soon after they buy Rawlingswood, a foreclosed mansion rumored
+ to be haunted, they realize they’re in for more of the same…or worse.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1552490936l/43706714.jpg')
+insert into Books
+values
+('B0152','Growing Things and Other Stories','C010',310000,14,'Paul Tremblay','A chilling anthology featuring nineteen pieces of short fiction from the multiple award-winning author of the
+ national bestseller The Cabin at the End of the World and A Head Full of Ghosts..','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556112321l/42118050._SY475_.jpg')
+insert into Books
+values
+('B0153','Song for the Unraveling of the World','C010',280000,15,'Brian Evenson','A newborn s absent face appears on the back of someone else s head, a filmmaker goes to gruesome lengths
+ to achieve the silence he s after for his final scene, and a therapist begins, impossibly, to appear in a troubled patient s room late at night. In these stories of doubt, delusion, 
+ and paranoia, no belief, no claim to objectivity, is immune to the distortions of human perception. Here, self-deception is a means of justifying our most inhuman impulses--whether 
+ we know it or not.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1539260891l/41888678.jpg')
+insert into Books
+values
+('B0154','The Toll','C010',280000,14,'Cherie Priest','State Road 177 runs along the Suwannee River, between Fargo, Georgia, and the Okefenokee Swamp. Drive that route from east to west,
+ and you’ll cross six bridges. Take it from west to east, and you might find seven.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537651567l/41555927.jpg')
+insert into Books
+values
+('B0155','Violet','C010',330000,18,'Scott Thomas','In the lineage of Peter Straub s Julia, Scott Thomas’ Violet is the disturbing tale of a woman haunted by her long-abandoned imaginary friend.',
+'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1566100001l/44349541.jpg')
+
