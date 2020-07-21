@@ -384,15 +384,15 @@ horrible vermin. He lay on his armour-like back, and if he lifted his head a lit
 slightly domed and divided by arches into stiff... ')
 
 --Sach Dat them
-insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes)
---31// https://m.media-amazon.com/images/I/51dOw2SF9YL.jpg
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes, bCover)
+--31// 
 values 
 ('The Maze Runner', 'C012', 180000, 20, 'James Dashner',
 'When Thomas wakes up in the lift, the only thing he can remember is his name. He’s surrounded by strangers—boys whose memories
 are also gone.Nice to meet ya, shank. Welcome to the Glade. Outside the towering stone walls that surround the Glade is a 
 limitless, ever-changing maze. It’s the only way out—and no one’s ever made it through alive. Everything is going to change.
-Then a girl arrives. The first girl ever. And the message she delivers is terrifying. Remember. Survive. Run. '),
---32// https://images-na.ssl-images-amazon.com/images/I/81s5gr8znaL.jpg
+Then a girl arrives. The first girl ever. And the message she delivers is terrifying. Remember. Survive. Run. ', 'https://m.media-amazon.com/images/I/51dOw2SF9YL.jpg'),
+--32// 
 ('The Alchemist', 'C003', 130000, 30, 'Paulo Coelho',
 'A young shepherd boy who resides in Andalusia, a mountainous region in the south of Spain. Santiago, who had given up a path
  of priesthood in order to enjoy the nomadic life of a shepherd, has recently been having recurring dreams. The dream first occurred
@@ -402,164 +402,164 @@ Then a girl arrives. The first girl ever. And the message she delivers is terrif
  be of some importance. While en route to trade sheep s wool with a merchant he stops in the town of Tarifa, hoping to speak with a woman
  who is said to be able to interpret dreams. Upon finding her, Santiago is discomforted to learn she is a Gypsy woman; having never met 
  one before, he is somewhat unsettled by the unfamiliar furnishings of her room, as well as the unsavory stories he heard about Gypsies 
- growing up. But upon glimpsing the Sacred Heart of Jesus in her home, he is put at ease. '),
- --33// https://salt.tikicdn.com/cache/w390/ts/product/3d/48/33/94b39d773b28290e9f4ed1daa53449eb.jpg
+ growing up. But upon glimpsing the Sacred Heart of Jesus in her home, he is put at ease. ','https://images-na.ssl-images-amazon.com/images/I/81s5gr8znaL.jpg'),
+ --33// 
  ('Pay Back Time', 'C016', 299000, 25, 'Phil Town',
 'Phil Town’s first book, the #1 New York Times bestseller Rule #1, was a guide to stock trading for people who believe they lack the 
  knowledge to trade.  But because many people aren’t ready to go from mutual funds directly into trading without understanding investing—for 
- the long term – he created Payback Time.'),
- --34// https://images-na.ssl-images-amazon.com/images/I/81qODNqTJ5L.jpg
+ the long term – he created Payback Time.','https://salt.tikicdn.com/cache/w390/ts/product/3d/48/33/94b39d773b28290e9f4ed1daa53449eb.jpg'),
+ --34// 
  ('Never eat alone', 'C016', 112000, 40, 'Keith Ferrazzi',
  'Success is rarely a solo accomplishment. The author of Never Eat Alone shows you how to eliminate artificial boundaries between personal and 
  professional relationships. Building on a foundation of intimacy and generosity, you can strengthen all your relationships and build a community 
  that can help you reach your most ambitious goals. In this live presentation, Keith Ferrazzi, one of the world s "most connected individuals", talks about:
- How to have real relationships in your professional life
+ How to have real relationships in your professional life 
  How to "warm" a cold call
  Finding time to build relationships
- Opening yourself to others generosity'),
- --35// https://salt.tikicdn.com/cache/w1200/media/catalog/product/t/u/tuoi-tho-du-doi_3.jpg
+ Opening yourself to others generosity','https://images-na.ssl-images-amazon.com/images/I/81qODNqTJ5L.jpg'),
+ --35// 
  ('Tuổi thơ dữ dội', 'C003', 299000, 25, 'Phùng Quán',
 'Nhắc đến Phùng Quán, người ta sẽ nhớ ngay tới một cây bút lạ kỳ trong nền văn học Việt Nam với một tác phẩm thiếu nhi vô cùng chân thực và xúc động về một 
  thế hệ trẻ anh hùng:
  Tuổi thơ dữ dội - cuốn truyện xoay quanh cuộc sống chiến đấu và hy sinh của những thiếu niên 13, 14 tuổi trong hàng ngũ Đội thiếu niên trinh sát của trung 
  đoàn Trần Cao Vân. Những Lượm, Mừng, Quỳnh sơn ca, Hòa đen, Bồng da rắn, Vịnh sưa, Tư dát... mỗi người một hoàn cảnh song đều chung quyết tâm, nhiệt huyết 
- và lòng yêu nước, đã tham gia chiến đấu hết mình và hy sinh khi tuổi đời còn rất trẻ.'),
- --36// https://salt.tikicdn.com/ts/product/61/87/8a/082a07cec3232115e2b22636fd71593c.jpg
+ và lòng yêu nước, đã tham gia chiến đấu hết mình và hy sinh khi tuổi đời còn rất trẻ.','https://salt.tikicdn.com/cache/w1200/media/catalog/product/t/u/tuoi-tho-du-doi_3.jpg'),
+ --36// 
  ('Trên đường băng', 'C015', 46.400, 42, 'Tony buổi sáng',
 '"Khi còn trẻ, hãy ra ngoài nhiều hơn ở nhà. Hãy nhào vô xin người khác “bóc hết, lột sạch” khả năng của mình. Chỉ sợ bất tài nộp hồ sơ “xin việc”, mà chả ai 
 thèm cho, chả ai thèm bóc lột. Khi đã được bóc và lột hết, dù sau này đi đâu, làm gì, bạn đều cực kỳ thành công. Vì năng lực được trui rèn trong quá trình làm 
 cho người khác. Sự chăm chỉ, tính kỷ luật, quen tay quen chân, quen ngáp, quen lười… cũng từ công việc mà ra. Mọi ông chủ vĩ đại đều từng là những người làm 
 công ở vị trí thấp nhất. Họ đều rẽ trái trong khi mọi người rẽ phải. Họ có những quyết định không theo đám đông, không cam chịu sống một cuộc đời tầm thường, 
-nhạt nhòa… rồi chết.'),
- --37// https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1429108714l/25364706.jpg
+nhạt nhòa… rồi chết.','https://salt.tikicdn.com/ts/product/61/87/8a/082a07cec3232115e2b22636fd71593c.jpg'),
+ --37// 
  ('Cà phê cùng Tony', 'C015', 44.100, 34, 'Tony buổi sáng',
 'Có đôi khi vào những tháng năm bắt đầu vào đời, giữa vô vàn ngả rẽ và lời khuyên, khi rất nhiều dự định mà thiếu đôi phần định hướng, thì CẢM HỨNG là điều 
  quan trọng để bạn trẻ bắt đầu bước chân đầu tiên trên con đường theo đuổi giấc mơ của mình. Cà Phê Cùng Tony là tập hợp những bài viết của tác giả Tony Buổi 
  Sáng. Đúng như tên gọi, mỗi bài nhẹ nhàng như một tách cà phê, mà bạn trẻ có thể nhận ra một chút gì của chính mình hay bạn bè mình trong đó: Từ chuyện lớn 
- như định vị bản thân giữa bạn bè quốc tế, cho đến chuyện nhỏ như nên chú ý những phép tắc xã giao thông thường.'),
- --38// https://thichblog.net/wp-content/uploads/2018/12/thinking-fast-and-slow-01.u4939.d20170915.t105730.179978.jpg
+ như định vị bản thân giữa bạn bè quốc tế, cho đến chuyện nhỏ như nên chú ý những phép tắc xã giao thông thường.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1429108714l/25364706.jpg'),
+ --38// 
  ('Tư duy nhanh và chậm', 'C003', 155.350, 60, 'Daniel Kahneman',
 'Chúng ta thường tự cho rằng con người là sinh vật có lý trí mạnh mẽ, khi quyết định hay đánh giá vấn đề luôn kĩ lưỡng và lý tính. Nhưng sự thật là, dù bạn 
 có cẩn trọng tới mức nào, thì trong cuộc sống hàng ngày hay trong vấn đề liên quan đến kinh tế, bạn vẫn có những quyết định dựa trên cảm tính chủ quan của mình. 
 “Tư duy nhanh và chậm”, cuốn sách nổi tiếng tổng hợp tất cả nghiên cứu được tiến hành qua nhiều thập kỷ của nhà tâm lý học từng đạt giải Nobel Kinh tế Daniel Kahneman 
 sẽ cho bạn thấy những sư hợp lý và phi lý trong tư duy của chính bạn. Cuốn sách được đánh giá là “kiệt tác” trong việc thay đổi hành vi của con người, Tư duy nhanh và 
 chậm đã dành được vô số giải thưởng danh giá, lọt vào Top 11 cuốn sách kinh doanh hấp dẫn nhất năm 2011. Alpha Books đã mua bản quyền và sẽ xuất bản cuốn sách trong Quý 
-1 năm nay. Tư duy nhanh và chậm dù là cuốn sách có tính hàn lâm cao nhưng vô cùng bổ ích với tất cả mọi người và đặc biệt rất dễ hiểu và vui nhộn.'),
---39// https://cf.shopee.vn/file/4dafe6b727ed98b72e27b70dea574b31
+1 năm nay. Tư duy nhanh và chậm dù là cuốn sách có tính hàn lâm cao nhưng vô cùng bổ ích với tất cả mọi người và đặc biệt rất dễ hiểu và vui nhộn.','https://thichblog.net/wp-content/uploads/2018/12/thinking-fast-and-slow-01.u4939.d20170915.t105730.179978.jpg'),
+--39// 
  ('Người giàu có nhất thành Babylon', 'C015', 68000, 55, 'George S. Clason',
 'Trước mắt bạn, tương lai đang trải rộng con đường dẫn tới những miền đất xa xôi đầy hứa hẹn. Trên con đường đó, bạn háo hức, mong muốn thực hiện nhiều ước mơ, dự định, 
 khát khao… của riêng mình.
 Để những nguyện vọng của mình được thực hiện, ít nhất bạn phải thành công về mặt tiền bạc. Quyển sách này sẽ giúp bạn biết cách vận dụng những nguyên lý quan trọng để 
 phát triển tài chính. Hãy để cuốn sách dẫn dắt bạn đi từ một hoàn cảnh khó khăn, tiêu biểu là một cái túi lép xẹp, đến một cuộc sống đầy đủ và hạnh phúc, tiêu biểu là 
-một túi tiền căng phồng, sung túc.'),
---40// https://www.nxbtre.com.vn/Images/Book/nxbtre_full_31372020_023745.jpg
+một túi tiền căng phồng, sung túc.','https://cf.shopee.vn/file/4dafe6b727ed98b72e27b70dea574b31'),
+--40// 
 ('Đời thay đổi khi chúng ta thay đổi', 'C015', 55000, 58, 'Andrew Matthews',
 'Quyển sách này nói về việc tại sao có những người dường như lúc nào cũng ở đúng nơi và đúng lúc - và làm thế nào bạn cũng được như họ; tại sao hoá đơn tính tiền luôn 
 luôn tới ngay tức khắc; tại sao đèn giao thông cứ ở màu đỏ hoài cả nửa ngày trong khi bạn đang trễ một cuộc hẹn làm ă Sách cũng bàn về việc nhận thức được các quy luật 
-tự nhiên để chúng ta có thể điều chỉnh bản tính chúng ta tốt hơn.'),
---41// https://static.8cache.com/cover/o/eJzLyTDW181ONTKN9_M3sLCM1A8zyA7IiiwwzjHz1HeEAn_DSP30VGePzKzkKmPDSMdC9yQ_k4xs54gUo4iKEI8Si0ATb0dn53z9ciNDU90MYyMjAHD7Gb4=/chuyen-con-meo-day-hai-au-bay.jpg
+tự nhiên để chúng ta có thể điều chỉnh bản tính chúng ta tốt hơn.','https://www.nxbtre.com.vn/Images/Book/nxbtre_full_31372020_023745.jpg'),
+--41// 
 ('Chuyện con mèo dạy hải âu bay', 'C003', 49000, 58, 'Luis Sepulveda',
 'Lời hứa của một con mèo cũng là trách nhiệm của toàn bộ mèo trên bến cảng, bởi vậy bè bạn của Zorba bao gồm ngài mèo Đại Tá đầy uy tín, mèo Secretario nhanh nhảu, 
 mèo Einstein uyên bác, mèo Bốn Biển đầy kinh nghiệm đã chung sức giúp nó hoàn thành trách nhiệm. Tuy nhiên, việc chăm sóc, dạy dỗ một con hải âu đâu phải chuyện đùa, 
-sẽ có hàng trăm rắc rối nảy sinh và cần có những kế hoạch đầy linh hoạt được bàn bạc kỹ càng…'),
---42// https://salt.tikicdn.com/ts/product/bd/08/51/da06acd3cfa862aa4fa8db5deba6fb4b.jpg
+sẽ có hàng trăm rắc rối nảy sinh và cần có những kế hoạch đầy linh hoạt được bàn bạc kỹ càng…','https://static.8cache.com/cover/o/eJzLyTDW181ONTKN9_M3sLCM1A8zyA7IiiwwzjHz1HeEAn_DSP30VGePzKzkKmPDSMdC9yQ_k4xs54gUo4iKEI8Si0ATb0dn53z9ciNDU90MYyMjAHD7Gb4=/chuyen-con-meo-day-hai-au-bay.jpg'),
+--42// 
 ('Thông minh cảm xúc thế kỉ 21', 'C016', 98000, 70, 'Travis Bradberry & Jean Greaves',
 'Lời hứa của một con mèo cũng là trách nhiệm của toàn bộ mèo trên bến cảng, bởi vậy bè bạn của Zorba bao gồm ngài mèo Đại Tá đầy uy tín, mèo Secretario nhanh nhảu, 
 mèo Einstein uyên bác, mèo Bốn Biển đầy kinh nghiệm đã chung sức giúp nó hoàn thành trách nhiệm. Tuy nhiên, việc chăm sóc, dạy dỗ một con hải âu đâu phải chuyện đùa, 
-sẽ có hàng trăm rắc rối nảy sinh và cần có những kế hoạch đầy linh hoạt được bàn bạc kỹ càng…'),
---43// https://bookmart.vn/wp-content/uploads/sach-dac-nhan-tam.jpg
+sẽ có hàng trăm rắc rối nảy sinh và cần có những kế hoạch đầy linh hoạt được bàn bạc kỹ càng…','https://salt.tikicdn.com/ts/product/bd/08/51/da06acd3cfa862aa4fa8db5deba6fb4b.jpg'),
+--43// 
 ('Đắc nhân tâm', 'C003', 76000, 58, 'Dale Carnegie',
 'Là quyển sách đầu tiên có ảnh hưởng làm thay đổi cuộc đời của hàng triệu người trên thế giới, Đắc Nhân Tâm là cuốn sách đem lại những giá trị tuyệt vời cho người đọc, 
-bao gồm những lời khuyên cực kì bổ ích về cách ứng xử trong cuộc sống hàng ngày. Sức lan toả của quyển sách vô cùng rộng lớn – với nhiều tầng lớp, đối tượng.'),
---44// https://salt.tikicdn.com/cache/550x550/ts/product/2b/b1/b7/60031f112d30ed96bde76d40b5b263dc.jpg
+bao gồm những lời khuyên cực kì bổ ích về cách ứng xử trong cuộc sống hàng ngày. Sức lan toả của quyển sách vô cùng rộng lớn – với nhiều tầng lớp, đối tượng.','https://bookmart.vn/wp-content/uploads/sach-dac-nhan-tam.jpg'),
+--44// 
 ('Mắt biếc', 'C003', 110000, 70, 'Nguyễn Nhật Ánh',
 '“Tôi gửi tình yêu cho mùa hè, nhưng mùa hè không giữ nổi. Mùa hè chỉ biết ra hoa, phượng đỏ sân trường và tiếng ve nỉ non trong lá. Mùa hè ngây ngô, giống như tôi vậy. 
-Nó chẳng làm được những điều tôi ký thác. Nó để Hà Lan đốt tôi, đốt rụi. Trái tim tôi cháy thành tro, rơi vãi trên đường về.”'),
---45// https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/o/co_gai_den_tu_hom_qua_1_2018_11_16_11_03_46.JPG
+Nó chẳng làm được những điều tôi ký thác. Nó để Hà Lan đốt tôi, đốt rụi. Trái tim tôi cháy thành tro, rơi vãi trên đường về.”','https://salt.tikicdn.com/cache/550x550/ts/product/2b/b1/b7/60031f112d30ed96bde76d40b5b263dc.jpg'),
+--45// 
 ('Cô gái đến từ hôm qua', 'C003', 80000, 72, 'Nguyễn Nhật Ánh',
 'Nếu ngày xưa còn bé, Thư luôn tự hào mình là cậu con trai thông minh có quyền bắt nạt và sai khiến các cô bé cùng lứa tuổi thì giờ đây khi lớn lên, anh luôn khổ sở khi 
 thấy mình ngu ngơ và bị con gái “xỏ mũi”. Và điều nghịch lý ấy xem ra càng “trớ trêu’ hơn, khi như một định mệnh, Thư nhận ra Việt An, cô bạn học thông minh thường làm 
-mình bối rối bấy lâu nay chính là Tiểu Li, con bé hàng xóm ngốc nghếch từng hứng chịu những trò nghịch ngợm của mình hồi xưa.'),
---46// https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_180164_1_43_1_57_1_4_1_2_1_210_1_29_1_98_1_25_1_21_1_5_1_3_1_18_1_18_1_45_1_26_1_32_1_14_1_1234.jpg
+mình bối rối bấy lâu nay chính là Tiểu Li, con bé hàng xóm ngốc nghếch từng hứng chịu những trò nghịch ngợm của mình hồi xưa.','https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/o/co_gai_den_tu_hom_qua_1_2018_11_16_11_03_46.JPG'),
+--46// 
 ('Cho tôi xin một vé đi tuổi thơ', 'C003', 80000, 72, 'Nguyễn Nhật Ánh',
 'Truyện Cho tôi xin một vé đi tuổi thơ là sáng tác mới nhất của nhà văn Nguyễn Nhật Ánh. Nhà văn mời người đọc lên chuyến tàu quay ngược trở lại thăm tuổi thơ và tình 
 bạn dễ thương của 4 bạn nhỏ. Những trò chơi dễ thương thời bé, tính cách thật thà, thẳng thắn một cách thông minh và dại dột, những ước mơ tự do trong lòng… khiến cuốn 
 sách có thể làm các bậc phụ huynh lo lắng rồi thở phào. Không chỉ thích hợp với người đọc trẻ, cuốn sách còn có thể hấp dẫn và thực sự có ích cho người lớn trong quan 
-hệ với con mình.'),
---47// https://www.nxbtre.com.vn/Images/Book/nxbtre_full_04152018_031555.jpg
+hệ với con mình.','https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_180164_1_43_1_57_1_4_1_2_1_210_1_29_1_98_1_25_1_21_1_5_1_3_1_18_1_18_1_45_1_26_1_32_1_14_1_1234.jpg'),
+--47// 
 ('Tôi thấy hoa vàng trên cỏ xanh', 'C003', 125000, 32, 'Nguyễn Nhật Ánh',
 'Ta bắt gặp trong Tôi Thấy Hoa Vàng Trên Cỏ Xanh một thế giới đấy bất ngờ và thi vị non trẻ với những suy ngẫm giản dị thôi nhưng gần gũi đến lạ. Câu chuyện của Tôi 
-Thấy Hoa Vàng Trên Cỏ Xanh có chút này chút kia, để ai soi vào cũng thấy mình trong đó, kiểu như lá thư tình đầu đời của cu Thiều chẳng hạ ngây ngô và khờ khạo.'),
---48// https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546100331l/32068852.jpg
+Thấy Hoa Vàng Trên Cỏ Xanh có chút này chút kia, để ai soi vào cũng thấy mình trong đó, kiểu như lá thư tình đầu đời của cu Thiều chẳng hạ ngây ngô và khờ khạo.','https://www.nxbtre.com.vn/Images/Book/nxbtre_full_04152018_031555.jpg'),
+--48// 
 ('Ngày xưa có một chuyện tình', 'C003', 65000, 45, 'Nguyễn Nhật Ánh',
 'Ngày xưa có một chuyện tình có phải là một câu chuyện cảm động khi người ta yêu nhau, nỗi khát khao một hạnh phúc êm đềm ấm áp đến thế; hay đơn giản chỉ là chuyện 
-ba người - anh, em, và người ấy…?'),
---49// https://salt.tikicdn.com/ts/product/bd/1a/40/888d58e13c2b3e60327ad6bd577f8a3b.jpg
+ba người - anh, em, và người ấy…?','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546100331l/32068852.jpg'),
+--49// 
 ('Còn chút gì để nhớ', 'C003', 125000, 24, 'Nguyễn Nhật Ánh',
 'Đó là những kỷ niệm thời đi học của Chương, lúc mới bước chân vào Sài Gòn và làm quen với cuộc sống đô thị. Là những mối quan hệ bạn bè tưởng chừng hời hợt thoảng 
 qua nhưng gắn bó suốt cuộc đời. Cuộc sống đầy biến động đã xô dạt mỗi người mỗi nơi, nhưng trải qua hàng mấy chục năm, những kỷ niệm ấy vẫn luôn níu kéo Chương về 
-với một thời để nhớ.'),
---50// https://salt.tikicdn.com/cache/w390/media/catalog/product/h/o/hoa-hong-xu-khac.jpg
+với một thời để nhớ.','https://salt.tikicdn.com/ts/product/bd/1a/40/888d58e13c2b3e60327ad6bd577f8a3b.jpg'),
+--50// 
 ('Hoa hồng xứ khác', 'C003', 80000, 64, 'Nguyễn Nhật Ánh',
 'Trong truyện, Ngữ, Khoa và Hòa lé đều say mê cô bạn cùng lớp Gia Khanh. Cái cô gái bị ba người cùng theo đó sẽ phải làm sao. Ba anh chàng làm gì để “chiến thắng”. 
-Điều lý thú là gần như tác giả tái hiện lại thời học trò của mình với ngôn ngữ thời bây giờ nên các bạn đọc trẻ sẽ tìm thấy hình bóng của chính mình trong đó.'),
---51// https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1454949850i/28961874._UY886_SS886_.jpg
+Điều lý thú là gần như tác giả tái hiện lại thời học trò của mình với ngôn ngữ thời bây giờ nên các bạn đọc trẻ sẽ tìm thấy hình bóng của chính mình trong đó.','https://salt.tikicdn.com/cache/w390/media/catalog/product/h/o/hoa-hong-xu-khac.jpg'),
+--51// 
 ('Con chó nhỏ mang giỏ hoa hồng', 'C003', 95000, 80, 'Nguyễn Nhật Ánh',
 'Tại sao lại là con chó mang giỏ hoa hồng? Nó mang cho bạn nó, hay cho những ai biết yêu thương nó? Câu chuyện về 5 chú chó đầy thú vị và cũng không kém cảm xúc 
-lãng mạn- tác phẩm mới nhất của nhà văn bestseller Nguyễn Nhật Ánh sẽ khiến bạn thay đổi nhiều trong cách nhìn về loài thú cưng số 1 thế giới này.'),
---52// https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1437835556l/25977277.jpg
+lãng mạn- tác phẩm mới nhất của nhà văn bestseller Nguyễn Nhật Ánh sẽ khiến bạn thay đổi nhiều trong cách nhìn về loài thú cưng số 1 thế giới này.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1454949850i/28961874._UY886_SS886_.jpg'),
+--52// 
 ('Ngôi trường mọi khi', 'C003', 72000, 34, 'Nguyễn Nhật Ánh',
 'Những câu chuyện về nhóm bạn học sinh năm đầu cấp 3 với bao kỷ niệm vui buồn hờn giận, bao nhiêu trò tinh nghịch của tuổi mới lớn. Với những Hạt tiêu, 
 Tóc ngắn, Hột mít, Bảnh trai, Răng chuột, Mặt mụn… đã tạo nên không khí của một lớp học thật dễ thương với bao nhiêu tình cảm yêu thương, cảm động và gần gũi. 
-Đây là sách mới nhất của tác giả viết về tuổi áo trắng mộng mơ và tinh nghịch.'),
---53// https://salt.tikicdn.com/ts/product/ec/7a/e5/9d1087de4f55919f6ec8bbc48496ec6b.jpg
+Đây là sách mới nhất của tác giả viết về tuổi áo trắng mộng mơ và tinh nghịch.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1437835556l/25977277.jpg'),
+--53// 
 ('Phòng trọ ba người', 'C003', 72000, 40, 'Nguyễn Nhật Ánh',
 'Hẳn bạn đọc ở lứa tuổi học trò đã từng quen thuộc với tác giả Nguyễn Nhật Anh với những truyện ngắn và truyện dài đậm chất học trò như: Trại hoa vàng, Chú 
 bé rắc rối, Phòng trọ ba người, Bồ câu không đưa thư, Những chàng trai xấu tính, Cô gái đến từ hôm qua, Trước vòng chung kết, Hạ đỏ, Hoa hồng xứ khác, Buổi 
 chiều Windows, Ut Quyên và tôi... Với lối viết dung dị và cách chọn đề tài gần gũi với lứa tuổi học trò, như quan hệ thầy trò, trường lớp, bạn bè, gia đình... 
 nên những truyện của ông chiếm được cảm tình của rất nhiều bạn đọc nhỏ tuổi. Họ hào hứng và nóng lóng đón đọc các trang viết của ông. Chúng tôi sẽ lần lượt giới 
-thiệu với bạn đọc các tác phẩm của ông.'),
---54// https://www.nxbtre.com.vn/Images/Book/nxbtre_thumb_09342017_103452.jpg
+thiệu với bạn đọc các tác phẩm của ông.','https://salt.tikicdn.com/ts/product/ec/7a/e5/9d1087de4f55919f6ec8bbc48496ec6b.jpg'),
+--54// 
 ('Lá nằm trong lá', 'C003', 80000, 52, 'Nguyễn Nhật Ánh',
 'Chuyện của bút nhóm học trò, truyện nằm trong truyện, những cơn giận dỗi ghen tuông bạn gái bạn trai với nhau, nhiều nhất vẫn là chuyện nhà trường có các cô 
 giáo hơn trò vài tuổi coi trò như bạn, có thầy hiệu trưởng tâm lý và yêu thương học trò coi trò như con…Trở lại với đề tài học trò, hóm hỉnh và gần gũi như chính 
 các em, Nguyễn Nhật Ánh chắc chắn sẽ được các bạn trẻ vui mừng đón nhận. Cứ lật đằng cuối sách, đọc bài thơ tình trong veo là có thể thấy điều đó “…Khi mùa xuân 
-đến / Tình anh lại đầy / Lá nằm trong lá / Tay nằm trong tay”.'),
---55// https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336126336l/13633451.jpg
+đến / Tình anh lại đầy / Lá nằm trong lá / Tay nằm trong tay”.','https://www.nxbtre.com.vn/Images/Book/nxbtre_thumb_09342017_103452.jpg'),
+--55// 
 ('Kính vạn hoa', 'C003', 69000, 40, 'Nguyễn Nhật Ánh',
 'Đọc Kính Vạn Hoa, tôi cảm ơn Nguyễn Nhật Ánh đã dày công phản ánh những sinh hoạt muôn mặt của lứa tuổi học trò. Từ cách học với các thủ thuật “phổ thơ” để ghi 
 nhớ thuộc lòng các công thức Toán, Lý, Hóa, Anh văn… đến lối làm thơ, kể vè, dựng hoạt cảnh để học tập các môn Văn, Sử. Từ trò chơi bóng đá, thi giải câu đố… ở 
 sân trường đến những chuyến đi nghỉ hè khám phá các vùng xa. Từ việc tìm hiểu (và yêu mến) những người thân trong gia đình, thầy cô giáo đến việc làm quen với 
-những bà con lao động đủ các nghề nghiệp: bán hàng rong, hốt rác, diễn thế thân (cascadeur), đạo diễn điện ảnh, nghệ sĩ ngôi sao, cầu thủ siêu hạng…'),
---56// https://product.hstatic.net/1000092447/product/hieuungchimmoi_tap_1_done.jpg
+những bà con lao động đủ các nghề nghiệp: bán hàng rong, hốt rác, diễn thế thân (cascadeur), đạo diễn điện ảnh, nghệ sĩ ngôi sao, cầu thủ siêu hạng…','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336126336l/13633451.jpg'),
+--56// 
 ('Hiệu ứng chim mồi', 'C015', 75000, 46, 'Quốc Khánh',
 'Quyển sách được cấu trúc thành các phần nhỏ với lý thuyết và ứng dụng đan xen. Mỗi hiện tượng hay kỹ thuật bán hàng đều được giải thích bằng lý thuyết, và mỗi 
 lý thuyết đều có các ứng dụng minh họa, nhằm giúp các bạn độc giả có thể có kiến thức vững chắc và linh hoạt. Để thể hiện sự tôn trọng với các tác giả đi trước, 
-mọi thông tin và số liệu lấy từ các nghiên cứu của các nhà khoa học khác đều được trích dẫn cụ thể, chính xác và ghi nguồn đầy đủ ở phần Tài liệu tham khảo.'),
---57// https://cdn0.fahasa.com/media/flashmagazine/images/page_images/dieu_vi_dai_doi_thuong_doi_bia_moi/2020_05_27_09_29_20_1.JPG
+mọi thông tin và số liệu lấy từ các nghiên cứu của các nhà khoa học khác đều được trích dẫn cụ thể, chính xác và ghi nguồn đầy đủ ở phần Tài liệu tham khảo.','https://product.hstatic.net/1000092447/product/hieuungchimmoi_tap_1_done.jpg'),
+--57// 
 ('Điều vĩ đại đời thường', 'C015', 80000, 30, 'Robin Sharma',
 'Điều Vĩ Đại Đời Thường (Tái Bản) là quyển sách có nội dung về hành trình trở nên vĩ đại khởi đầu từ những điều thật giản dị và gần gũi, cũng giống như hành trình 
 vạn dặm khởi đầu từ một bước chân giản đơn. 101 câu chuyện và ý tưởng của tác giả trong quyển sách này chính là 101 bài học minh chứng cho triết lý đơn sơ ấy.
 Không có cuộc sống nào là hoàn hảo, tất cả chúng ta phải đối mặt với nhiều thử thách, từ đơn giản đến nghiêm trọng… Nhưng chúng ta đều có quyền lựa chọn vượt 
-lên mọi nghịch cảnh để vươn tới vị trí cao nhất và tốt nhất của cuộc sống.'),
---58// https://www.sachhanoi.vn/wp-content/uploads/2018/09/quangganhlodi.jpg
+lên mọi nghịch cảnh để vươn tới vị trí cao nhất và tốt nhất của cuộc sống.','https://cdn0.fahasa.com/media/flashmagazine/images/page_images/dieu_vi_dai_doi_thuong_doi_bia_moi/2020_05_27_09_29_20_1.JPG'),
+--58// 
 ('Quẳng gánh lo đi và vui sống', 'C015', 76000, 50, 'Dale Carnegie',
 'Bất kỳ ai đang sống đều sẽ có những lo lắng thường trực về học hành, công việc, những hoá đơn, chuyện nhà cửa,... Cuộc sống không dễ dàng giải thoát bạn khỏi căng 
 thẳng, ngược lại, nếu quá lo lắng, bạn có thể mắc bệnh trầm cảm. Quẳng Gánh Lo Đi Và Vui Sống khuyên bạn hãy khóa chặt dĩ vãng và tương lai lại để sống trong cái 
-phòng kín mít của ngày hôm nay. Mọi vấn đề đều có thể được giải quyết, chỉ cần bạn bình tĩnh và xác định đúng hành động cần làm vào đúng thời điểm.'),
---59// https://product.hstatic.net/1000217031/product/image_176107_516f488bcaca4cc8bda1b349d445a8a0.jpg
+phòng kín mít của ngày hôm nay. Mọi vấn đề đều có thể được giải quyết, chỉ cần bạn bình tĩnh và xác định đúng hành động cần làm vào đúng thời điểm.','https://www.sachhanoi.vn/wp-content/uploads/2018/09/quangganhlodi.jpg'),
+--59// 
 ('Lối sống tối giản của người Nhật', 'C015', 95000, 50, 'Sasaki Fumio',
 'Chẳng có ai từ khi sinh ra đã có tài sản, đồ đạc gì trong tay. Vậy nên bất cứ ai khi mới chào đời đều là những người sống tối giản. Cứ mỗi lần bạn sở hữu trong tay 
 những đồ dùng hơn mức cần thiết là một lần bạn lấy mất tự do của chính mình. Giá trị bản thân chúng ta không đo bằng những đồ dùng mà chúng ta sở hữu. Những đồ dùng 
 này chỉ cho chúng ta một chút cảm giác hạnh phúc nhất thời mà thôi. Mang theo những đồ dùng hơn mức cần thiết sẽ lấy hết thời gian, năng lượng của bạn. Khi nhận ra được 
-điều đó, tức là bạn đã bắt đầu trở thành một người sống tối giản.'),
---60// https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1527947135i/40360069._UY2197_SS2197_.jpg
+điều đó, tức là bạn đã bắt đầu trở thành một người sống tối giản.','https://product.hstatic.net/1000217031/product/image_176107_516f488bcaca4cc8bda1b349d445a8a0.jpg'),
+--60// 
 ('Nghĩ đơn giản, sống đơn thuần', 'C015', 62000, 50, 'Sasaki Fumio',
 'Từ xưa đến nay, chúng ta vẫn được định hướng để tin rằng chẳng có điều gì đáng giá mà không cần đấu tranh. Bản thân tôi cũng đã dành hàng thập kỷ để nghiên cứu về 
 nhận định phổ biến này. Tôi chưa bao giờ để cuộc sống trở nên dễ dàng. Tuy nhiên, giờ đây, thay vì cứ cố gắng làm mọi việc đúng theo ý mình, tôi đã tìm ra chiến lược 
 để mọi thứ diễn ra theo cách của nó. Kết quả, tôi thấy mình khoẻ mạnh hơn, hạnh phúc và giàu có hơn tôi tưởng tượng. Nếu cuộc sống của bạn căng thẳng, buồn chán hoặc 
 mãi quẩn quanh, đó là dấu hiệu bạn đang thiếu đi điều gì đó cốt yếu, và bạn đang tự cho phép mình ngừng phát triển. “Nghĩ đơn giản, sống đơn thuần” sẽ mang tới cho bạn 
-bộ khung cơ bản để bạn nhìn nhận lại chính mình và tìm ra những mảnh ghép còn thiếu.')
+bộ khung cơ bản để bạn nhìn nhận lại chính mình và tìm ra những mảnh ghép còn thiếu.','https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1527947135i/40360069._UY2197_SS2197_.jpg')
 /*======================================USER INFO VALUES==============================================*/
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0001','lam@gmail.com','123','Lam ML','0000000000',' Somewhere in china ')
 insert into Users(uID, uEmail, uPassword, uName, uPhone, uAddress) values ('U0002','dat09@gmail.com','456','Dat 1 phit','1111111111','Viet Nam')
@@ -871,3 +871,190 @@ select * from Users
 ALTER TABLE Users
 ADD uRole int not null default(0);
 update Users set uRole =1 where uID='U0001'
+
+
+-----Dat
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes, bCover)
+values 
+----C012
+--1//
+('451 Độ F', 'C012', 70000, 29, 'Ray Bradbury',
+'Khi khắc họa cái xã hội giả tưởng ấy qua con mắt nhìn khủng hoảng niềm tin của anh lính phóng hỏa Montag, Ray Bradbury chắc không thể ngờ vào tính 
+tiên tri khủng khiếp của cuốn sách. Xã hội chúng ta đang sống ngày nay giống với những gì Bradbury mô tả đến rùng mình: một nền văn minh lệ thuộc 
+quá nhiều vào truyền thông, giải trí và công nghệ. Bởi lẽ đó, hơn sáu chục năm kể từ lần đầu xuất bản, 451 độ F vẫn đủ sức khiến bất kỳ ai đọc nó phải 
+sửng sốt và choáng váng','https://sachvui.com/cover/2018/451-do-f.jpg'),
+--2//
+('Người về từ sao hỏa', 'C012', 60000, 39, 'Andy Weir',
+'Sau trận bão bụi ác liệt khiến Mark Watney suýt mất mạng và buộc đoàn phi hành gia Hermes phải rời đi khi vẫn đinh ninh anh đã hy sinh, Mark còn trơ 
+trọi một mình trên sao Hỏa, tuyệt vọng chạy đua với thời gian và các yếu tố môi trường để tìm cách sống sót, không cách nào báo tin về Trái đất, không 
+cách nào cầm cự được cho đến lúc có người giải cứu (nếu may mắn sẽ có người giải cứu.','https://vcdn.tikicdn.com/cache/550x550/media/catalog/product/n/g/nguoi%20ve%20tu%20sao%20hoa.u335.d20160428.t180921.jpg'),
+--3//
+('Hai Vạn Dặm Dưới Đáy Biển', 'C012', 87000, 50, 'Jules Verne',
+'Chiếc tàu Nau-ti-lux được xây dựng bí mật và đi lang thang khắp vùng biển không có bất kỳ chính phủ nào. Động lực của thuyền trưởng Nê-mô ngụ ý là sự 
+khát khao về tri thức khoa học và là mong muốn nền văn minh vượt bậc. Nê-mô giải thích rằng tàu ngầm của ông được cung cấp điện và có thể thực hiện nghiên 
+cứu sinh học biển tiên tiến; ông cũng nói với hành khách mới của mình rằng mặc dù ông đánh giá cao cuộc trò chuyện với một chuyên gia như A-rô-nắc, duy trì 
+sự bí mật của sự tồn tại của ông và con tàu nên ông không bao giờ để chúng để lại.','https://salt.tikicdn.com/cache/w390/ts/product/12/64/e9/2071de8a60edfb7d94849fc7a67443a0.jpg'),
+--4//
+('Bí kíp quá giang vào ngân hà', 'C012', 100000, 86, 'Douglas Adam',
+'Với bí kíp trong tay, một nhóm người ngoài hành tinh kỳ quặc bên cạnh, và một Trái Đất nổ tung sau lưng, Arthur đột nhiên trở thành kẻ lữ hành lạc trôi trong 
+Vũ Trụ. Không, câu chuyện sẽ không mộng mơ hay nghiêm túc như bạn tưởng, mà quay cuồng giữa những trò khôi hài, ngẫu hứng, điên rồ. Một truyện khoa học viễn 
+tưởng cực kỳ hài hước.','https://lh3.googleusercontent.com/proxy/3LRkVylegcxfNox1arkFpr3D7Duqc30999xAwZzdwyIBG-gS4NIeO9tA8YI-eDTHjxRvUCwaP5OajQ3JMKfOimgdKEqP6zHQGxixCm6H0yNxZHmh_CFHXTKiDIrrJP7mAjvUr_sP'),
+--5//
+('Cỗ máy thời gian', 'C012', 60000, 30, 'H.G.Wells',
+'Nhân vật chính trong Cỗ máy Thời Gian, bằng phát minh khoa học của mình, đã đến tương lai xa xôi năm 802701 và dấn thân vào cuộc hành trình đi tìm câu trả lời 
+về số phận của nhân loại. Những tưởng sẽ thấy được con người ở giai đoạn đỉnh cao huy hoàng nhưng tiếc thay trước mắt ông chỉ là một chuỗi những tàn tích, hậu 
+quả để lại từ cuộc sống hiện tại. Sức mạnh, trí tuệ và cả những tình cảm thiện lương nguyên sơ dần thoái hóa, báo hiệu nhân loại đã “tới hồi tàn tạ”. Ra đời vào 
+cuối thế kỉ 19, Cỗ máy Thời Gian sớm trở thành lời cảnh tỉnh về những diễn biến đáng lo ngại của xã hội loài người ở thực tại. Với văn phong mới lạ đan xen u ám, 
+cốt truyện khoa học giả tưởng nhưng lại hiển hiện rõ sự thật về cuộc sống con người, tiểu thuyết đầu tay của nhà văn H. G. Wells suốt hơn 100 năm qua vẫn giữ nguyên 
+tính sáng tạo và nét hấp dẫn, trở thành nguồn cảm hứng cho nhiều phóng tác nghệ thuật khác nhau.','https://product.hstatic.net/1000328521/product/bia_1_co_may_thoi_gian.jpg'),
+--6
+('George Và Vụ Nổ Big Bang', 'C012', 99000, 50, 'Stephen Hawking',
+'Sự có mặt của thành viên mới trong gia đình khiến bố mẹ không còn chú ý đến cậu, chú lợn Freddy đáng yêu nay bị đưa ra khỏi nhà đến sống ở một trang 
+trại xa lạ, và tệ hại hơn: cô bạn thân Annie giờ đang chơi với anh bạn mới mà dường như quên luôn cả George...
+
+Cậu quyết định giúp chú Eric lên kế hoạch thực hiện một thí nghiệm đầy thú vị tại Thụy Sĩ, để mở ra cho loài người kiến thức về những khoảnh khắc 
+đầu tiên xảy ra trong vũ trụ. Nhưng mọi chuyện không hề dễ dàng khi George phát hiện ra, một tổ chức bí mật đang ra sức chống phá kế hoạch của chú Eric...',
+'https://salt.tikicdn.com/media/catalog/product/g/e/george-va-vu-no-big-bang.u547.d20161011.t163358.390094_3.jpg'),
+--7 
+('Tam thể', 'C012', 70000, 40, 'Lưu Từ Hân',
+'Nhưng anh không thể ngờ, thế giới khắc nghiệt trong Tam Thể là có thực, chỉ cách trái đất chừng bốn năm ánh sáng, và trò chơi ảo kia lại là một cánh cửa để những 
+sinh vật của thế giới ấy bước đến xâm chiếm địa cầu này. Kinh hoàng, Uông Diểu tìm mọi cách ngăn chặn điều đó. Nhưng anh, cũng như cả địa cầu, không biết rằng, cánh 
+cửa nọ đã được mở toang, từ mấy chục năm về trước...',
+'https://salt.tikicdn.com/cache/w390/media/catalog/product/t/a/tam%20the%201.u335.d20160425.t113049.jpg'),
+--8
+('Frankenstein', 'C012', 80000, 42, 'Mary Shelley',
+'Nó là sản phẩm đi ngược lại quá trình hình thành sự sống của tự nhiên, một tạo vật gớm guốc mang sinh lực của cái chết. Định mệnh khốc liệt đã bắt con quỷ và kẻ 
+tạo ra nó cuốn vào nhau trong vòng xoáy bất tận của oán hận...
+
+Nó được tạo ra để làm một con người...
+
+Thế nhưng nó hoàn toàn không phải một con người...
+
+Nó là một dị bản kinh tởm của con người, được lắp ghép bởi những bộ phận của người chết. Victor Frankenstein đã gom nhặt cơ thể của nó chủ yếu lấy từ phòng giải 
+phẫu tử thi và lò sát sinh. Ngay từ khi nó mở đôi mắt ướt nhoèn để lần đầu nhìn thấy ánh sáng, linh hồn nó đã bị nguyền rủa...',
+'https://lh3.googleusercontent.com/proxy/m0JHucX4scM7J02BOkuI4bkLttqbWwqG1RdBdTsbIhEn5b52W32ZOQTVwYKvmJTXLazGlgHbqtQFrln2052oeKXToil0c-sbz7Z6LErpWjUjA-kRQRtaT1N2Y1ESCoEWAQobM2W9mA'),
+--9
+('Xứ cát', 'C012', 75000, 35, 'Frank Herbert',
+'Một thời điểm rất xa trong tương lai…
+Từ đời này sang đời khác, người Fremen trên hành tinh sa mạc lưu truyền lời tiên tri về một đấng cứu tinh sẽ dẫn dắt họ giành lấy tự do đích thực…
+Từ thế hệ này sang thế hệ khác, những nữ phù thủy Bene Gesserit mỏi mòn chờ đợi sự xuất hiện của một B.G. nam giới duy nhất, người có thể vượt qua mọi giới hạn không gian - thời gian…',
+'https://vcdn1-giaitri.vnecdn.net/2009/06/05/axu-cat-1348826837.jpg?w=480&h=0&q=100&dpr=1&fit=crop&s=Q0qskAC5iy3MAb0-Ej0ofg'),
+--10
+('Animorphs - Người Hóa Thú', 'C012', 35000, 25, 'Katherine Applegate',
+'Tôi chỉ dám tiết lộ tên tôi là Jake. Còn họ tên đầy đủ ư? Xin cho phép tôi giữ bí mật. Nói ra cực kì nguy hiểm, bởi bọn Mượn xác có mặt khắp nơi. Nếu biết tên họ đầy đủ, 
+chúng có thể lần ra tôi và bạn bè của tôi. Chúng mà xử những ai chống đối thì, ôi thôi khủng khiếp lắm, thà đừng nghĩ tới còn hơn.',
+'https://upload.wikimedia.org/wikipedia/vi/thumb/0/0e/Animorphs_01_The_Invasion_2018_Vietnamese.jpg/1200px-Animorphs_01_The_Invasion_2018_Vietnamese.jpg'),
+--12
+('Hoa trên mộ Algernon', 'C012', 37000, 27, 'Daniel Keyes',
+'Được viết dưới lời kể của nhân vật chính, xen lẫn với những đoạn nhật ký của anh cả trước và sau phẩu thuật, Hoa trên mộ Algernon đem lại nhiều cảm xúc hơn 
+những gì người ta thường đợi ở một tác phẩm khoa học giả tưởng. Câu chuyện về kẻ ngốc hóa thành thiên tài này đã được kể tài tình đến độ ngay cả một cái kết 
+không hẳn có hậu cũng không làm nản lòng những độc giả lạc quan nhất. Hành trình từ bóng tối ra ánh sáng và rồi lại trở về bóng tối đó có thể vương chút u buồn, 
+nhưng trước khi tới những trang cuối cùng, Hoa trên mộ Algernon đã là cả một cuộc phiêu lưu của tâm trí, hồi hộp đến bứt rứt, cảm động đến xót xa, dí dỏm đến duyên 
+dáng, và lãng mạng đến khó tin.',
+'https://salt.tikicdn.com/cache/w1200/media/catalog/product/i/m/images_3_.jpg'),
+--13
+('1984', 'C012', 110000, 67, 'George Orwell',
+'Winston Smith toes the Party line, rewriting history to satisfy the demands of the Ministry of Truth. With each lie he writes, Winston grows to hate the Party that 
+seeks power for its own sake and persecutes those who dare to commit thoughtcrimes. But as he starts to think for himself, Winston can’t escape the fact that Big Brother 
+is always',
+'https://sachvui.com/cover/2018/1984.jpg'),
+--14
+('Trò Chơi Của Ender', 'C012', 70000, 57, ' Orson Scott Card',
+'Khi Trái Đất đang đứng trước nguy cơ bị diệt vong bởi sự xâm lược của lũ bọ ngoài hành tinh, hy vọng cứu Trái Đất được dồn toàn bộ vào Ender - một 
+cậu bé thiên tài chưa đầy mười tuổi. Cùng với những đứa trẻ khác, Ender được đưa lên tàu vũ trụ, bắt đầu quá trình học tập và rèn luyện khắc nghiệt tại 
+Trường Chiến đấu để được tôi luyện thành những người lính thiện nghệ, những chỉ huy tài giỏi, và riêng với Ender - để trở thành vị cứu tinh của toàn nhân loại…',
+'https://salt.tikicdn.com/cache/200x280/media/catalog/product/t/r/tro-choi-cua-ender.jpg'),
+--C0013
+--1.
+('Mega 2020 - Siêu Tốc Luyện Đề THPT Quốc Gia 2020 Tiếng Anh', 'C013', 50000, 48, 'Dương Thị Hương',
+'Mega 2020 – Siêu tốc luyện đề THPT Quốc Gia là bộ sách luyện đề Đại học số 1 trên thị trường sách tham khảo hiện nay. Sau quá trình 5 năm liên tục đổi mới, 
+không ngừng hoàn thiện, góp phần giúp hàng nghìn bạn học sinh lớp 12 đỗ vào những ngôi trường Đại học mơ ước, năm nay, Mega 2020 với sự trở lại được đầu tư nghiêm 
+túc và chỉn chu hơn rất nhiều, chắc chắn sẽ giúp sĩ tử 2k2 ôn luyện vững vàng và có một mùa thi thật thành công.',
+'https://salt.tikicdn.com/cache/w390/ts/product/c1/03/d1/550576880d544b1bc15d8c1b79d3802c.jpg'),
+--2
+('Đột Phá 8+ Kì Thi THPT Quốc Gia Môn Tiếng Anh', 'C013', 140000, 38, 'Nhiều Tác Giả',
+'Để đạt điểm cao trong cả 3 năm học cũng như trong kỳ thi tốt nghiệp THPT Quốc gia, ngoài những kiến thức cơ bản trong sách giáo khoa các em học sinh cũng 
+cần trang bị thêm kiến thức kỹ năng làm bài mới có thể tối ưu điểm số. Nhằm giải quyết những khó khăn đó cho các em CCbook đã nghiên cứu và cho ra mắt bộ sách 
+Đột phá 8+ kì thi THPT Quốc gia. Bộ sách đã giải tỏa được “cơn khát” tài liệu ôn thi cho cả giáo viên và  các em học sinh trên cả nước.',
+'https://salt.tikicdn.com/cache/w390/ts/product/2a/c3/ac/c0530a79bd307739fecbd0a813401ca7.jpg'),
+--3
+('Công Phá Bài Tập Hóa lớp 10-11-12', 'C013', 100000, 18, 'Trần Phương Duy',
+'Kể từ năm 2019, đề thi THPT quốc gia môn Hóa có các dạng bài tập trong cả 3 lớp 10-11-12, điều này sẽ gây không ít áp lực cho các em học sinh. 
+Chưa kể kiến thức về bài tập Hóa học khá là phức tạp và khó hiểu, hơn nữa các dạng bài trong đề thi khác xa với kiến thức trong SGK. Việc tạo ra 
+một cuốn sách duy nhất mà có thể giúp các em nắm chắc được toàn bộ các chuyên đề, các dạng bài tập trong chương trình Hóa 3 lớp là một điều hết sức 
+cần thiết. Chính vì những điều này đã thôi thúc tôi và nhà sách Lovebook cùng nhau phối hợp tạo nên cuốn sách “Công phá bài tập Hóa 10-11-12” này',
+'https://salt.tikicdn.com/cache/w390/ts/product/4f/03/47/98988033a5e394998b2b2dd7edb9a389.jpg'),
+--4
+('Đột Phá 8+ Kì Thi THPT Quốc Gia Môn Ngữ Văn', 'C013', 150000, 68, 'Nhiều Tác Giả',
+' Cuốn sách Đột phá 8+ kì thi THPT Quốc gia môn Ngữ Văn là sản phẩm của đội ngũ giáo viên đầy nhiệt huyết của CCBook và nhà xuất bản Đại học Quốc gia Hà Nội. 
+Sách bao gồm kiến thức 3 lớp 10, 11,12 với mong muốn hỗ trợ học sinh ôn thi THPT  đạt điểm số môn Ngữ Văn cao nhất trong kỳ thi THPT Quốc gia năm 2019.',
+'https://www.netabooks.vn/Data/Sites/1/Product/35834/dot-pha-8-ki-thi-thpt-quoc-gia-mon-ngu-van.jpg'),
+--5
+('Combo Chinh Phục Đề Thi Vào Lớp 10', 'C013', 300000, 50, 'Nhiều Tác Giả',
+'Chinh Phục Đề Thi Vào 10 được biên soạn từ những giáo viên có uy tín và kinh nghiệm nhiều năm biên soạn sách tham khảo, sách luyện thi bám sát chương trình học và thi. Bộ sách hứa hẹn sẽ giúp em “ĂN CHẮC TỪNG CÂU – TỪNG ĐIỂM”:',
+'https://megabook.vn/thumb_1000_1000_2/data/images/products/2020/01/18/396beba8d8c122b78e3f71612a034651_1579315355.png'),
+--6
+('Ôn Luyện Thi THPT Quốc Gia Năm 2020 Môn Tiếng Anh', 'C013', 35000, 38, 'Nhiều Tác Giả',
+'Nội dung bộ sách được xây dựng bám sát yêu cầu của  Phương án tổ chức kì thi THPT Quốc gia năm 2020 của Bộ Giáo dục và Đào tạo. Bộ sách hướng tới hai mục tiêu: đảm 
+bảo yêu cầu cơ bản của học sinh ôn luyện thi để công nhận tốt nghiệp THPT và cung cấp các kiến thức phân hóa cao để học sinh ôn luyện thi xét tuyển vào Đại học, Cao 
+đẳng năm 2020.',
+'https://newshop.vn/public/uploads/products/24282/on-luyen-thi-thpt-quoc-gia-nam-2020-mon-tieng-anh-bia.jpg'),
+--7
+('Mega 2020 - Siêu Tốc Luyện Đề THPT Quốc Gia 2020 Toán Học', 'C013', 98000, 38, 'Nguyễn Xuân Nam',
+'Mega 2020 – Siêu tốc luyện đề THPT Quốc Gia là bộ sách luyện đề Đại học số 1 trên thị trường sách tham khảo hiện nay. Sau quá trình 5 năm liên tục đổi mới, 
+không ngừng hoàn thiện, góp phần giúp hàng nghìn bạn học sinh lớp 12 đỗ vào những ngôi trường Đại học mơ ước, năm nay, Mega 2020 với sự trở lại được đầu tư 
+nghiêm túc và chỉn chu hơn rất nhiều, chắc chắn sẽ giúp sĩ tử 2k2 ôn luyện vững vàng và có một mùa thi thật thành công.',
+'https://newshop.vn/public/uploads/products/23261/mega-2020-sieu-toc-luyen-de-thpt-quoc-gia-2020-toan-hoc-bia.jpg'),
+--8
+('Công Phá Toán 3', 'C013', 212000, 28, 'Ngọc Huyền LB',
+'Công Phá Toán 3 giúp các em học sinh nắm chắc tư duy giải nhanh các dạng toán 12 và thâu tóm toàn bộ bài tập chọn lọc bài tập từ 200 đề thi thử mới nhất. 
+Tác giả là sinh viên có những thành tích cao trong học tập và cũng chính nhiệt huyết của tuổi trẻ đã mang đến cho bạn đọc những kinh nghiệm của bản thân, 
+chia sẻ tri thức, phần nào giúp các em học sinh hiện nay tự tin hơn khi luyện thi môn Toán.',
+'https://salt.tikicdn.com/cache/w390/ts/product/1d/b3/2c/580c845d55ef624950270b8ad380a132.jpg'),
+--9
+('Chinh Phục Đề Thi Vào 10 Chuyên - Khối Chuyên Anh', 'C013', 115000, 38, 'Dương Thị Hương',
+'Chinh Phục Đề Thi Vào 10 Chuyên - Khối Chuyên Anh được biên soạn và tổng hợp từ những trường THPT Chuyên hàng đầu trên cả nước như trường Chuyên Sư phạm, 
+Chuyên Khoa học Tự nhiên – ĐHQG HN, Chuyên Hà Nội – Amsterdam. Qua cuốn sách này, các em sẽ được cọ sát với tất cả những dạng bài, nâng cao tư duy để chinh phục 
+được mọi bài thi với điểm số cao nhất.',
+'https://adcbook.net.vn/images/products/2019/04/24/original/8936110983976_1556089958.jpg'),
+--10
+('Đột Phá 8+ Kì Thi THPT Quốc Gia Môn Toán - Tập 1: Đại Số Và Giải Tích', 'C013', 135000, 78, 'Nhiều Tác Giả',
+'Đột phá 8+ môn Toán kì thi THPT Quốc gia Tập 1 Đại số và giải tích là cuốn sách thuộc bộ sách 9 cuốn Đột phá 8+ kì thi THPT Quốc gia. Bộ sách do nhà xuất bản 
+Đại học Quốc gia Hà Nội và đơn vị phát hành sách CCBook, phối hợp với đội ngũ tác giả có chuyên môn giỏi biên soạn.',
+'https://salt.tikicdn.com/cache/w390/ts/product/95/8a/66/c406aeb09d310935137ffbfcf770a2f1.jpg'),
+--11
+('Công Phá Lí Thuyết Hóa lớp 10-11-12', 'C013', 120000, 38, 'Trần Phương Duy',
+'Hệ thống hơn 1000 câu hỏi trắc nghiệm, chia đều cho các chuyên đề kèm lời giải chi tiết ngay sau mỗi chuyên đề. Đặc biệt, trong phần lời giải, phân 
+tích chi tiết, chúng tôi có chắt lọc ra những nội dung quan trọng (hoặc gợi nhắc lại kiến thức nền tảng) thông qua ô CHEM Tip bên lề trái. Với đặc điểm này, 
+chúng tôi tin tưởng chắc chắn rằng các em sẽ tiếp thu bài nhanh hơn, khắc sâu kiến thức hơn. ',
+'https://product.hstatic.net/200000020612/product/rzhoalt_70c90b8dbff349c2889058f683870362_master.jpg'),
+--12
+('Công Phá Lí Thuyết Sinh', 'C013', 100000, 30, 'Phạm Thị Thanh Thảo',
+'Với những sự khác biệt từ nội dung tới hình thức, tới cách thức hỗ trợ sau khi mua sách, chúng tôi tin tưởng chắc chắn rằng CÔNG PHÁ BÀI TẬP SINH LỚP 10-11-12 
+và CÔNG PHÁ LÍ THUYẾT SINH LỚP 10-11-12 sẽ giúp các em tự tin với môn Sinh hơn trong mọi kì thi. Hãy đọc và cảm nhận tâm huyết trên từng trang sách của chúng tôi 
+ngay từ bây giờ quý thầy cô và các em nhé!',
+'https://product.hstatic.net/200000020612/product/sinh_lt_bf38c47e0f264427a0d0702bea9c2e5e_master.jpg'),
+--13
+('Công Phá Đề Thi THPT Quốc gia môn Toán - Tổng ôn và luyện đề', 'C013', 80000, 78, 'Nhóm Tác Giả Lovebook',
+'Đây là yếu tố khác biệt hẳn so với các sách luyện đề khác trên thị trường. Đến với 21 ĐỀ THI THỬ THPT QUỐC GIA TRONG SÁCH CÔNG PHÁ ĐỀ THI THPT QUỐC GIA MÔN TOÁN, các 
+bạn không phải mất thời gian mò mẫm đáp án chi tiết cho từng câu hỏi, bài tập như phải lên mạng xem video, kiểm tra Mail,… để biết được lời giải chi tiết, những lưu 
+ý, kĩ năng quan trọng. Tất cả mọi thứ, mọi khúc mắc đã được chúng tôi trình bày rõ ràng, mạch lạch một cách đầy đủ trong sách rồi. Công việc của các bạn là chỉ cần 
+ôm lấy cuốn sách và nghiền ngẫm thật kĩ.',
+'https://salt.tikicdn.com/ts/product/9a/11/8c/677fee9e794c7a6e89f5ca21811d02b5.jpg'),
+--14
+('Infographic Chinh Phục Kỳ Thi THPT Quốc Gia Môn Sinh Học', 'C013', 150000, 64, 'Trương Thị Thanh Hằng',
+'Nhằm giúp các em tiết kiệm thời gian, nâng cao hiệu quả học tập NXB Đại học Quốc gia Hà Nội, đơn vị CCBook đã biên soạn nên cuốn sách hệ thống đầy đủ kiến thức 
+trọng tâm của cả 3 lớp 10, 11, 12 thông qua các trang đồ họa kiến thức trực quan. Cuốn sách mang tên “INFOGRAPHIC chinh phục kỳ thi THPT Quốc gia môn Sinh học”.',
+'https://salt.tikicdn.com/cache/w390/ts/product/f0/52/a3/6c4fa677d436471b3e256efb5a2ecfbc.jpg'),
+--15
+('Tự Học Phiên Dịch Việt Anh - Anh Việt', 'C013', 92000, 35, 'Le Ton Hien',
+'Cuốn sách Tự học phiên dịch Việt Anh - Anh Việt hướng dẫn sử dụng từ ngữ, cấu trúc câu, khác biệt văn hóa.
+
+Sách này nhằm tạo căn bản vững về câu, đoạn văn, bài văn. Vì vậy, 3 trình độ sau nên dùng sách:
+
+- Người đang tập viết, nhất là viết luận văn, luận án
+
+- Người đang viết tiếng Anh trong công việc
+
+- Người muốn đọc sâu các tài liệu chuyên môn và làm công tác biên phiên dịch.',
+'https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/t/u/tu_hoc_phien_dich_viet_anh___anh_viet_1_2018_08_07_11_17_31.JPG')

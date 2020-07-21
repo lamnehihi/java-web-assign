@@ -1,21 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-<<<<<<< HEAD
-        <group/>
-=======
-        <group>
-            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/web/components/books.jsp</file>
-            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/src/java/Controller/BookDB.java</file>
-            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/web/components/users.jsp</file>
-            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/src/java/Controller/DatabaseInfo.java</file>
-            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/web/components/tableComponents/books.jsp</file>
-            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/web/components/dashboard.jsp</file>
-            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/web/Index.jsp</file>
-            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/web/Login.jsp</file>
-            <file>file:/C:/Users/Admin/Desktop/java-web-assign/java-web-assign/src/java/Controller/CategoryDB.java</file>
-        </group>
->>>>>>> cdcd5e4f91c0d2c6cdb9793b0d06d456ad89fd55
-    </open-files>
 </project-private>
