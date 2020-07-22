@@ -105,6 +105,7 @@ insert into Categories(catID, catName) values ('C015', 'Short Story')
 insert into Categories(catID, catName) values ('C016', 'Self Growth Books')
 
 /* ==============================PRODUCTS VALUES=============================== */
+
 GO
 --1 Action & Adventure
 
@@ -667,11 +668,6 @@ UPDATE Books SET bCover = 'https://sciencefictionbookart.com/wp-content/uploads/
 -----------------------------------------------------------------------------------------------------------------------------------
 
 
-select * from Categories
-select * from Books
-select * from Users
-select * from Transactions
-
 --NMT insert 50 books
 GO
 
@@ -871,3 +867,408 @@ select * from Users
 ALTER TABLE Users
 ADD uRole int not null default(0);
 update Users set uRole =1 where uID='U0001'
+
+											---------------SELECT------------------
+												select * from Categories
+												select * from Books
+												select * from Users
+												select * from Transactions
+											--------------------------------------
+
+
+
+-------------------------------------ADD 15 books FROM C001-C005--------------------------------
+
+-- C001 Action and Adventure
+-- C002 Classic
+-- C003 Comic and Graphic Novel
+-- C004 Crime and Detective
+-- C005 Drama
+
+
+ GO
+--C001
+--1
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0051','Don Quixote','C001',280000,20,'Miguel de Cervantes','Regarded as one of the greatest works in literature, 
+Don Quixote recounts the adventures of Alonso Quixano: a middle-aged man so obsessed with chivalric books that he decides to imitate them and 
+become a knight-errant. So begins his journey to find a faithful squire, save damsels in distress, and fight windmills.',
+'https://www.oakmeadowbookstore.com/images/products/4139.jpg')
+--2
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0052','Treasure Island','C001',280000,20,'Robert Louis Stevenson','Written by Scottish author Robert Louis Stevenson, 
+this story of “buccaneers and buried gold” launched a million tropes of treasure maps, sea chests, Black Spots, and deserted islands.',
+'https://kbimages1-a.akamaihd.net/bbb881d4-1c64-4c12-8b8d-e0461cf0419f/1200/1200/False/treasure-island-247.jpg')
+--3
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0053','King Solomon’s Mines','C001',280000,20,'H. Rider Haggard and A. C. Michael','The first English adventure novel set in Africa, 
+this 1885 book is considered to be the origin of the Lost World literary genre. It boasts six adaptations, including a 1937 British film and a 
+2004 American television miniseries.',
+'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6654cb68531143.5b6061ac2fc03.png')
+--4
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0054','Journey to the Center of the Earth','C001',280000,20,'Jules Verne','Journey to the Center of the Earth is exactly that: a trip to the inside 
+of the world, which is where German professor Otto Lidenbrock theorizes that volcanic tubes will lead. Another one of Jules Verne’s magnum opuses — 
+and one of the most famous examples of subterranean fiction.',
+'https://kbimages1-a.akamaihd.net/7194dfe0-fece-4f6a-838c-44913b217738/1200/1200/False/journey-to-the-centre-of-the-earth.jpg')
+--5
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0055','The Count of Monte Cristo','C001',280000,20,'Alexandre Dumas','Part adventure story and part revenge thriller, The Count of Monte Cristo is the 
+tale of Edmond Dantès, a man who is falsely imprisoned without trial in an island fortress off France.',
+'https://i.pinimg.com/originals/74/5e/6b/745e6bee4404bdec395fff084175cc48.jpg')
+--6
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0056','Ivanhoe','C001',280000,20,'Sir Walter Scott','First published in 1819, Ivanhoe is a tale of heroism set in 12th-century England after the 
+failure of the Third Crusade. Looking for jousting tournaments, romance, kidnappings, and witch trials? Then you’ve come to the right book.',
+'https://cloud10.todocoleccion.online/libros-segunda-mano-novela-infantil-y-juvenil/tc/2010/10/26/22370123.jpg')
+--7
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0057','Tarzan of the Apes','C001',280000,20,'Edgar Rice Burroughs','Immortalized by the Disney adaptation, Tarzan of the Apes by Edgar Rice Burroughs 
+launched the legend of an orphaned boy who is adopted by apes in the African jungle.',
+'https://images-na.ssl-images-amazon.com/images/I/81DVUvVL3zL.jpg')
+--8
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0058','Heart of Darkness','C001',280000,20,'Joseph Conrad','One of the most famous and acclaimed English novels in history happens to be a 
+grim adventure story. This 1899 novella by Joseph Conrad tells the doomed story of Charles Marlow, who wishes to leave behind the civilized world 
+and sail up the Congo in Africa.',
+'https://kbimages1-a.akamaihd.net/9b7ea1a5-ff91-4002-be6c-9ee4c82c19fd/1200/1200/False/heart-of-darkness-262.jpg')
+--9
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0059','Hatchet','C001',280000,20,'Gary Paulsen','Brian Robeson is only 13 years old when his bush plane crashes in the forest. 
+Now he must survive — with nothing but a hatchet. This book won the 1987 Newberry Award and has since gone on to spawn four sequels.',
+'https://images-na.ssl-images-amazon.com/images/I/61FbXZT3CBL.jpg')
+--10
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0060','Congo','C001',280000,20,'Michael Crichton','Another one of Michael Crichton’s famous adventure-and-science-fiction books, 
+Congo relates the gripping story of an expedition’s desire to find the Lost City of Zinj in Africa — despite the horrors of the jungle and previous deaths.',
+'https://4.bp.blogspot.com/-70nNU5tsJ3Y/VnVUwtGnBrI/AAAAAAAAALM/zGOyKb6PiL0/s1600/Copy%2Bof%2BICHBININDAH.BLOGSPOT.COM.png')
+--11
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0061','The Lost World','C001',280000,20,'Sir Arthur Conan Doyle','An expedition to an Amazon basin in South America to find 
+prehistoric dinosaurs goes awry in this 1912 novel by Sir Arthur Doyle. Sherlock Holmes is nowhere to be found, but this book does introduce 
+the notorious character of Professor Challenger, the founder of the mission.',
+'https://kbimages1-a.akamaihd.net/2cbcbecb-78b3-4952-8324-98d04e7f971c/353/569/90/False/the-lost-world-28.jpg')
+
+
+
+
+--C002
+--1
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0062','In Search of Lost Time','C002',350000,15,'Marcel Proust','Swanns Way, the first part of A la recherche de temps perdu, Marcel Prousts seven-part cycle, 
+was published in 1913. In it, Proust introduces the themes that run through the entire work. The narr...',
+'https://m.media-amazon.com/images/I/411fuVxxG4L.jpg')
+--2
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0063','Ulysses','C002',480000,30,'James Joyce','Ulysses chronicles the passage of Leopold Bloom through Dublin during an ordinary day, 
+June 16, 1904. The title parallels and alludes to Odysseus (Latinised into Ulysses), the hero of Homers Odyss...',
+'https://upload.wikimedia.org/wikipedia/commons/a/ab/JoyceUlysses2.jpg')
+--3
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0064','Moby Dick','C002',300000,18,'Herman Melville','First published in 1851, Melvilles masterpiece is, in Elizabeth Hardwicks words, 
+"the greatest novel in American literature." The saga of Captain Ahab and his monomaniacal pursuit of the white wh...',
+'https://ih1.redbubble.net/image.728139518.9450/flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg')
+--4
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0065','War and Peace','C002',380000,10,'Leo Tolstoy','Epic in scale, War and Peace delineates in graphic detail events leading up to Napoleons invasion of Russia, 
+and the impact of the Napoleonic era on Tsarist society, as seen through the eyes of fi...',
+'https://images-na.ssl-images-amazon.com/images/I/A1aDb5U5myL.jpg')
+--5
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0066','Lolita','C002',300000,25,'Vladimir Nabokov','The book is internationally famous for its innovative style and infamous for its controversial subject: 
+the protagonist and unreliable narrator, middle aged Humbert Humbert, becomes obsessed and se...',
+'https://cdnb.artstation.com/p/assets/images/images/010/504/713/medium/miriam-abramik-lolita-book-cover.jpg?1524767278')
+--6
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0067','The Catcher in the Rye','C002',280000,10,'J. D. Salinger','The Catcher in the Rye is a 1945 novel by J. D. Salinger. Originally published for adults, 
+the novel has become a common part of high school and college curricula throughout the English-speaking wo...',
+'https://images-na.ssl-images-amazon.com/images/I/81OthjkJBuL.jpg')
+--7
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0068','The Brothers Karamazov','C002',280000,30,'Fyodor Dostoyevsky','Dostoevskys last and greatest novel, The Karamazov Brothers, is both a brilliantly told crime story and 
+a passionate philosophical debate. The dissolute landowner Fyodor Pavlovich Karamazov is mur...',
+'https://i.pinimg.com/originals/f7/86/53/f786533b3a21c91b0deee00433771cc5.png')
+--8
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0069','Madame Bovary','C002',280000,9,'Gustave Flaubert','For daring to peer into the heart of an adulteress and enumerate its contents with profound dispassion, 
+the author of Madame Bovary was tried for "offenses against morality and religion." What shoc...',
+'https://almabooks.com/wp-content/uploads/2016/10/9781847493224.jpg')
+--9
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0070','The Divine Comedy ','C002',280000,20,'Dante Alighieri','Belonging in the immortal company of the great works of literature, Dante Alighieris poetic masterpiece, 
+The Divine Comedy, is a moving human drama, an unforgettable visionary journey through the ...',
+'https://www.woloafric.com/wp-content/uploads/2018/12/divine-comedy-1.jpg')
+--10
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0071','The Adventures of Huckleberry Finn','C002',280000,20,'Mark Twain','Revered by all of the towns children and dreaded by all of its mothers, 
+Huckleberry Finn is indisputably the most appealing child-hero in American literature. Unlike the tall-tale, idyllic worl...',
+'https://bizweb.dktcdn.net/100/326/228/products/the-adventures-of-huckleberry-finn-by-mark-twain-bookworm-hanoi.jpg?v=1580877216673')
+--11
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0072','Alice s Adventures in Wonderland','C002',480000,30,'Lewis Carroll','In 1862 Charles Lutwidge Dodgson, a shy Oxford mathematician with a stammer, 
+created a story about a little girl tumbling down a rabbit hole. Thus began the immortal adventures of Alice, perhaps th...',
+'https://www.bookstation.ie/wp-content/uploads/2020/02/9781447279990.jpg')
+
+
+
+select * FROM Books WHERE catID = 'C004'
+select * FROM Categories
+
+
+--C003
+--1
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0073','Maus: A Survivors Tale','C003',350000,15,'Art Spiegelman','Admit it — you are not exactly surprised to see this book turn up on this list. This is a comics list; we are NPR. 
+We get it. But Art Spiegelmans two-volume feat of historical memoir wasnt simply grandfathered in. It received the many votes it did because it remains such a standalone...',
+'https://images-na.ssl-images-amazon.com/images/I/A1RUVrZnIhL.jpg')
+--2
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0074','Daytripper','C003',380000,20,'Gabriel Ba and Fabio Moon','The books subject — the way death retroactively imposes a shape on a persons life — belies the sense of hope that 
+saturates every panel of this expressive and poignant story by Brazilian twin brothers Fabio Moon and Gabriel Ba...',
+'https://i1.wp.com/smithsonianapa.org/bookdragon/wp-content/uploads/sites/10/2011/03/Daytripper.jpg')
+--3
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0075','This One Summer','C003',300000,20,'Mariko Tamaki and Jillian Tamaki','Comics about awkward young men struggling with adolescence are thick on the ground, which makes sense, given that the medium seems 
+expressly suited to exploring the anxiety, self-consciousness...',
+'https://m.media-amazon.com/images/I/41gPPggJw6L.jpg')
+--4
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0076','Sweet Tooth','C003',380000,10,'Jeff Lemire','For such a young cartoonist (he is 41), Jeff Lemires output is considerable and sufficiently diverse that the judges each had 
+their favorites. Arguments were made for his Essex County Trilogy, about life in a small Canadian county, and The Underwater Welder, a ghostly meditation on fatherhood; his superhero 
+work at DC, Marvel and Valiant had its proponents as well...',
+'https://m.media-amazon.com/images/I/512vnb7A8AL.jpg')
+--5
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0077','Through The Woods','C003',300000,25,'Emily Carroll','It came from the woods. Most strange things do." Emily Carrolls book of short stories is horror, yes – 
+but its the psychological horror of isolation and alienation, not the pulpy, visceral horror of the slaughterhouse floor. Were left disturbed...',
+'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1414845473l/18659623.jpg')
+--6
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0078','Blankets','C003',280000,10,'Craig Thompson','Craig Thompson wrote and drew this bittersweet, 600-page, semiautobiographical story of a young man raised 
+in a strict evangelical tradition, haunted by feelings of guilt and shame as adolescence gives way to adulthood. His attempts to navigate a sexual relationship cause him ...',
+'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1460925949l/25179._SX318_.jpg')
+--7
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0079','My Favorite Thing Is Monsters','C003',280000,30,'Emil Ferris','After West Nile virus left illustrator Emil Ferris partially paralyzed, 
+she learned to draw again by duct-taping a quill pen to her hand. Her drive to recover — and her childhood love of horror films — are evident in her ferocious, semi-autobiographical...',
+'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/6839/9781683960195.jpg')
+--8
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0080','Jimmy Corrigan','C003',280000,9,'Chris Ware','Bright colors, clean lines, simple shapes — a Chris Ware comics page is meticulously designed to invite the eye in, 
+echoing the feel of a beloved picture book from your earliest childhood. And then you read the thing and — oof. Ware is a master of the comics mediums unique ability to create 
+tension between words and images...',
+'https://i.pinimg.com/originals/63/e9/e1/63e9e1f12dd42c3f1485211a5a04808e.jpg')
+--9
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0081','Blacksad','C003',280000,20,' Juan Diaz Canales and Juanjo Guarnido','It takes a village: Blacksad is a French comic by two Spaniards — writer Juan Diaz Canales and artist Juanjo Guarnido — 
+whove crafted a hard-boiled noir set in an America filled of ...',
+'https://bdi.dlpdomain.com/album/9782205076196/couv/M600x800/blacksad-8211-hors-srie-tome-0-l-8217-histoire-des-aquarelles-8211-intgrale.jpg')
+--10
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0082','Here','C003',280000,30,'Richard McGuire','Reading reviews of comics gets frustrating when the writer focuses solely on critiquing the story, 
+ignoring that comics can only exist in the space where text and art come together. Its great, then, when a comic like Here comes along, because it forces critics and readers 
+alike to engage with the potent narrative power of the wordless comics...',
+'https://images-na.ssl-images-amazon.com/images/I/910cdB0vm1L.jpg')
+--11
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0083','How To Be Happy','C003',480000,30,'Eleanor Davis','When a very recent work is nominated in the popular vote, the judges feel it incumbent upon them to really interrogate 
+it — to ensure that it justified its presence on the final list. That said, Eleanor Davis 2015 collection of comics short stories sailed through that process with...',
+'https://www.bookstation.ie/wp-content/uploads/2020/02/9781447279990.jpg')
+
+select * FROM Books WHERE catID = 'C001'
+select * FROM Books WHERE catID = 'C002' 
+select * FROM Books WHERE catID = 'C003' 
+select * FROM Books WHERE catID = 'C004' 
+select * FROM Books WHERE catID = 'C005' 
+ 
+--C004
+--1
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('And Then There Were None','C004',350000,15,'Agatha Christie','Ten people, each with something to hide and something to fear, 
+are invited to a lonely mansion on Indian Island by a host who, surprisingly, fails to appear. On the island they are cut off from everything 
+but each other and the inescapable shadows of their own past lives. One by one, the guests share the darkest secrets of their wicked pasts. 
+And one by one, they die…',
+'https://kbimages1-a.akamaihd.net/3a43258f-8286-40f4-8fef-26b23223be56/353/569/90/False/and-then-there-were-none-1.jpg')
+--2
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('Rules of Prey','C004',380000,35,'John Sandford','The killer was mad but brilliant.He left notes with every woman he killed. Rules of murder: Never have a motive.
+ Never follow a discernible pattern. Never carry a weapon after it has been used… So many rules to his sick, violent games of death.
+But Lucas Davenport, the cop who’s out to get him, isn’t playing by the rules....',
+'https://images-na.ssl-images-amazon.com/images/I/613Jm3WyCFL.jpg')
+--3
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('The Cutting Season','C004',220000,28,'Attica Locke','After her breathtaking debut novel, Black Water Rising, won acclaim from major publications 
+and respected crime fiction masters like James Ellroy and George Pelecanos, Locke returns with The Cutting Season, a second novel easily as 
+gripping and powerful as her first — a heart-....',
+'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336156465l/13623785.jpg')
+--4
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('Scarpetta','C004',200000,19,'Patricia Cornwell','Leaving behind her forensic pathology practice in South Carolina, Kay Scarpetta takes up an 
+assignment in New York City, where the NYPD has asked her to examine an injured patient in a psychiatric ward....',
+'https://m.media-amazon.com/images/I/51su4qDTGGL.jpg')
+--5
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('Naked in Death','C004',300000,15,'J. D. Robb','In a world of danger and deception, she walks the line — between seductive passion and scandalous murder....',
+'https://m.media-amazon.com/images/I/51V3lEJGvIL.jpg')
+--6
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('The Cove','C004',250000,32,'Catherine Coulter','Sally St. John Brainerd is on the run from the authorities, 
+who want to question her about her possible involvement in her father’s murder. FBI Special Agent James Quinlan goes undercover in the picturesque 
+town of The Cove — home of the World’s Greatest Ice Cream — where Sally seeks sanctuary. But the Cove and its elderly residents harbor sinister secrets of their own. 
+After Quinlan and Sally...',
+'https://images.penguinrandomhouse.com/cover/9780515118650')
+--7
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('Devil in a Blue Dress','C004',350000,15,'Walter Mosley','Devil in a Blue Dress, a defining novel in Walter Mosley’s bestselling Easy Rawlins mystery series, was adapted 
+into a TriStar Pictures film starring Denzel Washington as Easy Rawlins and Don Cheadle as Mouse...',
+'https://images-na.ssl-images-amazon.com/images/I/71w-dAzP4JL.jpg')
+--8
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('The Girl with the Dragon Tattoo','C004',350000,25,'Stieg Larsson','An international publishing sensation, Stieg Larsson’s The Girl with the Dragon Tattoo combines 
+murder mystery, family saga, love story, and financial intrigue into one satisfyingly complex and entertainingly atmospheric novel. Harriet Vanger, 
+a scion of one of Sweden’s wealthiest families...',
+'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/3079/9780307949486.jpg')
+--9
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('The Silence of the Lambs','C004',500000,50,'Thomas Harris','A serial murderer known only by a grotesquely apt nickname — Buffalo Bill — is stalking women. 
+He has a purpose, but no one can fathom it, for the bodies are discovered in different states. Clarice Starling, a young trainee at the FBI Academy, 
+is surprised to be summoned by Jack Crawford, chief of the Bureau’s Behavioral Science section. Her assignment...',
+'https://images-na.ssl-images-amazon.com/images/I/61xCUSb1dHL.jpg')
+--10
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('Still Life','C004',300000,20,'Louise Penny','Chief Inspector Armand Gamache of the Surêté du Québec and his team of investigators are 
+called in to the scene of a suspicious death in a rural village south of Montreal. Jane Neal, a local fixture in the tiny hamlet of Three Pines, 
+just north of the U.S. border, has been found dead in the woods. The locals are certain it’s a tragic hunting accident and nothing more,...',
+'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394239918l/12499717.jpg')
+--11
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('Triptych','C004',250000,15,'Karin Slaughter','From Atlanta’s wealthiest suburbs to its stark inner-city housing projects, 
+a killer has crossed the boundaries of wealth and race. And the people who are chasing him must cross those boundaries, too. 
+Among them is Michael Ormewood, a veteran detective...',
+'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442531921l/21717._SY475_.jpg')
+
+
+select * FROM Books WHERE catID = 'C005'
+
+--C005
+--1
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('Where the Crawdads Sing','C005',300000,15,'Delia Owens','For years, rumors of the “Marsh Girl” have haunted Barkley Cove, a quiet 
+town on the North Carolina coast. So in late 1969, when handsome Chase Andrews is found dead, the locals immediately suspect Kya Clark, 
+the so-called Marsh Girl. But Kya is not what they say...',
+'https://m.media-amazon.com/images/I/51VG7wnnj0L.jpg')
+--2
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('The Silent Wife','C005',350000,40,'Kerry Fisher','Lara’s life looks perfect on the surface. Gorgeous doting husband Massimo, sweet little son Sandro and 
+the perfect home. Lara knows something about Massimo. Something she can’t tell anyone else or everything he has worked so hard for will be 
+destroyed: his job, their...',
+'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1486387357l/33225794._SY475_.jpg')
+--3
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('Small Great Things','C005',350000,36,'Jodi Picoult','Ruth Jefferson is a labor and delivery nurse at a Connecticut hospital with more than twenty 
+years’ experience. During her shift, Ruth begins a routine checkup on a newborn, only to be told a few minutes later that she’s been reassigned to 
+another patient. The parents are white supremacists and don’t want Ruth, who is African American, to...',
+'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/4252/9780425286029.jpg')
+--4
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('Another Love','C005',450000,40,'Amanda Prowse','In the early years, she was happy. Romilly loved her stunning house, her kind husband and gorgeous 
+daughter. Sure, life was sometimes exhausting – but nothing that a large glass of wine at the end of the day couldn’t fix....',
+'https://images-na.ssl-images-amazon.com/images/I/5102ZfMVS8L.jpg')
+--5
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('Click','C005',150000,38,'Kayla Miller','Olive “clicks” with everyone in the fifth grade—until one day she doesn’t. When a school variety show 
+leaves Olive stranded without an act to join, she begins to panic, wondering why all her friends have already formed their own groups... 
+without her. With the performance drawing closer by the minute, will Olive be able to find her own...',
+'https://images-eu.ssl-images-amazon.com/images/I/51sqh5svFZL.jpg')
+--6
+insert into Books(bID, bName, catID, bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0100','Twelve Patients','C005',380000,35,'Eric Manheimer','Using the plights of twelve very different patients–from dignitaries 
+kat the nearby UN, to supermax prisoners at Riker’s Island, to illegal immigrants, and Wall Street tycoons–Dr.Eric Manheimer offers far more than remarkable medical dramas: he blends each patients personal...',
+'https://m.media-amazon.com/images/I/51GaYwGVxcL.jpg')
+--7
+insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0101','My Brother’s Bad Best Friend','C005',350000,15,'B.B. Hamel','Thug. Criminal. Bastard. Jonas Larsen is my brother’s best friend, and he’s as bad as 
+they come.When I run away from my abusive stepfather, Jonas agrees to take me in.Everything seems like it might be okay, until I realize my brother’s 
+addicted to drugs and Jonas is the only thing holding it all together.Now I’m living with the cocky jerk, and he says he’s watching...',
+'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1528995062l/40528854._SY475_.jpg')
+--8
+insert into Books(bID, bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0102', 'A Brother’s Bestfriend Baby Romance','C005',350000,15,'Mia Ford','Are you kidding me?”
+He is my brother’s best friend?That hunk of muscle attached to a to-die-for smile and light-my-fire eyes? That billionaire who sizzles 
+my insides every time he says my name?I didn’t have a choice. I got him alone during our Christmas Eve party, and I told him to unwrap his gift. 
+Me.But Josiah left me with an unexpected gift of his own. A bouncing baby that’s the spitting image of him.I can’t believe my family hasn’t figured 
+it out.They think I’m some romance-crazed maniac who can’t...',
+'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1543081623l/42944039._SY475_.jpg')
+--9
+insert into Books(bID, bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0103','White Lies','C005',350000,45,'Dana Rotberg','A medicine woman is asked to hide a secret that will protect one life and endanger another. 
+Based on a novel by Whale Rider writer Witi Ihimaera, White Lies – New Zealand’s entry in the 2014 Oscar competition for best foreign-language film – 
+is an intense...',
+'https://cdn2.penguin.com.au/covers/original/9781775533061.jpg')
+--10
+insert into Books(bID, bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0104','Daddys Girl','C005',450000,40,'Tasmina Perry','Daddys Girls is the 2006 debut novel by Tasmina Perry. The Independent described the novel as a 
+"Shirley Conranesque retro romp". The novel follows four glamorous daughters whose....',
+'https://images-na.ssl-images-amazon.com/images/I/51ydHBz8OZL._SX327_BO1,204,203,200_.jpg')
+--11
+insert into Books(bID, bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+values 
+('B0105','Gone with the Wind','C005',550000,40,'Margaret Mitchell','Scarlett O Hara, the beautiful, spoiled daughter of a well-to-do Georgia 
+plantation owner, must use every means at her disposal to claw her way out of the poverty she finds herself in after Shermans March to the Sea....',
+'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551144577l/18405._SY475_.jpg')
+
+
