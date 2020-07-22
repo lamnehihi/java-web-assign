@@ -889,73 +889,73 @@ update Users set uRole =1 where uID='U0001'
  GO
 --C001
 --1
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0051','Don Quixote','C001',280000,20,'Miguel de Cervantes','Regarded as one of the greatest works in literature, 
+('Don Quixote','C001',280000,20,'Miguel de Cervantes','Regarded as one of the greatest works in literature, 
 Don Quixote recounts the adventures of Alonso Quixano: a middle-aged man so obsessed with chivalric books that he decides to imitate them and 
 become a knight-errant. So begins his journey to find a faithful squire, save damsels in distress, and fight windmills.',
 'https://www.oakmeadowbookstore.com/images/products/4139.jpg')
 --2
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0052','Treasure Island','C001',280000,20,'Robert Louis Stevenson','Written by Scottish author Robert Louis Stevenson, 
+('Treasure Island','C001',280000,20,'Robert Louis Stevenson','Written by Scottish author Robert Louis Stevenson, 
 this story of “buccaneers and buried gold” launched a million tropes of treasure maps, sea chests, Black Spots, and deserted islands.',
 'https://kbimages1-a.akamaihd.net/bbb881d4-1c64-4c12-8b8d-e0461cf0419f/1200/1200/False/treasure-island-247.jpg')
 --3
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0053','King Solomon’s Mines','C001',280000,20,'H. Rider Haggard and A. C. Michael','The first English adventure novel set in Africa, 
+('King Solomon’s Mines','C001',280000,20,'H. Rider Haggard and A. C. Michael','The first English adventure novel set in Africa, 
 this 1885 book is considered to be the origin of the Lost World literary genre. It boasts six adaptations, including a 1937 British film and a 
 2004 American television miniseries.',
 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6654cb68531143.5b6061ac2fc03.png')
 --4
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0054','Journey to the Center of the Earth','C001',280000,20,'Jules Verne','Journey to the Center of the Earth is exactly that: a trip to the inside 
+('Journey to the Center of the Earth','C001',280000,20,'Jules Verne','Journey to the Center of the Earth is exactly that: a trip to the inside 
 of the world, which is where German professor Otto Lidenbrock theorizes that volcanic tubes will lead. Another one of Jules Verne’s magnum opuses — 
 and one of the most famous examples of subterranean fiction.',
 'https://kbimages1-a.akamaihd.net/7194dfe0-fece-4f6a-838c-44913b217738/1200/1200/False/journey-to-the-centre-of-the-earth.jpg')
 --5
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0055','The Count of Monte Cristo','C001',280000,20,'Alexandre Dumas','Part adventure story and part revenge thriller, The Count of Monte Cristo is the 
+('The Count of Monte Cristo','C001',280000,20,'Alexandre Dumas','Part adventure story and part revenge thriller, The Count of Monte Cristo is the 
 tale of Edmond Dantès, a man who is falsely imprisoned without trial in an island fortress off France.',
 'https://i.pinimg.com/originals/74/5e/6b/745e6bee4404bdec395fff084175cc48.jpg')
 --6
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0056','Ivanhoe','C001',280000,20,'Sir Walter Scott','First published in 1819, Ivanhoe is a tale of heroism set in 12th-century England after the 
+('Ivanhoe','C001',280000,20,'Sir Walter Scott','First published in 1819, Ivanhoe is a tale of heroism set in 12th-century England after the 
 failure of the Third Crusade. Looking for jousting tournaments, romance, kidnappings, and witch trials? Then you’ve come to the right book.',
 'https://cloud10.todocoleccion.online/libros-segunda-mano-novela-infantil-y-juvenil/tc/2010/10/26/22370123.jpg')
 --7
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0057','Tarzan of the Apes','C001',280000,20,'Edgar Rice Burroughs','Immortalized by the Disney adaptation, Tarzan of the Apes by Edgar Rice Burroughs 
+('Tarzan of the Apes','C001',280000,20,'Edgar Rice Burroughs','Immortalized by the Disney adaptation, Tarzan of the Apes by Edgar Rice Burroughs 
 launched the legend of an orphaned boy who is adopted by apes in the African jungle.',
 'https://images-na.ssl-images-amazon.com/images/I/81DVUvVL3zL.jpg')
 --8
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0058','Heart of Darkness','C001',280000,20,'Joseph Conrad','One of the most famous and acclaimed English novels in history happens to be a 
+('Heart of Darkness','C001',280000,20,'Joseph Conrad','One of the most famous and acclaimed English novels in history happens to be a 
 grim adventure story. This 1899 novella by Joseph Conrad tells the doomed story of Charles Marlow, who wishes to leave behind the civilized world 
 and sail up the Congo in Africa.',
 'https://kbimages1-a.akamaihd.net/9b7ea1a5-ff91-4002-be6c-9ee4c82c19fd/1200/1200/False/heart-of-darkness-262.jpg')
 --9
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0059','Hatchet','C001',280000,20,'Gary Paulsen','Brian Robeson is only 13 years old when his bush plane crashes in the forest. 
+('Hatchet','C001',280000,20,'Gary Paulsen','Brian Robeson is only 13 years old when his bush plane crashes in the forest. 
 Now he must survive — with nothing but a hatchet. This book won the 1987 Newberry Award and has since gone on to spawn four sequels.',
 'https://images-na.ssl-images-amazon.com/images/I/61FbXZT3CBL.jpg')
 --10
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0060','Congo','C001',280000,20,'Michael Crichton','Another one of Michael Crichton’s famous adventure-and-science-fiction books, 
+('Congo','C001',280000,20,'Michael Crichton','Another one of Michael Crichton’s famous adventure-and-science-fiction books, 
 Congo relates the gripping story of an expedition’s desire to find the Lost City of Zinj in Africa — despite the horrors of the jungle and previous deaths.',
 'https://4.bp.blogspot.com/-70nNU5tsJ3Y/VnVUwtGnBrI/AAAAAAAAALM/zGOyKb6PiL0/s1600/Copy%2Bof%2BICHBININDAH.BLOGSPOT.COM.png')
 --11
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0061','The Lost World','C001',280000,20,'Sir Arthur Conan Doyle','An expedition to an Amazon basin in South America to find 
+('The Lost World','C001',280000,20,'Sir Arthur Conan Doyle','An expedition to an Amazon basin in South America to find 
 prehistoric dinosaurs goes awry in this 1912 novel by Sir Arthur Doyle. Sherlock Holmes is nowhere to be found, but this book does introduce 
 the notorious character of Professor Challenger, the founder of the mission.',
 'https://kbimages1-a.akamaihd.net/2cbcbecb-78b3-4952-8324-98d04e7f971c/353/569/90/False/the-lost-world-28.jpg')
@@ -965,69 +965,69 @@ the notorious character of Professor Challenger, the founder of the mission.',
 
 --C002
 --1
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0062','In Search of Lost Time','C002',350000,15,'Marcel Proust','Swanns Way, the first part of A la recherche de temps perdu, Marcel Prousts seven-part cycle, 
+('In Search of Lost Time','C002',350000,15,'Marcel Proust','Swanns Way, the first part of A la recherche de temps perdu, Marcel Prousts seven-part cycle, 
 was published in 1913. In it, Proust introduces the themes that run through the entire work. The narr...',
 'https://m.media-amazon.com/images/I/411fuVxxG4L.jpg')
 --2
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0063','Ulysses','C002',480000,30,'James Joyce','Ulysses chronicles the passage of Leopold Bloom through Dublin during an ordinary day, 
+('Ulysses','C002',480000,30,'James Joyce','Ulysses chronicles the passage of Leopold Bloom through Dublin during an ordinary day, 
 June 16, 1904. The title parallels and alludes to Odysseus (Latinised into Ulysses), the hero of Homers Odyss...',
 'https://upload.wikimedia.org/wikipedia/commons/a/ab/JoyceUlysses2.jpg')
 --3
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0064','Moby Dick','C002',300000,18,'Herman Melville','First published in 1851, Melvilles masterpiece is, in Elizabeth Hardwicks words, 
+('Moby Dick','C002',300000,18,'Herman Melville','First published in 1851, Melvilles masterpiece is, in Elizabeth Hardwicks words, 
 "the greatest novel in American literature." The saga of Captain Ahab and his monomaniacal pursuit of the white wh...',
 'https://ih1.redbubble.net/image.728139518.9450/flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg')
 --4
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0065','War and Peace','C002',380000,10,'Leo Tolstoy','Epic in scale, War and Peace delineates in graphic detail events leading up to Napoleons invasion of Russia, 
+('War and Peace','C002',380000,10,'Leo Tolstoy','Epic in scale, War and Peace delineates in graphic detail events leading up to Napoleons invasion of Russia, 
 and the impact of the Napoleonic era on Tsarist society, as seen through the eyes of fi...',
 'https://images-na.ssl-images-amazon.com/images/I/A1aDb5U5myL.jpg')
 --5
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0066','Lolita','C002',300000,25,'Vladimir Nabokov','The book is internationally famous for its innovative style and infamous for its controversial subject: 
+('Lolita','C002',300000,25,'Vladimir Nabokov','The book is internationally famous for its innovative style and infamous for its controversial subject: 
 the protagonist and unreliable narrator, middle aged Humbert Humbert, becomes obsessed and se...',
 'https://cdnb.artstation.com/p/assets/images/images/010/504/713/medium/miriam-abramik-lolita-book-cover.jpg?1524767278')
 --6
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0067','The Catcher in the Rye','C002',280000,10,'J. D. Salinger','The Catcher in the Rye is a 1945 novel by J. D. Salinger. Originally published for adults, 
+('The Catcher in the Rye','C002',280000,10,'J. D. Salinger','The Catcher in the Rye is a 1945 novel by J. D. Salinger. Originally published for adults, 
 the novel has become a common part of high school and college curricula throughout the English-speaking wo...',
 'https://images-na.ssl-images-amazon.com/images/I/81OthjkJBuL.jpg')
 --7
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0068','The Brothers Karamazov','C002',280000,30,'Fyodor Dostoyevsky','Dostoevskys last and greatest novel, The Karamazov Brothers, is both a brilliantly told crime story and 
+('The Brothers Karamazov','C002',280000,30,'Fyodor Dostoyevsky','Dostoevskys last and greatest novel, The Karamazov Brothers, is both a brilliantly told crime story and 
 a passionate philosophical debate. The dissolute landowner Fyodor Pavlovich Karamazov is mur...',
 'https://i.pinimg.com/originals/f7/86/53/f786533b3a21c91b0deee00433771cc5.png')
 --8
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0069','Madame Bovary','C002',280000,9,'Gustave Flaubert','For daring to peer into the heart of an adulteress and enumerate its contents with profound dispassion, 
+('Madame Bovary','C002',280000,9,'Gustave Flaubert','For daring to peer into the heart of an adulteress and enumerate its contents with profound dispassion, 
 the author of Madame Bovary was tried for "offenses against morality and religion." What shoc...',
 'https://almabooks.com/wp-content/uploads/2016/10/9781847493224.jpg')
 --9
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0070','The Divine Comedy ','C002',280000,20,'Dante Alighieri','Belonging in the immortal company of the great works of literature, Dante Alighieris poetic masterpiece, 
+('The Divine Comedy ','C002',280000,20,'Dante Alighieri','Belonging in the immortal company of the great works of literature, Dante Alighieris poetic masterpiece, 
 The Divine Comedy, is a moving human drama, an unforgettable visionary journey through the ...',
 'https://www.woloafric.com/wp-content/uploads/2018/12/divine-comedy-1.jpg')
 --10
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0071','The Adventures of Huckleberry Finn','C002',280000,20,'Mark Twain','Revered by all of the towns children and dreaded by all of its mothers, 
+('The Adventures of Huckleberry Finn','C002',280000,20,'Mark Twain','Revered by all of the towns children and dreaded by all of its mothers, 
 Huckleberry Finn is indisputably the most appealing child-hero in American literature. Unlike the tall-tale, idyllic worl...',
 'https://bizweb.dktcdn.net/100/326/228/products/the-adventures-of-huckleberry-finn-by-mark-twain-bookworm-hanoi.jpg?v=1580877216673')
 --11
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0072','Alice s Adventures in Wonderland','C002',480000,30,'Lewis Carroll','In 1862 Charles Lutwidge Dodgson, a shy Oxford mathematician with a stammer, 
+('Alice s Adventures in Wonderland','C002',480000,30,'Lewis Carroll','In 1862 Charles Lutwidge Dodgson, a shy Oxford mathematician with a stammer, 
 created a story about a little girl tumbling down a rabbit hole. Thus began the immortal adventures of Alice, perhaps th...',
 'https://www.bookstation.ie/wp-content/uploads/2020/02/9781447279990.jpg')
 
@@ -1039,72 +1039,72 @@ select * FROM Categories
 
 --C003
 --1
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0073','Maus: A Survivors Tale','C003',350000,15,'Art Spiegelman','Admit it — you are not exactly surprised to see this book turn up on this list. This is a comics list; we are NPR. 
+('Maus: A Survivors Tale','C003',350000,15,'Art Spiegelman','Admit it — you are not exactly surprised to see this book turn up on this list. This is a comics list; we are NPR. 
 We get it. But Art Spiegelmans two-volume feat of historical memoir wasnt simply grandfathered in. It received the many votes it did because it remains such a standalone...',
 'https://images-na.ssl-images-amazon.com/images/I/A1RUVrZnIhL.jpg')
 --2
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0074','Daytripper','C003',380000,20,'Gabriel Ba and Fabio Moon','The books subject — the way death retroactively imposes a shape on a persons life — belies the sense of hope that 
+('Daytripper','C003',380000,20,'Gabriel Ba and Fabio Moon','The books subject — the way death retroactively imposes a shape on a persons life — belies the sense of hope that 
 saturates every panel of this expressive and poignant story by Brazilian twin brothers Fabio Moon and Gabriel Ba...',
 'https://i1.wp.com/smithsonianapa.org/bookdragon/wp-content/uploads/sites/10/2011/03/Daytripper.jpg')
 --3
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0075','This One Summer','C003',300000,20,'Mariko Tamaki and Jillian Tamaki','Comics about awkward young men struggling with adolescence are thick on the ground, which makes sense, given that the medium seems 
+('This One Summer','C003',300000,20,'Mariko Tamaki and Jillian Tamaki','Comics about awkward young men struggling with adolescence are thick on the ground, which makes sense, given that the medium seems 
 expressly suited to exploring the anxiety, self-consciousness...',
 'https://m.media-amazon.com/images/I/41gPPggJw6L.jpg')
 --4
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0076','Sweet Tooth','C003',380000,10,'Jeff Lemire','For such a young cartoonist (he is 41), Jeff Lemires output is considerable and sufficiently diverse that the judges each had 
+('Sweet Tooth','C003',380000,10,'Jeff Lemire','For such a young cartoonist (he is 41), Jeff Lemires output is considerable and sufficiently diverse that the judges each had 
 their favorites. Arguments were made for his Essex County Trilogy, about life in a small Canadian county, and The Underwater Welder, a ghostly meditation on fatherhood; his superhero 
 work at DC, Marvel and Valiant had its proponents as well...',
 'https://m.media-amazon.com/images/I/512vnb7A8AL.jpg')
 --5
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0077','Through The Woods','C003',300000,25,'Emily Carroll','It came from the woods. Most strange things do." Emily Carrolls book of short stories is horror, yes – 
+('Through The Woods','C003',300000,25,'Emily Carroll','It came from the woods. Most strange things do." Emily Carrolls book of short stories is horror, yes – 
 but its the psychological horror of isolation and alienation, not the pulpy, visceral horror of the slaughterhouse floor. Were left disturbed...',
 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1414845473l/18659623.jpg')
 --6
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0078','Blankets','C003',280000,10,'Craig Thompson','Craig Thompson wrote and drew this bittersweet, 600-page, semiautobiographical story of a young man raised 
+('Blankets','C003',280000,10,'Craig Thompson','Craig Thompson wrote and drew this bittersweet, 600-page, semiautobiographical story of a young man raised 
 in a strict evangelical tradition, haunted by feelings of guilt and shame as adolescence gives way to adulthood. His attempts to navigate a sexual relationship cause him ...',
 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1460925949l/25179._SX318_.jpg')
 --7
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0079','My Favorite Thing Is Monsters','C003',280000,30,'Emil Ferris','After West Nile virus left illustrator Emil Ferris partially paralyzed, 
+('My Favorite Thing Is Monsters','C003',280000,30,'Emil Ferris','After West Nile virus left illustrator Emil Ferris partially paralyzed, 
 she learned to draw again by duct-taping a quill pen to her hand. Her drive to recover — and her childhood love of horror films — are evident in her ferocious, semi-autobiographical...',
 'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/6839/9781683960195.jpg')
 --8
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0080','Jimmy Corrigan','C003',280000,9,'Chris Ware','Bright colors, clean lines, simple shapes — a Chris Ware comics page is meticulously designed to invite the eye in, 
+('Jimmy Corrigan','C003',280000,9,'Chris Ware','Bright colors, clean lines, simple shapes — a Chris Ware comics page is meticulously designed to invite the eye in, 
 echoing the feel of a beloved picture book from your earliest childhood. And then you read the thing and — oof. Ware is a master of the comics mediums unique ability to create 
 tension between words and images...',
 'https://i.pinimg.com/originals/63/e9/e1/63e9e1f12dd42c3f1485211a5a04808e.jpg')
 --9
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0081','Blacksad','C003',280000,20,' Juan Diaz Canales and Juanjo Guarnido','It takes a village: Blacksad is a French comic by two Spaniards — writer Juan Diaz Canales and artist Juanjo Guarnido — 
+('Blacksad','C003',280000,20,' Juan Diaz Canales and Juanjo Guarnido','It takes a village: Blacksad is a French comic by two Spaniards — writer Juan Diaz Canales and artist Juanjo Guarnido — 
 whove crafted a hard-boiled noir set in an America filled of ...',
 'https://bdi.dlpdomain.com/album/9782205076196/couv/M600x800/blacksad-8211-hors-srie-tome-0-l-8217-histoire-des-aquarelles-8211-intgrale.jpg')
 --10
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0082','Here','C003',280000,30,'Richard McGuire','Reading reviews of comics gets frustrating when the writer focuses solely on critiquing the story, 
+('Here','C003',280000,30,'Richard McGuire','Reading reviews of comics gets frustrating when the writer focuses solely on critiquing the story, 
 ignoring that comics can only exist in the space where text and art come together. Its great, then, when a comic like Here comes along, because it forces critics and readers 
 alike to engage with the potent narrative power of the wordless comics...',
 'https://images-na.ssl-images-amazon.com/images/I/910cdB0vm1L.jpg')
 --11
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0083','How To Be Happy','C003',480000,30,'Eleanor Davis','When a very recent work is nominated in the popular vote, the judges feel it incumbent upon them to really interrogate 
+('How To Be Happy','C003',480000,30,'Eleanor Davis','When a very recent work is nominated in the popular vote, the judges feel it incumbent upon them to really interrogate 
 it — to ensure that it justified its presence on the final list. That said, Eleanor Davis 2015 collection of comics short stories sailed through that process with...',
 'https://www.bookstation.ie/wp-content/uploads/2020/02/9781447279990.jpg')
 
@@ -1230,44 +1230,44 @@ leaves Olive stranded without an act to join, she begins to panic, wondering why
 without her. With the performance drawing closer by the minute, will Olive be able to find her own...',
 'https://images-eu.ssl-images-amazon.com/images/I/51sqh5svFZL.jpg')
 --6
-insert into Books(bID, bName, catID, bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName, catID, bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0100','Twelve Patients','C005',380000,35,'Eric Manheimer','Using the plights of twelve very different patients–from dignitaries 
+('Twelve Patients','C005',380000,35,'Eric Manheimer','Using the plights of twelve very different patients–from dignitaries 
 kat the nearby UN, to supermax prisoners at Riker’s Island, to illegal immigrants, and Wall Street tycoons–Dr.Eric Manheimer offers far more than remarkable medical dramas: he blends each patients personal...',
 'https://m.media-amazon.com/images/I/51GaYwGVxcL.jpg')
 --7
-insert into Books(bID,bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0101','My Brother’s Bad Best Friend','C005',350000,15,'B.B. Hamel','Thug. Criminal. Bastard. Jonas Larsen is my brother’s best friend, and he’s as bad as 
+('My Brother’s Bad Best Friend','C005',350000,15,'B.B. Hamel','Thug. Criminal. Bastard. Jonas Larsen is my brother’s best friend, and he’s as bad as 
 they come.When I run away from my abusive stepfather, Jonas agrees to take me in.Everything seems like it might be okay, until I realize my brother’s 
 addicted to drugs and Jonas is the only thing holding it all together.Now I’m living with the cocky jerk, and he says he’s watching...',
 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1528995062l/40528854._SY475_.jpg')
 --8
-insert into Books(bID, bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0102', 'A Brother’s Bestfriend Baby Romance','C005',350000,15,'Mia Ford','Are you kidding me?”
+('A Brother’s Bestfriend Baby Romance','C005',350000,15,'Mia Ford','Are you kidding me?”
 He is my brother’s best friend?That hunk of muscle attached to a to-die-for smile and light-my-fire eyes? That billionaire who sizzles 
 my insides every time he says my name?I didn’t have a choice. I got him alone during our Christmas Eve party, and I told him to unwrap his gift. 
 Me.But Josiah left me with an unexpected gift of his own. A bouncing baby that’s the spitting image of him.I can’t believe my family hasn’t figured 
 it out.They think I’m some romance-crazed maniac who can’t...',
 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1543081623l/42944039._SY475_.jpg')
 --9
-insert into Books(bID, bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0103','White Lies','C005',350000,45,'Dana Rotberg','A medicine woman is asked to hide a secret that will protect one life and endanger another. 
+('White Lies','C005',350000,45,'Dana Rotberg','A medicine woman is asked to hide a secret that will protect one life and endanger another. 
 Based on a novel by Whale Rider writer Witi Ihimaera, White Lies – New Zealand’s entry in the 2014 Oscar competition for best foreign-language film – 
 is an intense...',
 'https://cdn2.penguin.com.au/covers/original/9781775533061.jpg')
 --10
-insert into Books(bID, bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0104','Daddys Girl','C005',450000,40,'Tasmina Perry','Daddys Girls is the 2006 debut novel by Tasmina Perry. The Independent described the novel as a 
+('Daddys Girl','C005',450000,40,'Tasmina Perry','Daddys Girls is the 2006 debut novel by Tasmina Perry. The Independent described the novel as a 
 "Shirley Conranesque retro romp". The novel follows four glamorous daughters whose....',
 'https://images-na.ssl-images-amazon.com/images/I/51ydHBz8OZL._SX327_BO1,204,203,200_.jpg')
 --11
-insert into Books(bID, bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
+insert into Books(bName,catID,bPrice, bQuantity, bAuthor,bDes,bCover)
 values 
-('B0105','Gone with the Wind','C005',550000,40,'Margaret Mitchell','Scarlett O Hara, the beautiful, spoiled daughter of a well-to-do Georgia 
+('Gone with the Wind','C005',550000,40,'Margaret Mitchell','Scarlett O Hara, the beautiful, spoiled daughter of a well-to-do Georgia 
 plantation owner, must use every means at her disposal to claw her way out of the poverty she finds herself in after Shermans March to the Sea....',
 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551144577l/18405._SY475_.jpg')
 
